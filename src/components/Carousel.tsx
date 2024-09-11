@@ -2,16 +2,16 @@ import React from 'react'
 
 const Carousel = () => {
     return (
-        <div id="carouselExample" className="carousel slide">
-            <div className="carousel-inner">
-                <div className="carousel-item active">
-                    <div className='bg-black h-52 w-full'></div>
+        <div id="carouselExample" className="carousel slide h-[500px]">
+            <div className="carousel-inner h-full">
+                <div className="carousel-item active h-full">
+                    <div className='bg-black h-full w-full'></div>
                 </div>
-                <div className="carousel-item">
-                    <div className='bg-blue-500 h-52 w-full'></div>
+                <div className="carousel-item h-full">
+                    <div className='bg-blue-500 h-full w-full'></div>
                 </div>
-                <div className="carousel-item">
-                    <div className='bg-red-500 h-52 w-full'></div>
+                <div className="carousel-item h-full">
+                    <div className='bg-red-500 h-full w-full'></div>
                 </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
