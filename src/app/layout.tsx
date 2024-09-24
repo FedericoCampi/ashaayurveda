@@ -4,6 +4,8 @@ import "./globals.css";
 import Header from "@/components/Header";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BootstrapClient from '../services/BootstrapClient';
+import Whatsapp from "@/components/Whatsapp";
+import Chatbot from "@/components/Chatbot";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,7 +35,12 @@ export default function RootLayout({
       >
         <Header />
         {children}
-        
+        <div className="fixed bottom-4 left-4">
+          <Whatsapp/>
+        </div>
+        <div className="fixed bottom-4 right-4">
+          <Chatbot/>
+        </div>
         <BootstrapClient/>
       </body>
     </html>
