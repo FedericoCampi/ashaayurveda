@@ -5,8 +5,17 @@ import { FacebookIcon, InstagramIcon, YoutubeIcon, MapPinIcon, PhoneIcon, MailIc
 
 export default function ContactSection() {
   return (
-    <div className="bg-gradient-to-br from-green-700 to-green-900 text-white p-8 md:p-16">
+    <div className="bg-gradient-to-br from-green-700 to-green-900 text-white pb-20 p-8 md:p-16">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+        <div>
+          <h2 className="text-3xl font-bold mb-6">DESCUBRE EL EQUILIBRIO Y RENUEVA TU BIENESTAR CON ASHA AYURVEDA</h2>
+          <form className="space-y-4 text-center">
+            <Input type="text" placeholder="NOMBRE" className="bg-black bg-opacity-50 border-0 text-white placeholder-gray-400" />
+            <Input type="email" placeholder="EMAIL" className="bg-black bg-opacity-50 border-0 text-white placeholder-gray-400" />
+            <Textarea placeholder="MENSAJE" className="bg-black bg-opacity-50 border-0 text-white placeholder-gray-400" rows={4} />
+            <Button type="submit" className="bg-green-600 hover:bg-green-700 text-white">ENVIAR</Button>
+          </form>
+        </div>
         <div className="bg-black bg-opacity-50 p-6 rounded-lg">
           <h2 className="text-2xl font-bold mb-6 text-green-400">ESTAMOS CERCA</h2>
           <div className="flex space-x-4 mb-6">
@@ -28,15 +37,6 @@ export default function ContactSection() {
               <span>PEDRO GOYENA 128, SAN FERNANDO DEL VALLE DE CATAMARCA, PROVINCIA DE CATAMARCA, ARGENTINA</span>
             </div>
           </div>
-        </div>
-        <div>
-          <h2 className="text-3xl font-bold mb-6">DESCUBRE EL EQUILIBRIO Y RENUEVA TU BIENESTAR CON ASHA AYURVEDA</h2>
-          <form className="space-y-4">
-            <Input type="text" placeholder="NOMBRE" className="bg-black bg-opacity-50 border-0 text-white placeholder-gray-400" />
-            <Input type="email" placeholder="EMAIL" className="bg-black bg-opacity-50 border-0 text-white placeholder-gray-400" />
-            <Textarea placeholder="MENSAJE" className="bg-black bg-opacity-50 border-0 text-white placeholder-gray-400" rows={4} />
-            <Button type="submit" className="bg-green-600 hover:bg-green-700 text-white">ENVIAR</Button>
-          </form>
           <p className="mt-6 text-sm">
             Si tienes alguna pregunta, consulta o simplemente deseas obtener más información sobre nuestros tratamientos, clases y terapias, no dudes en ponerte en contacto con nosotros. Estaremos encantados de atenderte y brindarte toda la información que necesites para tomar decisiones informadas sobre tu bienestar.
           </p>

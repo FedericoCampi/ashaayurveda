@@ -1,11 +1,15 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Chatbot = () => {
   return (
     <div>
-      <img 
-        src='./iconWhatsapp.jpg'
+      <Image
+        alt='iconWhatsapp'
+        src='/iconWhatsapp.jpg'
         className='w-[70px] h-[70px]'
+        width={70}
+        height={70}
       />
     </div>
   )

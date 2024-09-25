@@ -14,6 +14,8 @@ export const InfiniteMovingCards = ({
     quote: string;
     name: string;
     title?: string;
+    quote1?: string;
+    name1?: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -65,7 +67,7 @@ export const InfiniteMovingCards = ({
       } else if (speed === "normal") {
         containerRef.current.style.setProperty("--animation-duration", "40s");
       } else {
-        containerRef.current.style.setProperty("--animation-duration", "500s");
+        containerRef.current.style.setProperty("--animation-duration", "100s");
       }
     }
   };
@@ -102,16 +104,31 @@ export const InfiniteMovingCards = ({
               <span className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
                 {item.quote}
               </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center">
+              <div className="relative z-20 mt-2 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
-                  <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
+                  <span className=" text-md leading-[1.6] text-gray-400 font-normal">
                     {item.name}
                   </span>
-                  <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
+                  <span className=" text-md leading-[1.6] text-gray-400 font-normal">
                     {item.title}
                   </span>
                 </span>
               </div>
+               {/* Verificación para quote1 y name1 */}
+              {item.quote1 && item.name1 && (
+                <div className="mt-5">
+                  <span className="relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
+                    {item.quote1}
+                  </span>
+                  <div className="relative z-20 mt-2 flex flex-row items-center">
+                    <span className="flex flex-col gap-1">
+                      <span className="text-md leading-[1.6] text-gray-400 font-normal">
+                        {item.name1}
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              )}
             </blockquote>
           </li>
         ))}
