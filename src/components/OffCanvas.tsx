@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 
@@ -5,8 +6,13 @@ const OffCanvas = () => {
     return (
         <div>
             <div className='flex w-full justify-between p-4'>
-                <div>
-                    Asha Ayurveda
+                <div className='bg-slate-200 p-1 rounded-md'>
+                    <Image
+                        src={'/icons/iconAsha.webp'}
+                        alt='icon Asha ayurveda'
+                        width={170}
+                        height={100}
+                    />
                 </div>
                 <button className="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                     <GiHamburgerMenu className="text-3xl" />

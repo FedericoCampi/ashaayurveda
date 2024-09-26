@@ -92,3 +92,30 @@ body {
     @apply bg-background text-foreground;
  }
 }
+
+/* fade boton en carousel */
+
+.fade-in-bottom {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInBottom 2s ease forwards;
+}
+
+@keyframes fadeInBottom {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+/* efectoVidrio */
+.containerVidrio {
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, .15);
+  
+  backdrop-filter: blur(10px);
+}
