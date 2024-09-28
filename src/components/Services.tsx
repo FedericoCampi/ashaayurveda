@@ -2,7 +2,6 @@ import React from 'react'
 import { servicesData } from '@/lib/data';
 import Image from 'next/image';
 import FirstButton from './ui/firstButton';
-import { div } from 'framer-motion/client';
 
 const Services = () => {
     return (

@@ -9,7 +9,7 @@ interface FirstButtonProps {
 
 const FirstButton: React.FC<FirstButtonProps> = ({ titulo, padding, tamano, forma }) => {
   return (
-    <button className={`${padding} ${tamano} mainColorbg text-white rounded-md`}>
+    <button className={`${padding} ${tamano} ${forma} mainColorbg text-white rounded-md`}>
       {titulo}
     </button>
   )
