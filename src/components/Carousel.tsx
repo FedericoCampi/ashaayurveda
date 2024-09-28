@@ -14,7 +14,7 @@ const Carousel = () => {
                                 src={image.imagen}
                                 alt={`carousel-${index}`}
                                 width={1000}
-                                height={300}
+                                height={280}
                                 className='w-full'
                             />
                             <div className="absolute inset-x-0 bottom-2 flex items-center justify-center">

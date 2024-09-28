@@ -23,7 +23,7 @@ export const servicesData = [
     },
     {
       title: 'Educación',
-      description: 'Conoce las actividades relacionadas a Educación que realizamos, permitiéndonos aprender de las experiencias que suceden en nuestra comunidad y compartir desde Ayurveda conceptos fácilmente aplicables a nuestras vidas y en consonancia con nuestros ecosistemas, cultura, creencias y salud, produciendo una verdadera y maravillosa integración.',
+      description: 'Descubre nuestras actividades educativas, donde aprendemos de la comunidad y compartimos conceptos de Ayurveda aplicables a la vida, integrando ecosistemas, cultura, creencias y salud.',
       image: '/imagesFirstLanding/services/cursos.webp',
       alt: 'cursos'
     },

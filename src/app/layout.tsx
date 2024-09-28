@@ -6,16 +6,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import BootstrapClient from '../services/BootstrapClient';
 import Whatsapp from "@/components/Whatsapp";
 import Chatbot from "@/components/Chatbot";
+import { Roboto_Serif } from 'next/font/google'
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+// const geistSans = localFont({
+//   src: "./fonts/GeistVF.woff",
+//   variable: "--font-geist-sans",
+//   weight: "100 900",
+// });
+
+const inter = Roboto_Serif({ 
+  weight: '400', 
+  subsets: ['latin']
 });
 
 export const metadata: Metadata = {
@@ -31,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-slate-500 antialiased`}
+        className={`${inter.className} antialiased`}
       >
         <Header />
         {children}

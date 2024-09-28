@@ -1,44 +1,35 @@
+'use client'
+
 import Image from 'next/image';
 import React from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const OffCanvas = () => {
+
     return (
-        <div>
-            <div className='flex w-full justify-between p-4'>
-                <div className='bg-slate-200 p-1 rounded-md'>
+        <div className='px-[3%]'>
+            <div className='flex w-full justify-between p-2'>
+                <div className='p-1'>
                     <Image
                         src={'/icons/iconAsha.webp'}
                         alt='icon Asha ayurveda'
-                        width={170}
+                        width={200}
                         height={100}
                     />
                 </div>
-                <button className="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                    <GiHamburgerMenu className="text-3xl" />
+                <button className="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                    <GiHamburgerMenu className="text-3xl mainColorText" />
                 </button>
             </div>
 
 
-            <div className="offcanvas offcanvas-start" tabIndex={-1} id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div className="offcanvas offcanvas-top" tabIndex={-1} id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
                 <div className="offcanvas-header">
-                    <h5 className="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                    <h5 className="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div className="offcanvas-body">
-                    <div>
-                        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                    </div>
-                    <div className="dropdown mt-3">
-                        <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                            Dropdown button
-                        </button>
-                        <ul className="dropdown-menu">
-                            <li><a className="dropdown-item" href="#">Action</a></li>
-                            <li><a className="dropdown-item" href="#">Another action</a></li>
-                            <li><a className="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
+                    ...
                 </div>
             </div>
         </div>

@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { FacebookIcon, InstagramIcon, YoutubeIcon, MapPinIcon, PhoneIcon, MailIcon } from "lucide-react"
+import FirstButton from "./ui/firstButton"
 
 export default function ContactSection() {
   return (
@@ -13,7 +14,7 @@ export default function ContactSection() {
             <Input type="text" placeholder="NOMBRE" className="bg-black bg-opacity-50 border-0 text-white placeholder-gray-400" />
             <Input type="email" placeholder="EMAIL" className="bg-black bg-opacity-50 border-0 text-white placeholder-gray-400" />
             <Textarea placeholder="MENSAJE" className="bg-black bg-opacity-50 border-0 text-white placeholder-gray-400" rows={4} />
-            <Button type="submit" className="bg-green-600 hover:bg-green-700 text-white">ENVIAR</Button>
+            <Button type="submit" className="bg-[#35b05a] hover:bg-green-700 text-white">ENVIAR</Button>
           </form>
         </div>
         <div className="bg-black bg-opacity-50 p-6 rounded-lg">
