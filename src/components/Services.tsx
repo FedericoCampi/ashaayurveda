@@ -36,10 +36,10 @@ const Services = () => {
                     </div>
                 ))}
             </div>
-            <div className='pt-8'>
+            <div className='pt-6'>
                 <FirstButton
                     titulo="Ver más servicios" 
-                    padding='p-2'
+                    padding='p-3'
                     tamano='text-xl'
                 />
             </div>
