@@ -17,9 +17,9 @@ const Carousel = () => {
                                 height={280}
                                 className='w-full'
                             />
-                            <div className="absolute inset-x-0 bottom-2 flex items-center justify-center">
-                                <button className="fade-in-bottom bg-gradient-to-br from-green-700 to-green-900 text-white py-2 px-4 rounded-lg">
-                                    Saber más
+                            <div className="absolute inset-x-0 bottom-5 flex items-center justify-center">
+                                <button className="fade-in-bottom text-xl bg-[#35b05a] text-white py-2 px-4 rounded-lg">
+                                    Ver más
                                 </button>
                             </div>
                         </div>
