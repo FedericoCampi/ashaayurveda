@@ -3,7 +3,7 @@ import React from 'react'
 
 const Whatsapp = () => {
   return (
-    <div>
+    <div className=''>
       <Image 
         alt='icon'
         src='/iconWhatsapp.jpg'

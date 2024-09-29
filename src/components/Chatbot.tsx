@@ -3,7 +3,7 @@ import React from 'react'
 
 const Chatbot = () => {
   return (
-    <div>
+    <div className=''>
       <Image
         alt='iconWhatsapp'
         src='/iconWhatsapp.jpg'

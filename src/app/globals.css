@@ -125,3 +125,7 @@ body {
 
   backdrop-filter: blur(10px);
 }
+
+:focus-visible {
+  outline: transparent auto 1px !important;
+}

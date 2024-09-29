@@ -4,7 +4,7 @@ import FirstButton from './ui/firstButton'
 
 const Welcome = () => {
   return (
-    <div className='flex w-full min-h-[400px] py-4'>
+    <div className='flex w-full min-h-[400px] pt-10 pb-4'>
       <div className='w-[40%] hidden md:block'>
         <Image
           src='/imagesFirstLanding/velas.webp'
