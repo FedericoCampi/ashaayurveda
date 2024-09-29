@@ -11,7 +11,7 @@ const Services = () => {
             <div className='py-10 grid grid-cols-1 gap-10 md:grid-cols-2 w-full h-full'>
                 {servicesData.map((service, index) => (
                     <div key={index} className='flex w-full justify-center'>
-                        <div className='max-w-[500px]'>
+                        <div className='w-full md:max-w-[500px]'>
                             <div className='relative h-full w-full'>
                                 <div className='bg-gray-300 w-full h-full'>
                                     <Image
