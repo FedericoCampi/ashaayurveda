@@ -129,3 +129,7 @@ body {
 :focus-visible {
   outline: transparent auto 1px !important;
 }
+.contentFooter {
+  position: relative;
+  z-index: 1; /* Asegúrate de que el contenido esté por encima */
+}

@@ -30,7 +30,7 @@ export const servicesData = [
     {
       title: 'Masajes',
       description: 'Descubre una variedad de tratamientos de masaje diseñados para revitalizar cuerpo y mente en nuestra página de masajes.',
-      image: '/imagesFirstLanding/services/masajes.webp',
+      image: '/imagesFirstLanding/services/masajes.jpg',
       alt: 'masajes' 
     },
   ];

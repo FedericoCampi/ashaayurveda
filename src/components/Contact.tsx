@@ -5,8 +5,16 @@ import { FacebookIcon, InstagramIcon, YoutubeIcon, MapPinIcon, PhoneIcon, MailIc
 
 export default function ContactSection() {
   return (
-    <div className="bg-gradient-to-br from-green-700 to-green-900 text-white pb-20 p-8 md:p-16">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+    <div className="relative bg-gradient-to-br from-green-700 to-green-900 text-white pb-20 p-8 md:p-16"
+    >
+      <div className="absolute inset-0">
+        <img
+          src="/imagesFirstLanding/fondoFooter.webp" // Reemplaza con la ruta de tu imagen
+          alt="Fondo"
+          className="w-full h-full object-cover opacity-30" // Ajusta la opacidad aquí
+        />
+      </div>
+      <div className="contentFooter max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
         <div>
           <h2 className="text-3xl font-bold mb-6">DESCUBRE EL EQUILIBRIO Y RENUEVA TU BIENESTAR CON ASHA AYURVEDA</h2>
           <form className="space-y-4 text-center">
