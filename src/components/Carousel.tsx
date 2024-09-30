@@ -5,28 +5,40 @@ import Image from 'next/image'
 const Carousel = () => {
     return (
         <div id="carouselExample" className="carousel slide">
-            <div className='bg-gradient-to-br from-green-700 to-green-900 w-full h-[50px]'>
-            </div>
-                <div className="carousel-inner h-full">
-                    {imagesCarousel.map((image, index) => (
-                        <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''} relative h-full`}>
+
+            <div className="carousel-inner h-full">
+
+                {imagesCarousel.map((image, index) => (
+
+                    <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''} relative h-full`}>
+
+                        {/* Pilar izquierdo */}
+                        <div className="absolute left-0 top-0 h-full w-0 md:w-16 xl:w-28 bg-green-500"></div>
+
+                        {/* Pilar derecho */}
+                        <div className="absolute right-0 top-0 h-full w-0 md:w-16 xl:w-28 bg-green-500"></div>
+
+                        {/* Imagen con padding para que no se superponga con los pilares */}
+                        <div className="h-full md:px-16 xl:px-28">
                             <Image
                                 src={image.imagen}
                                 alt={`carousel-${index}`}
                                 width={1000}
                                 height={280}
-                                className='w-full'
+                                className="w-full h-full object-cover"
                             />
-                            <div className="absolute inset-x-0 bottom-5 flex items-center justify-center">
-                                <button className="fade-in-bottom text-xl bg-[#35b05a] text-white py-2 px-4 rounded-lg">
-                                    Ver más
-                                </button>
-                            </div>
                         </div>
-                    ))}
-                </div>
-            <div className='bg-gradient-to-br from-green-700 to-green-900 w-full h-[50px]'>    
+
+                        <div className="absolute inset-x-0 bottom-5 flex items-center justify-center">
+                            <button className="fade-in-bottom text-xl bg-[#35b05a] text-white py-2 px-4 rounded-lg">
+                                Ver más
+                            </button>
+                        </div>
+                    </div>
+                ))}
+
             </div>
+
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Previous</span>
