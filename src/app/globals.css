@@ -133,3 +133,17 @@ body {
   position: relative;
   z-index: 1; /* Asegúrate de que el contenido esté por encima */
 }
+
+
+/* Media queries */
+/* Selector para los elementos <p> que cambiarán de tamaño */
+.text-item-services {
+  font-size: 13px; /* Definiendo el tamaño inicial a 10px */
+}
+
+/* Media query que detecta cuando el ancho de pantalla es mayor o igual a 500px */
+@media (min-width: 500px) {
+  .text-item-services {
+    font-size: 15px; /* Cambiando el tamaño a 15px cuando se cumple la condición */
+  }
+}
