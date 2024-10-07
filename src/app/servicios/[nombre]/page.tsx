@@ -4,15 +4,8 @@ import FaqSection from "@/components/FaqSection";
 import OtherServices from "@/components/OtherServices";
 import { services } from "@/lib/data";
 import Image from "next/image";
-import { useState } from "react";
 
-interface ServiceProps {
-    params: {
-        name: string;
-    };
-}
-
-export default function Service({ params }: ServiceProps) {
+export default function Service() {
 
     const data = services[0];
 
