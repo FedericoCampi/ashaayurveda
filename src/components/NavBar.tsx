@@ -5,42 +5,7 @@ import React, { useRef, useState } from 'react'
 import { IoIosArrowDown } from "react-icons/io";
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-
-interface SubItem {
-  name: string
-  href: string
-}
-
-interface NavItem {
-  name: string
-  href: string
-  subItems?: SubItem[]
-}
-
-const navItems: NavItem[] = [
-  { name: 'Bienvenido', href: '/' },
-  {
-    name: 'Servicios',
-    href: '/servicios',
-    subItems: [
-      { name: 'Consulta ayurveda', href: '/servicios/servicio-1' },
-      { name: 'Yoga ayurvédico', href: '/servicios/servicio-2' },
-      { name: 'Educación', href: '/servicios/servicio-3' },
-      { name: 'Masajes', href: '/servicios/servicio-4' },
-    ],
-  },
-  {
-    name: 'Artículos de interés',
-    href: '/articulos',
-    subItems: [
-      { name: 'Universidad Nacional de Catamarca', href: '/productos/categoria-1' },
-    ],
-  },
-  { name: 'Sobre nosotros', href: '/sobre-nosotros' },
-  { name: 'Galería', href: '/galeria' },
-  { name: 'Prensa y medios', href: '/prensa-medios' },
-]
-
+import { navItems } from '@/lib/data';
 
 const NavBar = () => {
 

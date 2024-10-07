@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { FacebookIcon, InstagramIcon, YoutubeIcon, MapPinIcon, PhoneIcon, MailIcon } from "lucide-react"
 
-export default function ContactSection() {
+export default function Contact() {
   return (
     <div className="relative bg-gradient-to-br from-green-700 to-green-900 text-white pb-20 p-8 md:p-16"
     >

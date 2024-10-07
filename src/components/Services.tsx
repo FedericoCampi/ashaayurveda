@@ -36,13 +36,13 @@ const Services = () => {
                     </div>
                 ))}
             </div>
-            <div className='pt-6'>
+            {/* <div className='pt-6'>
                 <FirstButton
                     titulo="Ver más servicios" 
                     padding='p-3'
                     tamano='text-xl'
                 />
-            </div>
+            </div> */}
         </div>
     );
 };
