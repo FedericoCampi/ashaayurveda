@@ -4,7 +4,7 @@ import FaqSection from "@/components/FaqSection";
 import OtherServices from "@/components/OtherServices";
 import { services } from "@/lib/data";
 import Image from "next/image";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 interface ServiceType {
@@ -86,7 +86,7 @@ const ConsultationSection = ({urlImageserv}: { urlImageserv: string }) => (
     <div className='w-full h-[300px] flex justify-center'>
         <div className='flex h-full w-[1000px] mx-0 sm:mx-auto mt-6'>
             <div className='h-full w-[60%]'>
-                <img
+                <Image
                     src={urlImageserv}
                     alt='Consulta Ayurveda'
                     className='object-cover w-full h-full'

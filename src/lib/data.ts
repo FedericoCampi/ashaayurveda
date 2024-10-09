@@ -1,5 +1,3 @@
-import { url } from "inspector";
-
 export const imagesCarousel = [
   { imagen: '/imagesFirstLanding/carousel/firstCarousel.webp' },
   { imagen: '/imagesFirstLanding/carousel/secondCarousel.webp' },
