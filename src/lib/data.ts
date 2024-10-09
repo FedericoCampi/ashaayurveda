@@ -1,3 +1,5 @@
+import { url } from "inspector";
+
 export const imagesCarousel = [
   { imagen: '/imagesFirstLanding/carousel/firstCarousel.webp' },
   { imagen: '/imagesFirstLanding/carousel/secondCarousel.webp' },
@@ -96,12 +98,13 @@ export const navItems: NavItem[] = [
 
 export const services = [
   {
+    idtext: "consulta",
     title: "Consulta Ayurveda",
     introduction: {
       text: "En Asha Ayurveda, nos enorgullece ofrecerte nuestros servicios de consulta tanto en persona como en línea, para que puedas acceder a la sabiduría milenaria del Ayurveda desde cualquier lugar del mundo. Con una atención personalizada y detallada, nuestro objetivo es ayudarte a encontrar la armonía y el bienestar en todas las áreas de tu vida."
     },
     professional: {
-      name: "Rafael Gustavo",
+      name: "Rafael Gustavo Campi",
       image: "/pageServices/doctorRafa.webp",
       credentials: [
         "Médico MP 1200 (Otorgada por colegio Médico de Catamarca)",
@@ -121,6 +124,60 @@ export const services = [
         question: "¿Puedo reservar una consulta en línea?",
         answer: "Sí, ofrecemos consultas tanto en persona como en línea."
       }
-    ]
+    ],
+    consultation: {
+      title: "Consulta Ayurveda",
+      subtitle: "Reservá tu sesión"
+    },
+    imgServ: {
+      url: "/pageServices/consultaMedica.webp",
+    }
+  },
+  {
+    idtext: "yoga",
+    title: "Yoga Ayurvédico",
+    subtitle: "Clases de Yoga: Encuentra Armonía y Bienestar",
+    introduction: {
+      text: "Ofrecemos clases de Yoga donde podrás experimentar los múltiples beneficios de esta práctica ancestral. Nuestras clases son presenciales y puedes acceder a ellas a través de nuestros contactos para coordinar. Además, te ofrecemos la oportunidad de probar una clase sin costo alguno."
+    },
+    professional: {
+      name: "Patricia Verónica Ahumada",
+      image: "/pageServices/patoFoto.webp", // Asegúrate de tener la imagen en esta ruta
+      credentials: [
+        "Instructora de Yoga Ayurvédico"
+      ]
+    },
+    faqs: [
+      {
+        question: "¿Qué es el Yoga?",
+        answer: "Es una ciencia milenaria diseñada para crear conciencia y promover la armonía y la paz."
+      },
+      {
+        question: "¿Qué recomendaciones debo seguir antes y después de la práctica del Yoga?",
+        answer: "Crea un ambiente tranquilo, practica con el estómago vacío, asegúrate de que la vejiga y los intestinos estén vacíos, y usa ropa cómoda."
+      },
+      {
+        question: "¿Es necesario consultar a un médico antes de practicar Yoga?",
+        answer: "Sí, especialmente si tienes enfermedades crónicas, dolor o problemas cardíacos. También es recomendable si estás embarazada o durante tu período menstrual."
+      }
+    ],
+    consultation: {
+      title: "Clases de Yoga",
+      subtitle: "Reserva tu sesión"
+    },
+    imgServ: {
+      url: "/imagesFirstLanding/services/yoga.webp",
+    }
   }
+]
+
+export const otherServices = [
+  { name: 'OTRAS TERAPIAS', image: '/pageServices/masajes.webp' },
+  { name: 'YOGA', image: '/imagesFirstLanding/services/yoga.webp' },
+  { name: 'EDUCACIÓN', image: '/imagesFirstLanding/services/cursos.webp' },
+  { name: 'SIRODHARA', image: '/pageServices/sirodhara.webp' },
+  { name: 'MASAJE ABHYANGA', image: '/pageServices/masajeAbhyanga.webp' },
+  { name: 'NASYA KARMA', image: '/pageServices/nasya-panchkarma.webp' },
+  { name: 'PINDA SVEDA', image: '/pageServices/pindaSveda.webp' },
+  { name: 'BASTI', image: '/pageServices/basti.webp' },
 ]

@@ -6,6 +6,7 @@ import BootstrapClient from '../services/BootstrapClient';
 import Whatsapp from "@/components/Whatsapp";
 import Chatbot from "@/components/Chatbot";
 import { Roboto_Serif } from 'next/font/google'
+import Contact from "@/components/Contact";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -35,6 +36,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Contact/>
         <div className="fixed bottom-4 left-4 z-50">
           <Whatsapp/>
         </div>

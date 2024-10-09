@@ -1,4 +1,3 @@
-import Contact from '@/components/Contact';
 import Services from '@/components/Services';
 import React from 'react';
 
@@ -7,7 +6,6 @@ const Page = () => {
     <div>
       <Services/>
       <div className='pt-10'></div>
-      <Contact/>
     </div>
   )
 };
