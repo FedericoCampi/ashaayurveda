@@ -87,6 +87,8 @@ const ConsultationSection = ({urlImageserv}: { urlImageserv: string }) => (
         <div className='flex h-full w-[1000px] mx-0 sm:mx-auto mt-6'>
             <div className='h-full w-[60%]'>
                 <Image
+                    width={400}
+                    height={300}
                     src={urlImageserv}
                     alt='Consulta Ayurveda'
                     className='object-cover w-full h-full'
