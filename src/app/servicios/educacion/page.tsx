@@ -12,7 +12,7 @@ export default function EducationSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {educationItems.map((item, index) => (
                     <Card key={index} className="overflow-hidden">
-                        
+                        <Link href={`educacion/${item.idtext}`} className="text-black no-underline">
                             <Image
                                 src={item.image}
                                 alt={item.title}
@@ -33,15 +33,11 @@ export default function EducationSection() {
                                 </div>
                                 <p className="text-sm text-gray-600">{item.shortDescription}</p>
                                 <button className="mt-4 text-blue-600 hover:underline">
-                                    <Link href={`educacion/${item.idtext}`} 
-                                        className="text-black no-underline">
                                         Read more
-                                    </Link>
                                 </button>
                             </CardContent>
-                        
+                        </Link>
                     </Card>
-
                 ))}
             </div>
 
