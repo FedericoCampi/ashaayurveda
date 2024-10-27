@@ -28,7 +28,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className='flex w-full px-10 h-full items-center border-b border-black'>
+    <div className='flex w-full px-10 h-full items-center border-b border-gray-300'>
       <div className='w-[30%]'>
         <a href="/">
           <Image

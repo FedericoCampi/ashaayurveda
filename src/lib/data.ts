@@ -229,3 +229,60 @@ export const educationItems = [
     description: "Únete a nuestra misión de difundir y contribuir al bienestar general a través del Ayurveda y el Yoga en Asha Ayurveda. Hemos establecido colaboraciones en diversos ámbitos de la sociedad, como fundaciones, institutos de salud, facultades universitarias y museos, con el objetivo de complementar y promover acciones que favorezcan la salud de diversos grupos de personas. Si estás interesado en contar con nuestra participación, te invitamos a contactarnos y enviar una nota de intención con tus objetivos a alcanzar. De esta manera, podremos evaluar la modalidad, nuestra disponibilidad y el contexto para brindar un aporte significativo. Estamos agradecidos y entusiasmados de formar parte de procesos que mejoren el bienestar general. En Asha Ayurveda, valoramos la colaboración y la sinergia con diferentes sectores para promover la salud y el bienestar integral. ¡Esperamos poder sumar nuestra experiencia y conocimientos a tu iniciativa!",
   },
 ]
+
+export const masajesSection = [
+  {
+    id: 1,
+    title: "SHIRODHARA",
+    description: "Profunda relajación y equilibrio mental a través del flujo constante de aceite tibio en la frente.",
+    image: "/pageServices/sirodhara.webp"
+  },
+  {
+    id: 2,
+    title: "MASAJE ABHYANGA",
+    description: "Bienestar total con masaje relajante y rejuvenecedor con aceites herbales terapéuticos y técnicas especializadas.",
+    image: "/pageServices/masajeAbhyanga.webp"
+  },
+  {
+    id: 3,
+    title: "NASYA KARMA",
+    description: "Tratamiento Nasya Karma: Despeje y rejuvenecimiento de los senos nasales mediante la aplicación de aceites medicados.",
+    image: "/pageServices/nasya-panchkarma.webp"
+  },
+  {
+    id: 4,
+    title: "NASYA KARMA",
+    description: "Tratamiento Nasya Karma: Despeje y rejuvenecimiento de los senos nasales mediante la aplicación de aceites medicados.",
+    image: "/pageServices/nasya-panchkarma.webp"
+  },
+  {
+    id: 5,
+    title: "PINDA SVEDA",
+    description: "Tratamiento Pinda: Relajación profunda y equilibrio mediante masajes con bolsitas herbales calientes y aromáticas.",
+    image: "/pageServices/pindaSveda.webp"
+  },
+  {
+    id: 6,
+    title: "BASTI",
+    description: "Equilibrio y bienestar a través de la aplicación de aceites medicados en puntos específicos del cuerpo.",
+    image: "/pageServices/basti.webp"
+  },
+  {
+    id: 7,
+    title: "MASAJE GARSHAN",
+    description: "Masaje linfático Ayurvédico que ayuda a remover toxinas del sistema linfático que se encuentra muy cerca de la piel.",
+    image: "/pageServices/masajes/garshan.webp"
+  },
+  {
+    id: 8,
+    title: "MASAJE SARASVATI",
+    description: "Proporciona bienestar mediante unas cuidadosas maniobras sobre el abdomen y luego cuerpo entero para lograr bienestar sutil y armonizante.",
+    image: "/pageServices/masajes/sarasvati.webp"
+  },
+  {
+    id: 9,
+    title: "FACIAL KERALA",
+    description: "También realizamos otras modalidades de Masaje Ayurveda para acompañar distintos procesos que necesitan de la aplicación de algunas de estas Terapias.",
+    image: "/pageServices/masajes/sarasvati.webp"
+  },
+]
