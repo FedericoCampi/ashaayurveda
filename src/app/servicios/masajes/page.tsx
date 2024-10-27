@@ -17,7 +17,7 @@ export default function MasajesSection() {
             <div className="min-h-screen bg-[#8B4513] py-16 px-8 text-white flex flex-col items-center">
                 <h1 className="text-4xl font-bold text-center mb-4">MASAJES Y OTROS TRATAMIENTOS</h1>
                 <p className="text-center mb-8 text-sm italic">
-                    "Sumérgete en un oasis de bienestar y renueva tu cuerpo y mente con nuestros exclusivos masajes terapéuticos en Asha Ayurveda."
+                    &quot;Sumérgete en un oasis de bienestar y renueva tu cuerpo y mente con nuestros exclusivos masajes terapéuticos en Asha Ayurveda.&quot;
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {masajesSection.map((masaje) => (
