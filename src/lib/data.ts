@@ -290,13 +290,26 @@ export const carouselArticles = [
   { 
     imagen: '/articulos/carousel/first.webp',
     title: 'Acompañamos y honramos los festejos por el día internacional del yoga 2024',
-    adds: 'by Asha Ayurveda | 5 julio, 2024 | Yoga | 0 Comments',
     text: 'Enviamos nuestros más sinceros saludos y reconocimientos para los festejos por el día Internacional del Yoga este 21 de junio de 2024 que se organizaron en distintos lugares del mundo donde brilló la luz de la práctica y enseñanzas de este conocimiento. Su lema o tema...'
   },
-  // { imagen: '/imagesFirstLanding/carousel/secondCarousel.webp' },
-  // { imagen: '/imagesFirstLanding/carousel/thirdCarousel.webp' },
-  // { imagen: '/imagesFirstLanding/carousel/fourthCarousel.webp' },
-  // { imagen: '/imagesFirstLanding/carousel/fifthCarousel.webp' },
-  // { imagen: '/imagesFirstLanding/carousel/sixthCarousel.webp' },
-  // { imagen: '/imagesFirstLanding/carousel/seventhCarousel.webp' }
+  { 
+    imagen: '/articulos/carousel/second.webp',
+    title: 'Participación en Consejos Multisectoriales',
+    text: 'Centro de día "Pilar de Vida" en 2024 en relación a los festejos por el Día mundial de la Salud, la municipalidad de San Fernando del Valle de Catamarca desde los consejos Multisectoriales organizó una serie de actividades desde el Centro Pilar de Vida para...'
+  },
+  { 
+    imagen: '/articulos/carousel/third.webp',
+    title: 'Participación en IX Congreso de Ciudades y Pueblos del interior',
+    text: 'Participación en IX Congreso de ciudades y pueblos del interior'
+  },
+  { 
+    imagen: '/articulos/carousel/fourth.webp',
+    title: 'II Encuentro de Ayurveda Catamarca 2023',
+    text: 'Con mucha alegría compartimos algunos de los aspectos del II Encuentro de Ayurveda en Catamarca durante el mes de Diciembre de 2023. Se desarrolló una hermosa convocatoria entre los distintos profesionales que disertaron y el público que asistió y participó...'
+  },
+  { 
+    imagen: '/articulos/carousel/fifth.webp',
+    title: 'Celebrando la unión Cultural y espiritual: Día de la independencia de India en la embajada de Buenos Aires',
+    text: 'En un momento de distinguida honorabilidad, nos unimos con gratitud y aprecio a la Embajada de India en Buenos Aires para celebrar el Día de la Independencia de India. Desde Asha Ayurveda, nos sentimos profundamente honrados por la invitación a este evento...'
+  },
 ];
