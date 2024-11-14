@@ -86,7 +86,7 @@ export const navItems: NavItem[] = [
     name: 'Artículos de interés',
     href: '/articulos',
     subItems: [
-      { name: 'Universidad Nacional de Catamarca', href: '/productos/categoria-1' },
+      { name: 'Universidad Nacional de Catamarca', href: '/articulos/universidad' },
     ],
   },
   { name: 'Sobre nosotros', href: '/sobre-nosotros' },
@@ -311,5 +311,22 @@ export const carouselArticles = [
     imagen: '/articulos/carousel/fifth.webp',
     title: 'Celebrando la unión Cultural y espiritual: Día de la independencia de India en la embajada de Buenos Aires',
     text: 'En un momento de distinguida honorabilidad, nos unimos con gratitud y aprecio a la Embajada de India en Buenos Aires para celebrar el Día de la Independencia de India. Desde Asha Ayurveda, nos sentimos profundamente honrados por la invitación a este evento...'
+  },
+];
+export const carouselUniversidad = [
+  { 
+    imagen: '/articulos/universidad/first.webp',
+    title: 'Módulo Ayurveda en la Diplomatura de Gestión de las Emociones en el Proceso Educativo(DGEPE)',
+    text: 'Acto inaugural DGEPE'
+  },
+  { 
+    imagen: '/articulos/universidad/second.webp',
+    title: 'Proyecto la naturaleza es sabia',
+    text: '¡Descubre el inspirador proyecto "La naturaleza es sabia"! En colaboración con la prestigiosa Facultad de Humanidades de la Universidad Nacional de Catamarca(UNCA), la secretaría de extensión universitaria de la UNCA, el colegio privado María Montessori y destacados...'
+  },
+  { 
+    imagen: '/articulos/universidad/third.webp',
+    title: 'Presentación libro "La naturaleza es sabia, experiencias en el aula"',
+    text: '"Con la Universidad Nacional de Catamarca(UNCA) realizamos actividades en donde potenciamos conocimientos en un marco de crecimiento mutuo y respeto. De derecha a izquierda: Gloria Dalma Videla - terapeuta, María Luisa Avalos - profesora de biología, Lucía Medina - CPN...'
   },
 ];

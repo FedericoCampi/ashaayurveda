@@ -1,4 +1,4 @@
-import CarouselArticles from '@/components/CarouselArticless'
+import CarouselArticles from '@/components/CarouselArticles'
 import { carouselArticles } from '@/lib/data'
 import Image from 'next/image'
 import React from 'react'
@@ -40,31 +40,32 @@ const page = () => {
                     </div>
                 </div>
             </div>
-            <div className='p-10'>
-                {carouselArticles.map((articles, index) => (
+            <div className='p-10 flex justify-center'>
+                <div className='max-w-[700px]'>
+                    {carouselArticles.map((articles, index) => (
+                        <div key={index} className={` w-full`}>
+                            <Image
+                                src={articles.imagen}
+                                alt={`carousel-${index}`}
+                                width={1000}
+                                height={280}
+                                className="w-full max-h-[500px] object-cover"
+                            />
+                            <div className="flex items-center justify-center">
+                                <div className='text-center p-12'>
 
-                    <div key={index} className={`h-full w-full`}>
-                        <Image
-                            src={articles.imagen}
-                            alt={`carousel-${index}`}
-                            width={1000}
-                            height={280}
-                            className="w-full max-h-[500px] object-cover"
-                        />
-                        <div className="flex items-center justify-center">
-                            <div className='text-center p-12'>
-                                
-                                <p className='text-2xl font-bold'>
-                                    <a href="" className='no-underline text-green-600'>
-                                        {articles.title}
-                                    </a>
-                                </p>
-                               
-                                <p className='text-black'>{articles.text}</p>
+                                    <p className='text-2xl font-bold'>
+                                        <a href="" className='no-underline text-green-600'>
+                                            {articles.title}
+                                        </a>
+                                    </p>
+
+                                    <p className='text-black'>{articles.text}</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </div>
     )
