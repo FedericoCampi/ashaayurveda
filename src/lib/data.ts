@@ -89,7 +89,7 @@ export const navItems: NavItem[] = [
       { name: 'Universidad Nacional de Catamarca', href: '/articulos/universidad' },
     ],
   },
-  { name: 'Sobre nosotros', href: '/sobre-nosotros' },
+  { name: 'Sobre nosotros', href: '/sobrenosotros' },
   { name: 'Galería', href: '/galeria' },
   { name: 'Prensa y medios', href: '/prensa-medios' },
 ]
