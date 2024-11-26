@@ -347,12 +347,12 @@ export const carouselPrensa = [
     text: 'Para Revista Mahat, en donde se publicó un artículo sobre Ayurveda y otoño, explicando que transitar y respetar el cambio estacional del año es una de las tantas recomendaciones de esta Medicina Milenaria. Ayurveda es una Ciencia reconocida por la OMS como una de las...'
   },
   { 
-    imagen: '/articulos/universidad/fourth.webp',
+    imagen: '/prensaymedios/carousel/fourth.webp',
     title: 'Radio Valle viejo',
     text: 'En Radio Valle Viejo a través del programa “Con vos” de Inés Ogas, desarrollando distintos temas de Ayurveda y Yoga de acuerdo a la necesidad de la comunidad.'
   },
   { 
-    imagen: '/articulos/universidad/fifth.webp',
+    imagen: '/prensaymedios/carousel/fifth.webp',
     title: 'Tv de Catamarca',
     text: 'En Tv de Catamarca presentando Ayurveda y Yoga como Ciencias que orientan en la Alimentación, situación que está a travesada por múltiples factores de la persona, del entorno y de la dinámica cambiante de la vida misma en el planeta.'
   },

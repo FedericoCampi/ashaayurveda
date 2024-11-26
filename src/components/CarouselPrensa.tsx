@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const CarouselPrensa = () => {
     return (
-        <div id="carouselExample" className="w-[600px] carousel slide">
+        <div id="carouselExample" className="max-w-[600px] carousel slide">
 
             <div className="carousel-inner w-full h-[600px]">
 
