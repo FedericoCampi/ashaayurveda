@@ -330,3 +330,30 @@ export const carouselUniversidad = [
     text: '"Con la Universidad Nacional de Catamarca(UNCA) realizamos actividades en donde potenciamos conocimientos en un marco de crecimiento mutuo y respeto. De derecha a izquierda: Gloria Dalma Videla - terapeuta, María Luisa Avalos - profesora de biología, Lucía Medina - CPN...'
   },
 ];
+export const carouselPrensa = [
+  { 
+    imagen: '/prensaymedios/carousel/first.webp',
+    title: 'Radio Universidad',
+    text: 'En Radio Universidad, a través del programa Senderos para Crecer, a cargo del Sr Ing. Adolfo Agüero, complementado a distintas temáticas y abordajes de la búsqueda interior, con aportes y perspectivas del Ayurveda y el Yoga.'
+  },
+  { 
+    imagen: '/prensaymedios/carousel/second.webp',
+    title: 'Radio Nacional',
+    text: 'En Radio Nacional a través de las invitaciones de las Sras. Rita Soria en su programa “La hora de la Lagartija” y, por otro lado de la Sra. Sonia Luna, desarrollando temas sobre eventos y jornadas de Ayurveda y Yoga.'
+  },
+  { 
+    imagen: '/prensaymedios/carousel/third.webp',
+    title: 'Revista Mahat',
+    text: 'Para Revista Mahat, en donde se publicó un artículo sobre Ayurveda y otoño, explicando que transitar y respetar el cambio estacional del año es una de las tantas recomendaciones de esta Medicina Milenaria. Ayurveda es una Ciencia reconocida por la OMS como una de las...'
+  },
+  { 
+    imagen: '/articulos/universidad/fourth.webp',
+    title: 'Radio Valle viejo',
+    text: 'En Radio Valle Viejo a través del programa “Con vos” de Inés Ogas, desarrollando distintos temas de Ayurveda y Yoga de acuerdo a la necesidad de la comunidad.'
+  },
+  { 
+    imagen: '/articulos/universidad/fifth.webp',
+    title: 'Tv de Catamarca',
+    text: 'En Tv de Catamarca presentando Ayurveda y Yoga como Ciencias que orientan en la Alimentación, situación que está a travesada por múltiples factores de la persona, del entorno y de la dinámica cambiante de la vida misma en el planeta.'
+  },
+];
