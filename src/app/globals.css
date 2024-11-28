@@ -141,6 +141,10 @@ body {
   font-size: 13px; /* Definiendo el tamaño inicial a 10px */
 }
 
+.offcanvas.hiding, .offcanvas.show, .offcanvas.showing {
+  height: 100% !important;
+}
+
 /* Media query que detecta cuando el ancho de pantalla es mayor o igual a 500px */
 @media (min-width: 500px) {
   .text-item-services {

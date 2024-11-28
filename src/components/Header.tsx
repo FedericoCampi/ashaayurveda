@@ -22,7 +22,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className={`sticky top-0 bg-white z-30 w-full transition-all duration-300 ${shrink ? 'h-12' : 'h-16'}`}>
+    <div className={`sticky top-0 bg-white z-30 w-full transition-all duration-300 ${shrink ? 'h-15' : 'h-16'}`}>
       <div className="hidden lg:block h-full">
         <NavBar />
       </div>
