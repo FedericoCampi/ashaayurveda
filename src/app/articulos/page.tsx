@@ -52,7 +52,7 @@ const page = () => {
                                 className="w-full max-h-[500px] object-cover"
                             />
                             <div className="flex items-center justify-center">
-                                <div className='text-center p-12'>
+                                <div className='text-center p-4 sm:p-12'>
 
                                     <p className='text-2xl font-bold'>
                                         <a href="" className='no-underline text-green-600'>

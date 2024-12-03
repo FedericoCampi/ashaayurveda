@@ -35,34 +35,83 @@ const OffCanvas = () => {
                     <button type="button" className="btn-close text-3xl" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div className="offcanvas-body h-[400px]">
-                    <p className='text-[14px]'>Home</p>
+                    <p className='text-[14px]'>
+                        <a href="/" className='text-black no-underline'>
+                            Home
+                        </a>
+                    </p>
                     <Accordion type="single" collapsible className="w-full border-top border-gray-500">
                         <AccordionItem value="item-1">
-                            <AccordionTrigger>Servicios</AccordionTrigger>
+                            <AccordionTrigger>
+                                <a href="/servicios" className='text-black no-underline'>
+                                    Servicios
+                                </a>
+                            </AccordionTrigger>
                             <AccordionContent>
-                                <p>Consulta Ayurveda</p>
-                                <p>Yoga Ayurvédico</p>
-                                <p>Educación</p>
+                                <p>
+                                    <a href="/servicios/consulta" className='text-black no-underline'>
+                                        Consulta Ayurveda
+                                    </a>
+                                </p>
+                                <p>
+                                    <a href="/servicios/yoga" className='text-black no-underline'>
+                                        Yoga Ayurvédico
+                                    </a>
+                                </p>
+                                <p>
+                                    <a href="/servicios/educacion" className='text-black no-underline'>
+                                        Educación
+                                    </a>
+                                </p>
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="item-2">
-                            <AccordionTrigger>Masajes</AccordionTrigger>
+                            <AccordionTrigger>
+                                <a href="/servicios/masajes" className='text-black no-underline'>
+                                    Masajes
+                                </a>
+                            </AccordionTrigger>
                             <AccordionContent>
-                                <p>Consulta Ayurveda</p>
-                                <p>Yoga Ayurvédico</p>
-                                <p>Educación</p>
+                                <p>Pinda Sveda</p>
+                                <p>Sirodhara</p>
+                                <p>Abhyanga</p>
+                                <p>Nasya karma</p>
+                                <p>Basti</p>
+                                <p>Sarasvati</p>
+                                <p>Garshan</p>
+                                <p>Facial kerala</p>
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="item-3">
-                            <AccordionTrigger>Artículos de ínteres</AccordionTrigger>
+                            <AccordionTrigger>
+                                <a href="/articulos" className='text-black no-underline'>
+                                    Artículos de ínteres
+                                </a>
+                            </AccordionTrigger>
                             <AccordionContent>
-                                Yes. It adheres to the WAI-ARIA design pattern.
+                                <a href="/articulos/universidad" className='text-black no-underline'>
+                                    Universidad nacional de Catamarca
+                                </a>
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
-                    <p className='text-[14px] py-4 border-bottom border-gray-500'>Sobre nosotros</p>
-                    <p className='text-[14px] py-4 border-bottom border-gray-500'>Galería</p>
-                    <p className='text-[14px] py-4 border-bottom border-gray-500'>Prensa y medios</p>
+                    <p className='text-[14px] py-4 border-bottom border-gray-500'>
+                        <a href="/articulos/universidad" className='text-black no-underline'>
+                            Sobre nosotros
+                        </a>
+                    </p>
+                    <p className='text-[14px] py-4 border-bottom border-gray-500'>
+                        <a href="/galeria" className='text-black no-underline'>
+                            Galería
+                        </a>
+                    </p>
+
+                    <p className='text-[14px] py-4 border-bottom border-gray-500'>
+                        <a href="/prensa-medios" className='text-black no-underline'>
+                            Prensa y medios
+                        </a>
+                    </p>
+                    <p className='text-[14px] py-4 border-bottom border-gray-500 invisible'>Prensa y medios</p>
                 </div>
             </div>
         </div>

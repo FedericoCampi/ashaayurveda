@@ -14,7 +14,7 @@ const page = () => {
           src={'/prensaymedios/encabezado.webp'}
           className='w-full object-cover h-[400px] opacity-50'
         />
-        <p className='absolute inset-0 flex flex-col items-center justify-center text-white text-[40px] text-center'>
+        <p className='absolute inset-0 flex flex-col items-center justify-center text-white text-[40px] text-center px-2'>
           PARTICIPACIÓN EN <br />
           MEDIOS <br />
           PERIODÍSTICOS
@@ -30,7 +30,7 @@ const page = () => {
               src={'/articulos/recorteBarras.png'}
               className='w-[100px] h-auto pb-8'
             />
-            <p>
+            <p className='px-4'>
               Estamos agradecidos por las invitaciones que hemos recibido de programas de radio, televisión y revistas en nuestra ciudad. Consideramos que participar en estos medios de comunicación es una forma de colaborar y aportar a la sociedad en su conjunto, beneficiando a diversos grupos de interlocutores: profesionales, vecinos, artistas, organizaciones, movimientos sociales, niños, niñas, jóvenes, hombres y mujeres que eligen acompañar una radio en su vida cotidiana.<br /><br />
 
               Nos complace embarcarnos en este viaje que nos permite explorar, mediante la imaginación y el deseo de escuchar, diferentes momentos, sensaciones y ritmos de nuestra comunidad. Nuestro objetivo es poner nuestros contenidos al servicio de los temas que se requieren en cada emisión, utilizando un lenguaje sencillo y ameno. De esta manera, mostramos a las personas los múltiples beneficios y la facilidad de incorporar el Ayurveda y el Yoga en diferentes situaciones para cuidar su bienestar general.<br /><br />
@@ -43,7 +43,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className='p-10 flex justify-center'>
+      <div className='p-6 sm:p-10 flex justify-center'>
             <div className='max-w-[700px]'>
                 {carouselPrensa.map((prensa, index) => (
                     <div key={index} className={` w-full`}>
@@ -55,7 +55,7 @@ const page = () => {
                             className="w-full max-h-[500px] object-cover"
                         />
                         <div className="flex items-center justify-center">
-                            <div className='text-center p-12'>
+                            <div className='text-center p-8 sm:p-12'>
 
                                 <p className='text-2xl font-bold'>
                                     <a href="" className='no-underline text-green-600'>

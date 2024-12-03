@@ -4,11 +4,11 @@ import React from "react";
 const Page = () => {
   return (
     <div>
-      <div className="flex justify-center items-center h-[250px]">
-        <h3 className="text-[50px]">GALERÍA</h3>
+      <div className="flex justify-center items-center h-[200px]">
+        <p className="text-[50px]">GALERÍA</p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-rows-2 gap-5 w-full px-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-rows-2 gap-5 w-full px-6 sm:px-10">
         <div className="row-span-1 col-span-1 flex items-center justify-center">
             <Image
                 src='/galeria/1.webp'
@@ -57,7 +57,7 @@ const Page = () => {
       </div>
 
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-rows-3 gap-5 w-full py-20 px-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-rows-3 gap-5 w-full py-20 px-6 sm:px-10">
         <div className="row-span-1 col-span-1 flex items-center justify-center">
             <Image
                 src='/galeria/6.webp'
