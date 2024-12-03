@@ -12,7 +12,7 @@ export default function OtherServices() {
               <Image
                 src={service.image}
                 alt={service.name}
-                layout="fill"
+                fill={true}
                 objectFit="cover"
                 className="rounded-lg"
               />

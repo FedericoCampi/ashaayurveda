@@ -61,7 +61,8 @@ export const questions = [
 
 interface SubItem {
   name: string
-  href: string
+  href: string,
+  subItems?: SubItem[]
 }
 
 interface NavItem {
@@ -79,7 +80,20 @@ export const navItems: NavItem[] = [
       { name: 'Consulta ayurveda', href: '/servicios/consulta' },
       { name: 'Yoga ayurvédico', href: '/servicios/yoga' },
       { name: 'Educación', href: '/servicios/educacion' },
-      { name: 'Masajes', href: '/servicios/masajes' },
+      {
+        name: 'Masajes',
+        href: '/servicios/masajes',
+        subItems: [
+          { name: 'Pinda Sveda', href: '/servicios/masajes/pinda-sveda' },
+          { name: 'Sirodhara', href: '/servicios/masajes/sirodhara' },
+          { name: 'Abhyanga', href: '/servicios/masajes/abhyanga' },
+          { name: 'Nasya Karma', href: '/servicios/masajes/nasya-karma' },
+          { name: 'Basti', href: '/servicios/masajes/basti' },
+          { name: 'Sarasvati', href: '/servicios/masajes/sarasvati' },
+          { name: 'Garshan', href: '/servicios/masajes/garshan' },
+          { name: 'Facial Kerala', href: '/servicios/masajes/facial-kerala' },
+        ],
+      },
     ],
   },
   {
@@ -357,3 +371,90 @@ export const carouselPrensa = [
     text: 'En Tv de Catamarca presentando Ayurveda y Yoga como Ciencias que orientan en la Alimentación, situación que está a travesada por múltiples factores de la persona, del entorno y de la dinámica cambiante de la vida misma en el planeta.'
   },
 ];
+
+
+export const masajes = [
+  {
+    idtext: "pinda-sveda",
+    title: "Masaje Pinda sveda",
+    introduction: {
+      text: "Sumérgete en la experiencia transformadora de Pinda Sweda, un procedimiento terapéutico clave dentro de los tratamientos de Kerala. Con una combinación única de fomentación, sudoración y masajes suaves, esta técnica utiliza bolos medicinales que contienen una variedad de sustancias beneficiosas, como semillas, arroces y hierbas, adaptadas a tus necesidades específicas. Preparado por profesionales en medicina ayurveda y masajistas capacitados, Pinda Sweda te ofrece una forma holística y rejuvenecedora de tratar diversas afecciones y rejuvenecer tu cuerpo."
+    },
+    professional: {
+      name: "Patricia Verónica Ahumada",
+      image: "/pageServices/patoFoto.webp", // Asegúrate de tener la imagen en esta ruta
+      credentials: [
+        "Instructora de Yoga Ayurvédico"
+      ]
+    },
+    faqs: [
+      {
+        question: "¿Cuáles son las indicaciones de Pinda Sweda?",
+        answer: "Pinda Sweda se recomienda para una variedad de afecciones, incluyendo distrofias musculares, enfermedades neuromotrices, neurológicas, convulsiones, espondilitis, parálisis, artropatías y para el rejuvenecimiento corporal. Sus propiedades curativas ayudan a aliviar síntomas y mejorar el bienestar general."
+      },
+      {
+        question: "¿A qué edades está indicado el masaje Pinda Sweda?",
+        answer: "El masaje Pinda Sweda puede adaptarse a diferentes edades, desde adultos jóvenes hasta personas mayores."
+      },
+      {
+        question: "¿Cómo se realiza el procedimiento de Pinda Sweda?",
+        answer: "El procedimiento de Pinda Sweda comienza con una preparación previa del paciente mediante un masaje en la cabeza y el cuerpo con aceite medicado. Luego, se realiza el Taladharana, que consiste en la aplicación de medicamentos en la fontanela anterior. A continuación, se realiza el masaje con los bolos medicinales, donde participan la masajista y los ayudantes de manera armónica. Finalmente, se retira el contenido de los bolos de la piel y se completa con un baño para eliminar los residuos."
+      },
+      {
+        question: "¿Qué necesita el paciente para asistir a una sesión de masaje Pinda Sweda?",
+        answer: "Para disfrutar plenamente de tu sesión de masaje Pinda Sweda en Asha Ayurveda, te recomendamos seguir estas indicaciones: Vestimenta: Durante la sesión, te proporcionaremos ropa cómoda y suelta para que te sientas relajado y libre de restricciones. Sin embargo, si prefieres usar tu propia ropa, te recomendamos llevar prendas ligeras y holgadas que sean fáciles de quitar y poner. Accesorios y joyas: Antes de la sesión, te aconsejamos quitarte cualquier joya o accesorio que pueda interferir con el masaje, como collares, pulseras o anillos. De esta manera, podrás disfrutar de una experiencia completamente relajante y segura. Privacidad: Tu privacidad y comodidad son nuestras principales prioridades. Durante el masaje Pinda Sweda, te proporcionaremos una toalla o sábana para cubrir las partes del cuerpo que no están siendo tratadas, garantizando así tu intimidad en todo momento. Preparación previa: Antes de la sesión, evita comer en exceso y asegúrate de llegar con el estómago relativamente vacío. También es recomendable informar a nuestro equipo sobre cualquier condición médica, lesiones o alergias que puedas tener para que podamos adaptar el tratamiento según tus necesidades. En Asha Ayurveda, nos preocupamos por tu comodidad y bienestar en cada aspecto de tu experiencia de masaje Pinda Sweda. Si tienes alguna otra pregunta o inquietud específica antes de tu sesión, no dudes en contactarnos. Estamos aquí para brindarte una experiencia de bienestar inigualable. Nota: Este texto ha sido adaptado para responder a las necesidades de los pacientes en relación con su vestimenta y preparación previa para una sesión de masaje Pinda Sweda en Asha Ayurveda."
+      },
+      {
+        question: "¿Cuáles son las ventajas de Pinda Sweda?",
+        answer: "Pinda Sweda ofrece numerosos beneficios para el bienestar. Además de calmar la fatiga, la depresión y la somnolencia, esta terapia tradicional mejora la digestión, realza el brillo de la piel y contrarresta la rigidez articular. También fortalece el cuerpo y produce resultados satisfactorios de manera temprana."
+      },
+      {
+        question: "¿Qué puedo esperar durante una sesión de masaje Pinda Sweda en Asha Ayurveda?",
+        answer: "Durante una sesión de masaje Pinda Sweda, nuestra especialista en Ayurvedic Yoga Terapéutico comenzará con una breve consulta para comprender tus necesidades y objetivos de bienestar. A continuación, se te guiará en una serie de suaves masajes y la aplicación de bolos medicinales calientes en áreas específicas de tu cuerpo. Este proceso promoverá la relajación profunda, la liberación de toxinas y la restauración del equilibrio en tu ser.duos."
+      }
+    ],
+    consultation: {
+      title: "Sesión Pinda-sveda",
+      subtitle: "Reservá tu sesión"
+    },
+    imgServ: {
+      url: "/pageServices/pindaSveda.webp",
+    }
+  },
+  {
+    idtext: "yoga",
+    title: "Yoga Ayurvédico",
+    subtitle: "Clases de Yoga: Encuentra Armonía y Bienestar",
+    introduction: {
+      text: "Ofrecemos clases de Yoga donde podrás experimentar los múltiples beneficios de esta práctica ancestral. Nuestras clases son presenciales y puedes acceder a ellas a través de nuestros contactos para coordinar. Además, te ofrecemos la oportunidad de probar una clase sin costo alguno."
+    },
+    professional: {
+      name: "Patricia Verónica Ahumada",
+      image: "/pageServices/patoFoto.webp", // Asegúrate de tener la imagen en esta ruta
+      credentials: [
+        "Instructora de Yoga Ayurvédico"
+      ]
+    },
+    faqs: [
+      {
+        question: "¿Qué es el Yoga?",
+        answer: "Es una ciencia milenaria diseñada para crear conciencia y promover la armonía y la paz."
+      },
+      {
+        question: "¿Qué recomendaciones debo seguir antes y después de la práctica del Yoga?",
+        answer: "Crea un ambiente tranquilo, practica con el estómago vacío, asegúrate de que la vejiga y los intestinos estén vacíos, y usa ropa cómoda."
+      },
+      {
+        question: "¿Es necesario consultar a un médico antes de practicar Yoga?",
+        answer: "Sí, especialmente si tienes enfermedades crónicas, dolor o problemas cardíacos. También es recomendable si estás embarazada o durante tu período menstrual."
+      }
+    ],
+    consultation: {
+      title: "Clases de Yoga",
+      subtitle: "Reserva tu sesión"
+    },
+    imgServ: {
+      url: "/imagesFirstLanding/services/yoga.webp",
+    }
+  }
+]

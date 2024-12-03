@@ -12,6 +12,7 @@ const NavBar = () => {
   const pathname = usePathname();
 
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
+  const [openSubDropdown, setOpenSubDropdown] = useState<string | null>(null)
   const dropdownTimeout = useRef<NodeJS.Timeout | null>(null);
 
   const handleMouseEnter = (itemName: string) => {
@@ -24,6 +25,7 @@ const NavBar = () => {
   const handleMouseLeave = () => {
     dropdownTimeout.current = setTimeout(() => {
       setOpenDropdown(null);
+      setOpenSubDropdown(null);
     }, 300); // 300ms delay before closing the dropdown
   };
 
@@ -42,42 +44,52 @@ const NavBar = () => {
       <div className="w-[70%] space-x-5 text-sm flex justify-end">
         {navItems.map((item) => (
           <div
-          key={item.name}
-          className="relative"
-          onMouseEnter={() => handleMouseEnter(item.name)}
-          onMouseLeave={handleMouseLeave}
-        >
-          <Link href={item.href} className={`${pathname === item.href ? 'mainColorText' : 'text-black'} no-underline`}>
-            <button className='flex items-center'>
-              <p className='mr-[5px] mb-0'>{item.name}</p>
-              {item.subItems && <IoIosArrowDown />}
-            </button>
-          </Link>
+            key={item.name}
+            className="relative"
+            onMouseEnter={() => handleMouseEnter(item.name)}
+            onMouseLeave={handleMouseLeave}
+          >
+            <Link href={item.href} className={`${pathname === item.href ? 'mainColorText' : 'text-black'} no-underline`}>
+              <button className='flex items-center'>
+                <p className='mr-[5px] mb-0'>{item.name}</p>
+                {item.subItems && <IoIosArrowDown />}
+              </button>
+            </Link>
 
-          {/* Dropdown */}
-          {item.subItems && openDropdown === item.name && (
-            <div className="absolute top-full left-0 mt-2 bg-white shadow-lg p-2 w-[150px] rounded-md transition-opacity duration-300 opacity-100 border-b-4 border-[#35b05a]">
-              {item.subItems.map((subItem) => (
-                <Link key={subItem.name} href={subItem.href} className='no-underline m-0'>
-                  <p className="hover:bg-gray-100 m-1 px-2 py-2 cursor-pointer text-black">{subItem.name}</p>
-                </Link>
-              ))}
-            </div>
-          )}
-        </div>
+            {/* Dropdown */}
+            {item.subItems && openDropdown === item.name && (
+              <div className="absolute top-full left-0 mt-2 bg-white shadow-lg p-2 w-[150px] rounded-md transition-opacity duration-300 opacity-100 border-b-4 border-[#35b05a]">
+                {item.subItems.map((subItem) => (
+                  <div
+                    key={subItem.name}
+                    className="relative"
+                    onMouseEnter={() => setOpenSubDropdown(subItem.name)}
+                    onMouseLeave={() => setOpenSubDropdown(null)}
+                  >
+                    <Link href={subItem.href} className='no-underline m-0'>
+                      <p className="hover:bg-gray-100 m-1 px-2 py-2 cursor-pointer text-black flex items-center">
+                        {subItem.name}
+                        {subItem.subItems && <IoIosArrowDown className="ml-2" />}
+                      </p>
+                    </Link>
+
+                    {/* Sub-dropdown */}
+                    {subItem.subItems && openSubDropdown === subItem.name && (
+                      <div className="absolute top-0 left-full bg-white shadow-lg p-2 w-[150px] rounded-md transition-opacity duration-300 opacity-100 border-b-4 border-[#35b05a]">
+                        {subItem.subItems.map((nestedItem) => (
+                          <Link key={nestedItem.name} href={nestedItem.href} className='no-underline m-0'>
+                            <p className="hover:bg-gray-100 m-1 px-2 py-2 cursor-pointer text-black">{nestedItem.name}</p>
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
+
+          </div>
         ))}
-        {/* <button className={pathname === '/' ? 'mainColorText' : 'text-black'}>
-          Bienvenidos
-        </button>
-        <button className='flex items-center'>
-          <p className='mr-[5px] mb-0'>Servicios</p><IoIosArrowDown/>
-        </button>
-        <button className='flex items-center'>
-          <p className='mr-[5px] mb-0'>Articulos de ínteres</p><IoIosArrowDown/>
-        </button>
-        <button>Sobre nosotros</button>
-        <button>Galería</button>
-        <button>Prensa y medios</button> */}
       </div>
     </div>
   )

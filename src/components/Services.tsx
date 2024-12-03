@@ -19,7 +19,7 @@ const Services = () => {
                                         alt={service.alt}
                                         width={1000}
                                         height={300}
-                                        layout='responsive' // Esto asegura que la imagen se ajuste correctamente
+                                        fill={true} // Esto asegura que la imagen se ajuste correctamente
                                     />
                                 </div>
                                 <div className='absolute bottom-0 w-full p-2 text-center containerVidrio text-white'>

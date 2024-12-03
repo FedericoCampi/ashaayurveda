@@ -1,6 +1,6 @@
 'use client'
 
-import FaqSection from "@/components/FaqSection";
+import {FaqSection} from "@/components/FaqSection";
 import OtherServices from "@/components/OtherServices";
 import { services } from "@/lib/data";
 import Image from "next/image";
