@@ -67,7 +67,7 @@ export default function Service() {
                         credentials={data.professional.credentials}
                     />
                     <div className='mt-16'>
-                        <FaqSection />
+                        <FaqSection faqs={data.faqs}/>
                     </div>
                 </div>
             </div>

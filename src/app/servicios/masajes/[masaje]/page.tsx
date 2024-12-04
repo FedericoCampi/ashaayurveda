@@ -1,5 +1,6 @@
 'use client'
 
+import { FaqSection } from "@/components/FaqSection";
 import OtherServices from "@/components/OtherServices";
 import { masajes } from "@/lib/data";
 import Image from "next/image";
@@ -9,8 +10,12 @@ import { useEffect, useState } from "react";
 interface ServiceType {
     idtext: string;
     title: string;
+    subtitle?: string;
     introduction: {
         text: string;
+        image?: string;
+        introSubtitle?: string;
+        subText?: string;
     };
     professional: {
         name: string;
@@ -29,6 +34,12 @@ interface ServiceType {
         url: string;
     }
 }
+type ConsultationType = {
+    consultation: {
+        title: string;
+        subtitle: string;
+    };
+};
 
 export default function Page() {
 
@@ -51,9 +62,14 @@ export default function Page() {
         <div className='mx-0 sm:mx-auto'>
 
             <div className='my-2 sm:my-8'>
-                <h1 className='text-green-700 text-4xl font-bold text-center sm:pt-[40px]'>
+                <h1 className='text-green-700 text-4xl font-bold text-center sm:pt-[40px] mb-0'>
                     {data.title}
                 </h1>
+                {data.subtitle && 
+                    <p className="text-green-700 text-2xl font-bold text-center sm:pt-[40px] pt-4 mt-0">
+                        {data.subtitle}
+                    </p>
+                }
                 {/* Bloque de consulta */}
                 <ConsultationSection urlImageserv={data.imgServ.url} />
             </div>
@@ -64,6 +80,9 @@ export default function Page() {
                         url={data.professional.image}
                         name={data.professional.name}
                         credentials={data.professional.credentials}
+                        image= {data.introduction.image}
+                        introSubtitle= {data.introduction.introSubtitle}
+                        subText= {data.introduction.subText}
                     />
                     <div className='mt-16'>
                         <FaqSection faqs={data.faqs}/>
@@ -71,7 +90,7 @@ export default function Page() {
                 </div>
             </div>
 
-            <ReservationSection />
+            <ReservationSection consultation={data.consultation}/>
 
             <div>
                 <OtherServices />
@@ -86,8 +105,8 @@ const ConsultationSection = ({urlImageserv}: { urlImageserv: string }) => (
         <div className='flex h-full w-[1000px] mx-0 sm:mx-auto mt-6'>
             <div className='h-full w-[60%]'>
                 <Image
-                    width={400}
-                    height={300}
+                    width={1000}
+                    height={600}
                     src={urlImageserv}
                     alt='Consulta Ayurveda'
                     className='object-cover w-full h-full'
@@ -117,12 +136,31 @@ const ServiceInfo: React.FC<ServiceInfoProps> = ({ label, value }) => (
 );
 
 // Componente para la introducción
-const IntroductionSection = ({ text, url, name, credentials }: { name: string, text: string, url: string, credentials: string[] }) => (
+const IntroductionSection = ({ text, url, name, credentials, image, introSubtitle, subText }: { 
+    name: string, 
+    text: string, 
+    url: string, 
+    credentials: string[], 
+    image?: string 
+    introSubtitle?: string 
+    subText?: string 
+
+    }) => (
+
     <div className='flex flex-wrap mt-12'>
         <div className='w-full md:w-[60%]'>
             <p className='mt-4 pr-2 sm:text-lg'>
                 {text}
             </p>
+            {introSubtitle && 
+                <p className="text-green-400">{introSubtitle}</p>
+            }
+            {subText && 
+                <p>{subText}</p>
+            }
+            {image && 
+                <img src={image} alt="Introduction image" className="mt-4 w-full h-auto" />
+            }
         </div>
         <ProfessionalSection name={name} credentials={credentials} url={url} />
     </div>
@@ -131,7 +169,7 @@ const IntroductionSection = ({ text, url, name, credentials }: { name: string, t
 // Componente para la información del profesional
 const ProfessionalSection = ({ name, credentials, url }: { name: string, credentials: string[], url: string }) => {
     return (
-        <div className='w-full md:w-[40%] flex flex-col items-center border-2 border-green-600 rounded-lg p-2'>
+        <div className='w-full h-[300px] md:w-[40%] flex flex-col items-center border-2 border-green-600 rounded-lg p-2'>
             <div className='bg-gray-600 w-[100px] h-auto rounded-full mt-4'>
                 <Image
                     src={url}
@@ -152,12 +190,12 @@ const ProfessionalSection = ({ name, credentials, url }: { name: string, credent
 };
 
 // Componente para la sección de reserva
-const ReservationSection = () => {
-    const data = masajes[0]; // Puedes usar el mismo array aquí
+const ReservationSection: React.FC<ConsultationType> = ({ consultation }) => {
+
     return (
         <div className='bg-green-800 w-full h-[300px] flex flex-col justify-center items-center mt-4 sm:mt-16'>
-            <p className='text-white text-3xl'>{data.consultation.title}</p>
-            <p className='text-white text-lg'>{data.consultation.subtitle}</p>
+            <p className='text-white text-3xl'>{consultation.title}</p>
+            <p className='text-white text-lg'>{consultation.subtitle}</p>
             <button className='bg-green-600 text-white py-2 px-4 mt-4 rounded hover:bg-green-700'>
                 Reserva tu sesión
             </button>

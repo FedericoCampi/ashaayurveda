@@ -422,11 +422,11 @@ export const masajes = [
     }
   },
   {
-    idtext: "yoga",
-    title: "Yoga Ayurvédico",
-    subtitle: "Clases de Yoga: Encuentra Armonía y Bienestar",
+    idtext: "sirodhara",
+    title: "Sirodhara",
     introduction: {
-      text: "Ofrecemos clases de Yoga donde podrás experimentar los múltiples beneficios de esta práctica ancestral. Nuestras clases son presenciales y puedes acceder a ellas a través de nuestros contactos para coordinar. Además, te ofrecemos la oportunidad de probar una clase sin costo alguno."
+      text: "En la búsqueda de un equilibrio holístico, Ayurveda ofrece una amplia gama de terapias que se adaptan a las necesidades individuales de cada persona. Una de estas terapias transformadoras es el Shirodhara. Basado en la conciencia de los Doshas o biotipos corporales, esta terapia utiliza un derramamiento continuo de líquidos sobre la frente para ayudarte a encontrar la armonía y el bienestar. Sumérgete en esta experiencia única que combina aceites medicados, masaje corporal específico y un ambiente cuidadosamente creado para brindarte una profunda relajación y rejuvenecimiento.",
+      image: "/pageServices/masajes/sirodhara2.webp"
     },
     professional: {
       name: "Patricia Verónica Ahumada",
@@ -437,24 +437,141 @@ export const masajes = [
     },
     faqs: [
       {
-        question: "¿Qué es el Yoga?",
-        answer: "Es una ciencia milenaria diseñada para crear conciencia y promover la armonía y la paz."
+        question: "¿Qué es el Shirodhara y cómo funciona?",
+        answer: "El Shirodhara es un procedimiento terapéutico en el que se derraman de forma continua aceites medicados, leche o ghee sobre la frente del paciente en posición acostada. Este proceso se realiza desde una altura específica y durante un tiempo determinado, que puede variar según el caso. La terapia se complementa con un masaje corporal específico y es llevada a cabo por profesionales debidamente capacitados, incluyendo uno o dos ayudantes junto con un médico/a."
       },
       {
-        question: "¿Qué recomendaciones debo seguir antes y después de la práctica del Yoga?",
-        answer: "Crea un ambiente tranquilo, practica con el estómago vacío, asegúrate de que la vejiga y los intestinos estén vacíos, y usa ropa cómoda."
+        question: "¿Cuáles son los efectos principales de la Terapia Shirodhara?",
+        answer: "La Terapia Shirodhara ofrece efectos ansiolíticos, adaptogénicos y relajantes sin producir sedación o alteraciones en la conciencia. Además, mejora la agitación psicomotriz y promueve la claridad mental, brindándote una sensación de calma y bienestar integral."
       },
       {
-        question: "¿Es necesario consultar a un médico antes de practicar Yoga?",
-        answer: "Sí, especialmente si tienes enfermedades crónicas, dolor o problemas cardíacos. También es recomendable si estás embarazada o durante tu período menstrual."
+        question: "¿Cuáles son los beneficios del Shirodhara?",
+        answer: "El Shirodhara es ideal para tratar una amplia gama de desórdenes del sistema nervioso, como cefaleas, ansiedad, enfermedades neurológicas y trastornos de la piel. Además, también se ha demostrado eficaz en la reducción de la agitación psicomotriz, mejorando la claridad mental y promoviendo un estado de relajación profunda sin producir sedación, hipnosis o alteración de la conciencia."
+      },
+      {
+        question: "¿Recomendaciones antes y después del masaje?",
+        answer: "Antes del masaje, se recomienda evitar comidas pesadas y asegurarse de estar bien hidratado/a. Después del masaje, se aconseja descansar y permitir que los beneficios de la terapia se asienten en el cuerpo y la mente. Beber agua para ayudar a eliminar las toxinas liberadas durante el proceso también es recomendado."
+      },
+      {
+        question: "¿En qué casos se aplica el Shirodhara?",
+        answer: "El Shirodhara puede formar parte de un tratamiento específico para abordar trastornos específicos o puede ser parte de un Panchakarma, un proceso de desintoxicación y rejuvenecimiento. Si estás buscando alivio del estrés, mejorar la calidad del sueño o simplemente experimentar una profunda relajación, el Shirodhara es una opción ideal para ti."
+      },
+      {
+        question: "¿Para qué edades está recomendado?",
+        answer: "El Shirodhara es apto para adultos de todas las edades. Sin embargo, se recomienda consultar con un profesional de Ayurveda para evaluar si es adecuado."
       }
     ],
     consultation: {
-      title: "Clases de Yoga",
+      title: "Sesión Sirodhara",
       subtitle: "Reserva tu sesión"
     },
     imgServ: {
-      url: "/imagesFirstLanding/services/yoga.webp",
+      url: "/pageServices/sirodhara.webp",
+    }
+  },
+  {
+    idtext: "abhyanga",
+    title: "Abhyanga",
+    subtitle: "Equilibrio y Armonía a través del Masaje Ayurvédico",
+    introduction: {
+      text: "Abhyanga es una técnica ancestral de masaje Ayurveda que tiene como objetivo equilibrar los Doshas o biotipos corporales, armonizar las esencias vitales de Prana, Tejas y Ojas, y nutrir la vida. También contribuye a mejorar los Dathus o Tejidos y el Agni o fuego digestivo.",
+      introSubtitle: "Mecanismos de Acción:",
+      subText: "Durante el masaje Abhyanga, se utilizan aceites herbales que penetran a través de los poros de la piel para alcanzar los tejidos más profundos. Dado que las membranas celulares están compuestas por lipoproteínas, que son una combinación de lípidos, los aceites, al ser lípidos, facilitan su acción. Además, el masaje estimula áreas específicas de la piel, lo que tiene un impacto en la mente. Esto se debe a que la piel y el sistema nervioso central se derivan de la misma placa embrionaria y, por lo tanto, están íntimamente conectados.",
+      image: "/pageServices/masajes/Abhyanga2.webp"
+    },
+    professional: {
+      name: "Patricia Verónica Ahumada",
+      image: "/pageServices/patoFoto.webp", // Asegúrate de tener la imagen en esta ruta
+      credentials: [
+        "Instructora de Yoga Ayurvédico"
+      ]
+    },
+    faqs: [
+      {
+        question: "¿Hay alguna restricción en cuanto a las comidas antes del masaje?",
+        answer: "Es preferible evitar comidas pesadas o abundantes justo antes del masaje. Trata de comer una comida ligera al menos una hora antes para evitar molestias durante el masaje."
+      },
+      {
+        question: "¿Debo informar al terapeuta sobre alguna condición médica o sensibilidad específica?",
+        answer: "Sí, es importante informar al terapeuta sobre cualquier condición médica preexistente, lesiones recientes, sensibilidades o alergias antes de comenzar el masaje. Esto permitirá al terapeuta adaptar el tratamiento según tus necesidades y garantizar una experiencia segura y efectiva."
+      },
+      {
+        question: "¿Debo tomar algún cuidado especial después del masaje?",
+        answer: "Después del masaje, es recomendable descansar y permitir que los efectos del masaje se asienten en el cuerpo. Evita realizar actividades físicas intensas, exponerte a cambios bruscos de temperatura o tomar duchas calientes inmediatamente después del masaje. Beber agua y mantenerse hidratado es importante para ayudar al cuerpo a eliminar las toxinas liberadas durante el masaje."
+      },
+      {
+        question: "¿Es el masaje Abhyanga doloroso?",
+        answer: "No, el masaje Abhyanga no debe ser doloroso. El terapeuta aplica presión y movimientos suaves y fluidos para promover la relajación y el equilibrio. Sin embargo, es importante comunicar al terapeuta cualquier nivel de incomodidad o sensibilidad durante el masaje para que pueda ajustar la presión según tus necesidades."
+      },
+      {
+        question: "¿Puedo ducharme o bañarme después del masaje?",
+        answer: "En la mayoría de los casos, es recomendable esperar al menos una hora después del masaje antes de ducharte o bañarte. Esto permite que los aceites o productos utilizados durante el masaje se absorban completamente en la piel y maximicen sus beneficios."
+      },
+      {
+        question: "¿Cuánto tiempo dura una sesión de masaje Abhyanga?",
+        answer: "La duración de una sesión de masaje Abhyanga puede variar según tus necesidades y preferencias. Por lo general, puede durar entre 45 minutos y 1 hora. Sin embargo, es posible personalizar la duración según tus requerimientos específicos."
+      },
+      {
+        question: "¿Es necesario informar al terapeuta sobre alguna condición médica o sensibilidad antes de la Terapia Basti?",
+        answer: "Sí, es importante informar al terapeuta sobre cualquier condición médica preexistente, alergias o sensibilidades específicas que puedas tener. Esto permitirá al terapeuta adaptar el aceite medicado y el proceso de terapia de acuerdo con tus necesidades y evitar posibles complicaciones."
+      },
+      {
+        question: "¿Con qué frecuencia se recomienda recibir masaje Abhyanga?",
+        answer: "La frecuencia de los masajes puede variar según tus necesidades individuales y objetivos de bienestar. Algunas personas encuentran beneficios al recibir masajes regularmente, como una vez por semana o una vez al mes, mientras que otras pueden optar por recibir masajes de forma más ocasional. Escucha a tu cuerpo y habla con tu terapeuta para determinar la frecuencia más adecuada para ti."
+      }
+    ],
+    consultation: {
+      title: "Sesión Abhyanga",
+      subtitle: "Reserva tu sesión"
+    },
+    imgServ: {
+      url: "/pageServices/masajeAbhyanga.webp",
+    }
+  },
+  {
+    idtext: "nasya-karma",
+    title: "Nasya",
+    subtitle: "Equilibrio y Bienestar para Cabeza, Cuello y Hombros",
+    introduction: {
+      text: "Nasya es una técnica disponible en Medicina Ayurveda que se utiliza para tratar desequilibrios que afectan la cabeza, el cuello y los hombros. La cabeza es considerada uno de los puntos principales de Prana (energía vital) y también es el centro de los Indriyas (sentidos). Nasya, que significa “a través de la nariz” en sánscrito, consiste en la introducción de medicamentos preparados con hierbas, aceites, decocciones u otras preparaciones específicas para cada caso. También se conoce como Shirovirechana o Shirovireka. En algunos casos, Nasya puede ser realizado por el paciente mismo, ya sea colocando gotas de aceite en ambas fosas nasales o realizando Jala Neti (lavado nasal con un Neti o Lota). En circunstancias más complejas, se requiere la asistencia de un terapeuta y médico capacitados en un entorno adecuado, con conocimientos sobre las indicaciones y contraindicaciones del proceso a tratar. También se puede utilizar como parte de un Panchakarma, un tratamiento integral de desintoxicación y rejuvenecimiento. Descripción según Sushruta: “Nasa hi shiraso dwaram” Este aforismo sánscrito significa que la nariz es la puerta principal hacia el cerebro y, a su vez, hacia nuestra conciencia.",
+      introSubtitle: "Mecanismos de Acción:",
+      subText: "Las sustancias utilizadas en Nasya penetran por ambas fosas nasales, viajando a través del techo nasal, pasando por la lámina cribosa del etmoides, donde se encuentra el bulbo olfatorio y sus neuronas. Luego, descienden por la rinofaringe y la orofaringe antes de ser expulsadas por la boca. Esto provoca una serie de respuestas químicas y eléctricas que se transmiten rápidamente a los centros superiores del sistema nervioso central para lograr la respuesta adecuada. Es útil para la prevención, el mantenimiento, la reparación y el rejuvenecimiento de la salud, así como para tratar desequilibrios que afectan desde los hombros hacia arriba.",
+    },
+    professional: {
+      name: "Patricia Verónica Ahumada",
+      image: "/pageServices/patoFoto.webp", // Asegúrate de tener la imagen en esta ruta
+      credentials: [
+        "Instructora de Yoga Ayurvédico"
+      ]
+    },
+    faqs: [
+      {
+        question: "¿Para qué condiciones se recomienda Nasya?",
+        answer: "Nasya se recomienda para una variedad de condiciones que afectan la cabeza, el cuello y los hombros, como dolores de cabeza, congestión nasal, sinusitis, problemas oculares, trastornos del sueño, tensión en el cuello y los hombros, entre otros. Es importante consultar a un terapeuta ayurvédico para determinar si Nasya es adecuado para tu situación específica."
+      },
+      {
+        question: "¿Debo informar al terapeuta sobre alguna condición médica o sensibilidad específica?",
+        answer: "Sí, es importante informar al terapeuta sobre cualquier condición médica preexistente, lesiones recientes, sensibilidades o alergias antes de comenzar el masaje. Esto permitirá al terapeuta adaptar el tratamiento según tus necesidades y garantizar una experiencia segura y efectiva."
+      },
+      {
+        question: "¿Existen contraindicaciones o precauciones para Nasya?",
+        answer: "Sí, Nasya tiene algunas contraindicaciones y precauciones. No se recomienda para mujeres embarazadas, personas que sufren de hemorragias nasales frecuentes, resfriados severos o infecciones agudas en la nariz, así como para aquellos con ciertas condiciones médicas específicas. Es importante consultar con un terapeuta ayurvédico para evaluar tu situación antes de realizar Nasya."
+      },
+      {
+        question: "¿Puedo ducharme o bañarme después del masaje?",
+        answer: "En la mayoría de los casos, es recomendable esperar al menos una hora después del masaje antes de ducharte o bañarte. Esto permite que los aceites o productos utilizados durante el masaje se absorban completamente en la piel y maximicen sus beneficios."
+      },
+      {
+        question: "¿Es necesario informar al terapeuta sobre alguna condición médica o sensibilidad antes de la Terapia Basti?",
+        answer: "Sí, es importante informar al terapeuta sobre cualquier condición médica preexistente, alergias o sensibilidades específicas que puedas tener. Esto permitirá al terapeuta adaptar el aceite medicado y el proceso de terapia de acuerdo con tus necesidades y evitar posibles complicaciones."
+      },
+    ],
+    consultation: {
+      title: "Masaje Nasya",
+      subtitle: "Reserva tu sesión"
+    },
+    imgServ: {
+      url: "/pageServices/nasya-panchkarma.webp"
     }
   }
 ]

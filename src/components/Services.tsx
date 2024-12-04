@@ -19,7 +19,6 @@ const Services = () => {
                                         alt={service.alt}
                                         width={1000}
                                         height={300}
-                                        fill={true} // Esto asegura que la imagen se ajuste correctamente
                                     />
                                 </div>
                                 <div className='absolute bottom-0 w-full p-2 text-center containerVidrio text-white'>
@@ -36,13 +35,6 @@ const Services = () => {
                     </div>
                 ))}
             </div>
-            {/* <div className='pt-6'>
-                <FirstButton
-                    titulo="Ver más servicios" 
-                    padding='p-3'
-                    tamano='text-xl'
-                />
-            </div> */}
         </div>
     );
 };
