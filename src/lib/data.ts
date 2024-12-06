@@ -573,5 +573,200 @@ export const masajes = [
     imgServ: {
       url: "/pageServices/nasya-panchkarma.webp"
     }
+  },
+  {
+    idtext: "basti",
+    title: "Basti",
+    introduction: {
+      text: "Terapia Basti: Revitalización y Armonización mediante Aceite Medicado. La Terapia Basti es una antigua técnica ayurvédica que utiliza aceite medicado con hierbas para generar armonía y revitalización en el cuerpo. La palabra “Basti” en sánscrito se traduce como vejiga o recipiente que contiene algo, y en este caso se refiere a la pequeña represa que se forma con una masa para contener el aceite caliente sobre diferentes partes del cuerpo. Esta terapia se aplica en zonas específicas donde se busca equilibrar y estimular el flujo de energía, mejorando diversos procesos que requieren su intervención. Los beneficios de la Terapia Basti son especialmente notables en áreas como la región cervical, conocida como “Manya Basti”, que suele estar sometida a tensiones; la articulación de la rodilla, conocida como “Janu Basti”; la región lumbar, conocida como “Kati o Katu Basti”; los ojos, conocida como “Netra Basti”; y el centro del tórax en la parte anterior, conocido como “Hrd o Hrid o Hridaya Basti”. En ciertas situaciones, combinar la Terapia Basti con el masaje Abhyanga potencia aún más sus beneficios. Las propiedades nutritivas y revitalizadoras del aceite medicado han sido ampliamente demostradas, tanto por la evidencia de su uso ancestral como por los conocimientos actuales que respaldan su efectividad. Si estás buscando una forma natural y efectiva de armonizar y revitalizar tu cuerpo, la Terapia Basti puede ser una excelente opción. Consulta a un terapeuta ayurvédico especializado para obtener más información y descubrir cómo esta antigua técnica puede beneficiarte.",
+      image: "/pageServices/masajes/basti3.webp"
+    },
+    professional: {
+      name: "Patricia Verónica Ahumada",
+      image: "/pageServices/patoFoto.webp", // Asegúrate de tener la imagen en esta ruta
+      credentials: [
+        "Instructora de Yoga Ayurvédico"
+      ]
+    },
+    faqs: [
+      {
+        question: "¿Cuáles son los beneficios de la Terapia Basti?",
+        answer: "La Terapia Basti tiene múltiples beneficios, entre ellos: Armonización y equilibrio del flujo de energía en el cuerpo. Estimulación de procesos corporales que requieren un impulso adicional. Alivio de tensiones y malestares en zonas específicas, como el cuello, las articulaciones y los ojos. Nutrición y revitalización de los tejidos."
+      },
+      {
+        question: "¿Cómo se realiza la Terapia Basti?",
+        answer: "En la Terapia Basti, se aplica aceite medicado con hierbas calentado sobre la zona específica del cuerpo que se desea tratar. Este aceite se coloca en una pequeña represa hecha con una masa especial para mantenerlo en su lugar. La duración y la frecuencia del tratamiento pueden variar según las necesidades individuales y las recomendaciones del terapeuta ayurvédico."
+      },
+      {
+        question: "¿Cuánto tiempo lleva ver los resultados de la Terapia Basti?",
+        answer: "Los resultados de la Terapia Basti pueden variar según la condición y las necesidades individuales. En algunos casos, los efectos beneficiosos se pueden percibir de inmediato, mientras que en otros puede requerir varias sesiones para experimentar mejoras significativas. Es importante ser consistente con el tratamiento y seguir las pautas recomendadas por el terapeuta ayurvédico."
+      },
+      {
+        question: "¿Es seguro recibir Terapia Basti?",
+        answer: "Sí, la Terapia Basti es considerada segura cuando se realiza correctamente por un terapeuta ayurvédico calificado. Sin embargo, es importante informar al terapeuta sobre cualquier condición médica o sensibilidad en particular antes de comenzar el tratamiento. Esto asegurará que se seleccione el tipo de aceite medicado adecuado y se realice la terapia de manera segura y efectiva."
+      },
+      {
+        question: "¿Es la Terapia Basti dolorosa?",
+        answer: "No, la Terapia Basti no suele ser dolorosa. El aceite caliente se aplica suavemente sobre la zona y se mantiene en la represa durante un período de tiempo determinado. Algunas personas pueden experimentar una sensación de calor o ligera presión, pero en general, la terapia es relajante y reconfortante."
+      },
+      {
+        question: "¿Existen recomendaciones especiales para después de recibir Terapia Basti?",
+        answer: "Después de la Terapia Basti, se recomienda descansar durante un corto período de tiempo para permitir que los aceites medicados se absorban completamente en el cuerpo. Evita realizar actividades vigorosas o exponerte a cambios bruscos de temperatura inmediatamente después de la terapia."
+      },
+      {
+        question: "¿Hay alguna preparación especial que deba hacer antes de recibir Terapia Basti?",
+        answer: "Es recomendable llegar a la sesión con el estómago vacío. Evita comer una o dos horas antes de la terapia para facilitar la absorción de los aceites y permitir una experiencia más cómoda."
+      },
+      {
+        question: "¿Existen recomendaciones especiales para después de recibir Terapia Basti?",
+        answer: "Después de la Terapia Basti, se recomienda descansar durante un corto período de tiempo para permitir que los aceites medicados se absorban completamente en el cuerpo. Evita realizar actividades vigorosas o exponerte a cambios bruscos de temperatura inmediatamente después de la terapia."
+      },
+      {
+        question: "¿Hay alguna restricción dietética después de la Terapia Basti?",
+        answer: "No hay restricciones dietéticas específicas después de la Terapia Basti. Sin embargo, es recomendable optar por comidas ligeras y saludables para ayudar al proceso de digestión y asimilación de los aceites medicados en el cuerpo."
+      },
+      {
+        question: "¿Es necesario informar al terapeuta sobre alguna condición médica o sensibilidad antes de la Terapia Basti?",
+        answer: "Sí, es importante informar al terapeuta sobre cualquier condición médica preexistente, alergias o sensibilidades específicas que puedas tener. Esto permitirá al terapeuta adaptar el aceite medicado y el proceso de terapia de acuerdo con tus necesidades y evitar posibles complicaciones."
+      },
+    ],
+    consultation: {
+      title: "Terapia Basti",
+      subtitle: "Reserva tu sesión"
+    },
+    imgServ: {
+      url: "/pageServices/masajes/basti2.webp"
+    }
+  },
+  {
+    idtext: "sarasvati",
+    title: "Sarasvati",
+    introduction: {
+      text: "En los antiguos textos hindúes, se menciona a Sarasvatî, la diosa del conocimiento y la sabiduría. Pero en el Masaje Sarasvati, esta evocación no lleva consigo ninguna connotación religiosa. Más bien, nos sumerge en una técnica ancestral reservada para despertar la verdadera feminidad y el equilibrio interior. En este tratamiento, cada toque es una invitación al bienestar profundo. Inspirado por la diosa que personifica la energía creativa del Universo, el Masaje Sarasvati se centra en armonizar cuerpo y mente a través de maniobras cuidadosas sobre el abdomen y el cuerpo entero. Utilizando aceites y plantas adecuadas para cada Dosha, este masaje va más allá de la relajación física para alcanzar un estado de equilibrio sutil y armonizante.",
+      image: "/pageServices/masajes/sarasvati2.webp"
+    },
+    professional: {
+      name: "Patricia Verónica Ahumada",
+      image: "/pageServices/patoFoto.webp", // Asegúrate de tener la imagen en esta ruta
+      credentials: [
+        "Instructora de Yoga Ayurvédico"
+      ]
+    },
+    faqs: [
+      {
+        question: "¿Qué tipo de aceites y plantas se utilizan durante el Masaje Sarasvati y cuáles son sus beneficios específicos?",
+        answer: "Durante el Masaje Sarasvati, se utilizan aceites y plantas seleccionados cuidadosamente según el Dosha predominante de cada individuo. Estos pueden incluir aceites como el sésamo, el coco o el aceite de almendras, así como plantas medicinales como la cúrcuma, el jengibre o la hierba de trigo. Cada uno de estos ingredientes ofrece beneficios únicos que ayudan a equilibrar el cuerpo y la mente, promoviendo la relajación, la desintoxicación y la armonía interior."
+      },
+      {
+        question: "¿Cuánto tiempo dura una sesión típica de Masaje Sarasvati en Asha Ayurveda?",
+        answer: "La duración de una sesión de Masaje Sarasvati puede variar dependiendo de las necesidades individuales del cliente, pero generalmente suele durar entre 60 y 90 minutos para garantizar una experiencia completa y satisfactoria."
+      },
+      {
+        question: "¿A qué edades está indicado el Masaje Sarasvati?",
+        answer: "Se recomienda para la adolescencia y en edad adulta."
+      },
+      {
+        question: "¿Qué puedo esperar durante una sesión de masaje Sarasvati en Asha Ayurveda?",
+        answer: "Recuperar una sensación armonizante, relajante y suave, tomando conciencia de la eliminación de toxinas y líquidos. Mejorar los niveles de estrés, mejorar el umbral para gestionar emociones. Colaborar en el trabajo de los órganos abdominales."
+      },
+      {
+        question: "Indicaciones y contraindicaciones",
+        answer: "El Masaje Sarasvati está especialmente recomendado para aquellos que buscan alivio en procesos que intoxican el hígado, desequilibrios estomacales, tensiones abdominales, ansiedad, dolores menstruales y desequilibrios del aparato reproductor. Sin embargo, hay ciertas condiciones en las que este masaje no es adecuado, como durante el embarazo, estados febriles, inflamaciones estomacales y otros, siempre es recomendable consultar con un profesional en Ayurveda en caso de dudas."
+      }
+    ],
+    consultation: {
+      title: "Sarasvati",
+      subtitle: "Reserva tu sesión"
+    },
+    imgServ: {
+      url: "/pageServices/masajes/sarasvati.webp"
+    }
+  },
+  {
+    idtext: "garshan",
+    title: "Garshan",
+    introduction: {
+      text: "En sánscrito, Garshan significa fricción o frotado. Este antiguo arte del masaje linfático Ayurvédico, también conocido como cepillado seco, es una técnica poderosa que ayuda a liberar toxinas del sistema linfático, ubicado cerca de la piel. Ideal para las mañanas, este masaje puede revivir tu energía y vitalidad, aunque también puede disfrutarse en otros momentos del día. Realizado con guantes específicos o un cepillo corporal, el Masaje Garshan ofrece una fricción vigorosa que estimula la circulación y promueve la salud general del cuerpo y la mente.",
+      image: "/pageServices/masajes/garshan2.webp"
+    },
+    professional: {
+      name: "Patricia Verónica Ahumada",
+      image: "/pageServices/patoFoto.webp", // Asegúrate de tener la imagen en esta ruta
+      credentials: [
+        "Instructora de Yoga Ayurvédico"
+      ]
+    },
+    faqs: [
+      {
+        question: "Indicaciones y contraindicaciones",
+        answer: "El Masaje Garshan es especialmente útil para aquellos que buscan reducir el exceso de Kapha Dosha, mejorar la circulación, combatir la retención de líquidos, y revitalizar el metabolismo. Sin embargo, hay ciertas condiciones en las que este masaje no es apropiado, como piel muy sensible, afecciones cutáneas como psoriasis o eczemas, o heridas abiertas. Siempre es importante consultar con un profesional en Ayurveda antes de comenzar cualquier tratamiento."
+      },
+      {
+        question: "¿Qué necesita el paciente para asistir a una sesión de Masaje Garshan?",
+        answer: "Los pacientes deben llevar ropa cómoda y informar al terapeuta sobre cualquier medicación, cirugías previas o tratamientos oncológicos. Además, es fundamental tener una piel sana para recibir el masaje de manera segura y efectiva."
+      },
+      {
+        question: "¿A qué edades está indicado el Masaje Garshan?",
+        answer: "El Masaje Garshan está indicado para adultos que deseen mejorar su bienestar físico y mental, revitalizando su cuerpo y promoviendo la salud en general."
+      },
+      {
+        question: "¿Cómo se realiza el procedimiento Garshan?",
+        answer: "Durante una sesión de Masaje Garshan, se aplican movimientos vigorosos y circulares en diversas áreas del cuerpo con guantes o cepillos adecuados. Esta fricción estimula los músculos, tonifica la piel y promueve la circulación. El masaje concluye con la aplicación de líquidos específicos según las necesidades individuales de cada cliente."
+      },
+      {
+        question: "Qué puedo esperar durante una sesión de masaje Garshan en Asha Ayurveda",
+        answer: "Durante una sesión de Masaje Garshan, puedes esperar mejorar tu sistema inmunológico, acelerar tu metabolismo, mejorar la circulación, exfoliar las células muertas de la piel y reducir el estrés. Este masaje también colabora en la eliminación de desechos celulares y puede ayudar a reducir la apariencia de la celulitis. Sumérgete en esta experiencia rejuvenecedora y experimenta la transformación en Asha Ayurveda."
+      },
+      {
+        question: "Cuánto tiempo lleva notar los beneficios del Masaje Garshan después de una sesión",
+        answer: "Los beneficios del Masaje Garshan pueden sentirse de inmediato después de una sesión, ya que la fricción vigorosa estimula la circulación y desencadena una sensación de vitalidad y renovación. Sin embargo, los efectos a largo plazo, como la mejora del sistema inmunológico y la reducción del estrés, pueden acumularse con el tiempo y con sesiones regulares."
+      }
+    ],
+    consultation: {
+      title: "Sesión Garshan",
+      subtitle: "Reserva tu sesión"
+    },
+    imgServ: {
+      url: "/pageServices/masajes/garshan.webp"
+    }
+  },
+  {
+    idtext: "facial-kerala",
+    title: "Facial kerala",
+    introduction: {
+      text: "Nuestra terapia facial Kerala se centra en proporcionar una hidratación adecuada, una reparación profunda y una sensación de confort duradera. Mediante el uso de pequeñas pindas preparadas con sustancias naturales y sumergidas en aceites seleccionados específicamente para cada tratamiento, estimulamos puntos energéticos clave en tu rostro. Este proceso induce una profunda oxigenación de la piel, eliminando toxinas y estimulando su luminosidad natural. Además, nuestros masajes suaves y expertos descontracturan los músculos faciales y del cuello, ayudando a restaurar la firmeza y vitalidad de tu piel.",
+    },
+    professional: {
+      name: "Patricia Verónica Ahumada",
+      image: "/pageServices/patoFoto.webp", // Asegúrate de tener la imagen en esta ruta
+      credentials: [
+        "Instructora de Yoga Ayurvédico"
+      ]
+    },
+    faqs: [
+      {
+        question: "¿Para qué tipo de pieles está indicada esta terapia facial?",
+        answer: "Nuestra terapia facial Kerala Ayurveda está indicada para todo tipo de pieles, ya que se centra en proporcionar una hidratación profunda y una reparación celular a través de los aceites y sustancias naturales utilizados. Si tu piel está reseca, deshidratada o sensible, notarás sus beneficios desde la primera sesión. Y si tu piel es grasa o combinada, este tratamiento ayudará a restablecer el equilibrio natural, dejándola radiante."
+      },
+      {
+        question: "¿Es doloroso o incómodo?",
+        answer: "Nuestros masajes están diseñados para ser muy suaves y relajantes. Usamos pindas de algodón y movimientos lentos y pausados para no causar ningún tipo de incomodidad. De hecho, la mayoría de clientes acaban sintiéndose en un estado de profundo relax al final de la sesión."
+      },
+      {
+        question: "¿Cuáles son los beneficios que puedo esperar tras una sesión?",
+        answer: "Después de una sesión de nuestra terapia facial Kerala podrás esperar una piel visiblemente más hidratada, suave y tersa. Además, notarás que los rasgos se ven más descansados y definidos, gracias a que nuestros masajes descontracturan los músculos faciales. A medio-largo plazo, con sesiones regulares, la piel lucirá más uniforme, luminosa y con las líneas de expresión atenuadas."
+      },
+      {
+        question: "¿A quién está dirigida esta terapia?",
+        answer: "Nuestra terapia facial Kerala Ayurveda es adecuada para todo tipo de pieles y de personas, independientemente de la edad o el género. Desde los 20 años hasta edades más maduras, tanto mujeres como hombres, notarán sus efectos rejuvenecedores, anti-estrés y de bienestar general. Se trata de un tratamiento perfecto para cuidar de la piel de una forma natural y placentera.Recuperar una sensación armonizante, relajante y suave, tomando conciencia de la eliminación de toxinas y líquidos. Mejorar los niveles de estrés, mejorar el umbral para gestionar emociones. Colaborar en el trabajo de los órganos abdominales."
+      },
+    ],
+    consultation: {
+      title: "Facial Kerala",
+      subtitle: "Reserva tu sesión"
+    },
+    imgServ: {
+      url: "/pageServices/masajes/facial-kerala.webp"
+    }
   }
 ]
