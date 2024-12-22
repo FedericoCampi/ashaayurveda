@@ -4,7 +4,7 @@ import FirstButton from './ui/firstButton'
 
 const Welcome = () => {
   return (
-    <div className='flex w-full min-h-[400px] pt-10 pb-4 lg:px-[5%] md:space-x-6'>
+    <div className='flex w-full min-h-[400px] sm:pt-16 lg:px-[5%] 2xl:px-[15%] md:space-x-6'>
       <div className='w-[40%] hidden md:block'>
         <Image
           src='/imagesFirstLanding/velas.webp'
@@ -29,11 +29,13 @@ const Welcome = () => {
         <p className='md:text-center text-start'>
           Gracias por visitar nuestra página y ser parte de este camino de aprendizaje y crecimiento.
         </p>
-        <FirstButton 
-          titulo="Sobre Asha Ayurveda" 
-          padding='p-3'
-          tamano='text-2xl'
-        />
+        <a href='/sobrenosotros'>
+          <FirstButton 
+            titulo="Sobre Asha Ayurveda" 
+            padding='p-3'
+            tamano='text-2xl mt-3'
+          />
+        </a>
       </div>
     </div>
   )

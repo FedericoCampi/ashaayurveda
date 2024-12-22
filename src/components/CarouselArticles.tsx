@@ -4,16 +4,16 @@ import Image from 'next/image'
 
 const CarouselArticles = () => {
     return (
-        <div id="carouselExample" className="max-w-[600px] carousel slide">
+        <div id="carouselExample" className="w-[500px] carousel slide">
 
-            <div className="carousel-inner w-full h-[600px]">
+            <div className="carousel-inner h-[600px]">
 
                 {carouselArticles.map((articles, index) => (
 
-                    <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''} relative h-full w-full`}>
+                    <div key={index} className={`carousel-item w-[500px] h-full ${index === 0 ? 'active' : ''} relative `}>
 
-                        {/* Imagen con padding para que no se superponga con los pilares */}
-                        <div className="w-full h-full bg-black">
+                        {/* Imagen con padding para que no se sup erponga con los pilares */}
+                        <div className="w-[500px] h-full bg-black ">
                             <Image
                                 src={articles.imagen}
                                 alt={`carousel-${index}`}
@@ -23,10 +23,10 @@ const CarouselArticles = () => {
                             />
                         </div>
 
-                        <div className="absolute inset-0 flex items-center justify-center">
-                            <div className='max-w-[500px] text-center text-white p-12'>
-                                <p className='text-2xl font-bold'>{articles.title}</p>
-                                <p>{articles.text}</p>
+                        <div className="absolute inset-0 flex items-center justify-center w-[500px]">
+                            <div className=' h-full text-center flex flex-col items-center justify-around text-white p-12'>
+                                <p className='text-2xl font-bold p_sin_interlineado'>{articles.title}</p>
+                                <p className='p_sin_interlineado'>{articles.text}</p>
                                 <button className="fade-in-bottom text-xl bg-[#35b05a] text-white py-2 px-4 rounded-lg">
                                     Leer más
                                 </button>

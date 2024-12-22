@@ -20,8 +20,8 @@ const page = () => {
                 </p>
             </div>
             <div>
-                <div className='md:flex md:items-center md:justify-center py-10'>
-                    <div className='md:max-w-[300px] flex flex-col items-start'>
+                <div className='md:flex md:items-center md:justify-center py-10 space-x-10'>
+                    <div className='md:max-w-[400px] flex flex-col items-start'>
                         <Image
                             width={100}
                             alt='barras'
