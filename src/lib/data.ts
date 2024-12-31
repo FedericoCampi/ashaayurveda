@@ -3,9 +3,15 @@ export const imagesCarousel = [
     imagen: '/imagesFirstLanding/carousel/firstCarousel.webp' ,
     idText: 'yoga/acompanamos-y-honramos',
   },
-  { imagen: '/imagesFirstLanding/carousel/secondCarousel.webp' },
-  { imagen: '/imagesFirstLanding/carousel/thirdCarousel.webp' },
-  { imagen: '/imagesFirstLanding/carousel/fourthCarousel.webp' },
+  { imagen: '/imagesFirstLanding/carousel/secondCarousel.webp',
+    idText: 'servicios/educacion/taller'
+  },
+  { imagen: '/imagesFirstLanding/carousel/thirdCarousel.webp',
+    idText: 'yoga/participacion-en-consejos-multisectoriales'
+   },
+  { imagen: '/imagesFirstLanding/carousel/fourthCarousel.webp',
+    idText: 'articulos/universidad'
+   },
   { imagen: '/imagesFirstLanding/carousel/fifthCarousel.webp' },
   { imagen: '/imagesFirstLanding/carousel/sixthCarousel.webp' },
   { imagen: '/imagesFirstLanding/carousel/seventhCarousel.webp' }
@@ -302,13 +308,16 @@ export const masajesSection = [
     description: "También realizamos otras modalidades de Masaje Ayurveda para acompañar distintos procesos que necesitan de la aplicación de algunas de estas Terapias.",
     image: "/pageServices/masajes/sarasvati.webp"
   },
-]
+];
+
 export const carouselArticles = [
   { 
     idText: 'acompanamos-y-honramos',
+    faq:'by Asha Ayurveda | Jul 5, 2024 | Yoga',
     imagen: '/articulos/carousel/first.webp',
     title: 'Acompañamos y honramos los festejos por el día internacional del yoga 2024',
-    text: 'Enviamos nuestros más sinceros saludos y reconocimientos para los festejos por el día Internacional del Yoga este 21 de junio de 2024 que se organizaron en distintos lugares del mundo donde brilló la luz de la práctica y enseñanzas de este conocimiento. Su lema o tema...'
+    text: 'Enviamos nuestros más sinceros saludos y reconocimientos para los festejos por el día Internacional del Yoga este 21 de junio de 2024 que se organizaron en distintos lugares del mundo donde brilló la luz de la práctica y enseñanzas de este conocimiento. Su lema o tema...',
+    textCompleto: 'Enviamos nuestros más sinceros saludos y reconocimientos para los festejos por el día Internacional del Yoga este 21 de junio de 2024 que se organizaron en distintos lugares del mundo donde brilló la luz de la práctica y enseñanzas de este conocimiento. Su lema o tema para este año “Yoga para uno mismo, Yoga para la Sociedad” refleja el pedido de búsqueda interior sin olvidar a todos los seres que nos rodean. Agradeciendo a todas aquellas generaciones que transmitieron su esencia, con beneficios y alcances registrados desde miles de años atrás, y a los/as que lo siguen haciendo desde el corazón en beneficio de la humanidad entera, sin discriminación, con respeto, en unión y con la sencillez y efectividad claramente demostrada no solo con el paso del tiempo sino con los métodos científicos actuales. Bendiciones y felicidad para la continuidad de esta Ciencia invitando todos/as aquellas personas que quisieran experimentar el bienestar que produce la realización de Yoga.'
   },
   { 
     idText: 'consejos-multisectoriales',
@@ -335,21 +344,71 @@ export const carouselArticles = [
     text: 'En un momento de distinguida honorabilidad, nos unimos con gratitud y aprecio a la Embajada de India en Buenos Aires para celebrar el Día de la Independencia de India. Desde Asha Ayurveda, nos sentimos profundamente honrados por la invitación a este evento...'
   },
 ];
+
+export const yogaSection = [
+  { 
+    idText: 'acompanamos-y-honramos',
+    faq:'by Asha Ayurveda | Jul 5, 2024 | Yoga',
+    imagen: '/yogaSection/acompananos.webp',
+    title: 'Acompañamos y honramos los festejos por el día internacional del yoga 2024',
+    text: 'Enviamos nuestros más sinceros saludos y reconocimientos para los festejos por el día Internacional del Yoga este 21 de junio de 2024 que se organizaron en distintos lugares del mundo donde brilló la luz de la práctica y enseñanzas de este conocimiento. Su lema o tema...',
+    textCompleto: 'Enviamos nuestros más sinceros saludos y reconocimientos para los festejos por el día Internacional del Yoga este 21 de junio de 2024 que se organizaron en distintos lugares del mundo donde brilló la luz de la práctica y enseñanzas de este conocimiento. Su lema o tema para este año “Yoga para uno mismo, Yoga para la Sociedad” refleja el pedido de búsqueda interior sin olvidar a todos los seres que nos rodean. Agradeciendo a todas aquellas generaciones que transmitieron su esencia, con beneficios y alcances registrados desde miles de años atrás, y a los/as que lo siguen haciendo desde el corazón en beneficio de la humanidad entera, sin discriminación, con respeto, en unión y con la sencillez y efectividad claramente demostrada no solo con el paso del tiempo sino con los métodos científicos actuales. Bendiciones y felicidad para la continuidad de esta Ciencia invitando todos/as aquellas personas que quisieran experimentar el bienestar que produce la realización de Yoga.',
+    imagen2: '/yogaSection/acompananos2.webp',
+  },
+  { 
+    idText: 'participacion-en-consejos-multisectoriales',
+    faq:'by Asha Ayurveda | Abr 22, 2024 | Yoga',
+    imagen: '/yogaSection/charla.webp',
+    title: 'Centro de día “Pilar de Vida” en 2024',
+    textCompleto: 'En relación a los festejos por el Día Mundial de la Salud, la Municipalidad de San Fernando del Valle de Catamarca desde los Consejos Multisectoriales organizó una serie de actividades desde el Centro Pilar de Vida para reflexionar sobre la importancia de mantener un bienestar integral en nuestras vidas. Este año, nuevamente fuimos invitados para colaborar con un aporte desde la Medicina Ayurveda. En este contexto, la antigua sabiduría del Ayurveda compartió similitudes con lo que se quiere enfatizar para la toma de conciencia y el cuidado de la salud. El evento organizado en el corazón de la ciudad, fue muy agradable donde se compartió conocimientos milenarios, los nuevos desafíos sobre la salud y el bienestar. Se destacó la importancia de vivir en armonía con los ritmos naturales y de nutrir tanto el cuerpo, la mente y el espíritu. Durante la Conferencia se hizo hincapié en el reconocimiento de Charya, término en sánscrito que también se aplica para definir Rutinas, que podrías ser diarias (Dinacharya), estacionales (Ritucharya), nocturnas (Ratricharya) y la importancia de adaptar el enfoque de salud a las necesidades predominantes. Se exploraron temas como el significado de Ayurveda, como es considerada a nivel mundial y en nuestro país, las similitudes de objetivos de la OMS (Organización Mundial de la Salud) y Ayurveda, las características de la Estación de Otoño, la Alimentación recomendada para dicha estación y loa efectos predominantes de la misma en la salud. Luego se mostró ejemplo de algunas plantas que se pueden utilizar para realizar Infusiones en otoño utilizando:',
+    list: {
+      item1: "Cuminum cyminum (Comino) en semilla",
+      item2: "Coriandrum sativum (Coriandro) en semilla",
+      item3: "Zingiber officinale (Jengibre) en raíz",
+      item4: "Cinnamomum zeylanicun (Canela) en rama",
+      item5: "Foeniculum vulgare (Hinojo) en semilla",
+    },
+    imagen2: '/yogaSection/prensa.webp',
+    secondText: 'El aroma de las hierbas aromáticas que se mostraron como ejemplo llenaban el aire mientras los asistentes se sumergían en las enseñanzas de esta antigua ciencia. Uno de los momentos más destacados del evento fue la cálida participación con preguntas y aportes de los/as asistentes compartiendo los beneficios de esta antigua técnica de sanación. Se compartió una de las tantas frases que se describen en uno de los textos refrentes de Ayurveda, Sushruta Samhita Chapter 6 Ritucharya Adhyaya que sobre Ritu Prabhava (efecto de la Estación) refiriéndose a otoño menciona: “en el que el cielo se compone de nubes dispersas, los rayos del sol secan el lodo (humedad de la tierra) y producen fácil desequilibrio en la piel”. A medida que la Conferencia llegaba a su fin, los participantes se despidieron con corazones y mentes renovados, inspirados por las enseñanzas del Ayurveda y comprometidos a integrar sus principios en sus vidas cotidianas. Con una comprensión más profunda de la conexión entre el cuerpo y la mente, se marcharon con la determinación de cuidarse a sí mismos y a los demás, recordando siempre que la salud verdadera es un viaje que abarca todos los aspectos de nuestra existencia.'
+  },
+  { 
+    idText: 'congreso-de-ciudades',
+    imagen: '/articulos/carousel/third.webp',
+    title: 'Participación en IX Congreso de Ciudades y Pueblos del interior',
+    text: 'Participación en IX Congreso de ciudades y pueblos del interior'
+  },
+  { 
+    idText: 'encuentro-de-ayurveda-2023',
+    imagen: '/articulos/carousel/fourth.webp',
+    title: 'II Encuentro de Ayurveda Catamarca 2023',
+    text: 'Con mucha alegría compartimos algunos de los aspectos del II Encuentro de Ayurveda en Catamarca durante el mes de Diciembre de 2023. Se desarrolló una hermosa convocatoria entre los distintos profesionales que disertaron y el público que asistió y participó...'
+  },
+  { 
+    idText: 'union-cultural-y-espiritual',
+    imagen: '/articulos/carousel/fifth.webp',
+    title: 'Celebrando la unión Cultural y espiritual: Día de la independencia de India en la embajada de Buenos Aires',
+    text: 'En un momento de distinguida honorabilidad, nos unimos con gratitud y aprecio a la Embajada de India en Buenos Aires para celebrar el Día de la Independencia de India. Desde Asha Ayurveda, nos sentimos profundamente honrados por la invitación a este evento...'
+  },
+];
+
 export const carouselUniversidad = [
   { 
     imagen: '/articulos/universidad/first.webp',
     title: 'Módulo Ayurveda en la Diplomatura de Gestión de las Emociones en el Proceso Educativo(DGEPE)',
-    text: 'Acto inaugural DGEPE'
+    text: 'Acto inaugural DGEPE',
+    faq: 'by Asha Ayurveda | 22 abril, 2024 | Universidad de Nacional de Catamarca | 0 Comments'
   },
   { 
     imagen: '/articulos/universidad/second.webp',
     title: 'Proyecto la naturaleza es sabia',
-    text: '¡Descubre el inspirador proyecto "La naturaleza es sabia"! En colaboración con la prestigiosa Facultad de Humanidades de la Universidad Nacional de Catamarca(UNCA), la secretaría de extensión universitaria de la UNCA, el colegio privado María Montessori y destacados...'
+    text: '¡Descubre el inspirador proyecto "La naturaleza es sabia"! En colaboración con la prestigiosa Facultad de Humanidades de la Universidad Nacional de Catamarca(UNCA), la secretaría de extensión universitaria de la UNCA, el colegio privado María Montessori y destacados...',
+    faq: 'by Asha Ayurveda | 24 mayo, 2023 | Educación, Universidad de Nacional de Catamarca | 0 Comments'
   },
   { 
     imagen: '/articulos/universidad/third.webp',
     title: 'Presentación libro "La naturaleza es sabia, experiencias en el aula"',
-    text: '"Con la Universidad Nacional de Catamarca(UNCA) realizamos actividades en donde potenciamos conocimientos en un marco de crecimiento mutuo y respeto. De derecha a izquierda: Gloria Dalma Videla - terapeuta, María Luisa Avalos - profesora de biología, Lucía Medina - CPN...'
+    text: '"Con la Universidad Nacional de Catamarca(UNCA) realizamos actividades en donde potenciamos conocimientos en un marco de crecimiento mutuo y respeto. De derecha a izquierda: Gloria Dalma Videla - terapeuta, María Luisa Avalos - profesora de biología, Lucía Medina - CPN...',
+    faq: 'by Asha Ayurveda | 24 mayo, 2023 | Educación, Universidad de Nacional de Catamarca | 0 Comments'
   },
 ];
 export const carouselPrensa = [

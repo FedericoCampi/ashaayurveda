@@ -8,12 +8,6 @@ import Chatbot from "@/components/Chatbot";
 import { Roboto_Serif } from 'next/font/google'
 import Contact from "@/components/Contact";
 
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
-
 const inter = Roboto_Serif({ 
   weight: '400', 
   subsets: ['latin']

@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const CarouselUniversidad = () => {
     return (
-        <div id="carouselExample" className="md:w-[800px] max-w-[800px] carousel slide">
+        <div id="carouselExample" className="md:w-[800px] lg:w-[1000px] max-w-[1000px] carousel slide">
 
             <div className="carousel-inner w-full h-[600px]">
 
@@ -25,8 +25,9 @@ const CarouselUniversidad = () => {
 
                         <div className="absolute inset-0 flex items-center justify-center">
                             <div className='max-w-[500px] text-center text-white p-12'>
-                                <p className='text-2xl font-bold'>{articles.title}</p>
-                                <p>{articles.text}</p>
+                                <p className='text-3xl font-bold text-center leading-relaxed'>{articles.title}</p>
+                                <p className='text-[12px] my-0'>{articles.faq}</p>
+                                <p className='text-center'>{articles.text}</p>
                                 <button className="fade-in-bottom text-xl bg-[#35b05a] text-white py-2 px-4 rounded-lg">
                                     Leer más
                                 </button>

@@ -62,7 +62,7 @@ export default function SeccionEducacion() {
                         className="w-full h-48 object-cover"
                     />
                     {data.taller && typeof data.taller === 'object' && (
-                        <div>
+                        <div className="text-green-500 pt-6 text-3xl">
                             <p>{data.taller.titulo}</p>
                             <p>{data.taller.ano}</p>
                         </div>
@@ -71,17 +71,17 @@ export default function SeccionEducacion() {
 
                     {data.taller && typeof data.taller === 'object' && (
                         <div>
-                            <p>Programa:</p>
+                            <p className="text-green-500 font-bold text-xl">Programa:</p>
                             <p>{data.taller.programa}</p>
-                            <p>Modalidad:</p>
+                            <p className="text-green-500 font-bold">Modalidad:</p>
                             <p>{data.taller.modalidad}</p>
-                            <p>Duración:</p>
+                            <p className="text-green-500 font-bold">Duración:</p>
                             <p>{data.taller.duracion}</p>
-                            <p>Requisitos:</p>
+                            <p className="text-green-500 font-bold">Requisitos:</p>
                             <p>{data.taller.requisitos}</p>
-                            <p>A cargo de:</p>
+                            <p className="text-green-500 font-bold">A cargo de:</p>
                             <p>{data.taller.aCargo}</p>
-                            <p>Información:</p>
+                            <p className="text-green-500 font-bold">Información:</p>
                             <p>{data.taller.informacion}</p>
                         </div>
                     )}
