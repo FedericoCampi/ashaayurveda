@@ -6,7 +6,6 @@ import { IoIosArrowDown } from "react-icons/io";
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { navItems } from '@/lib/data';
-import { div } from 'framer-motion/client';
 
 const NavBar = () => {
 
