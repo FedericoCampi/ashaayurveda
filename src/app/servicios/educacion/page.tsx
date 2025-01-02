@@ -25,7 +25,7 @@ export default function EducationSection() {
                             </CardHeader>
                             <CardContent>
                                 <div className="flex flex-wrap gap-2 mb-2">
-                                    {item.tags.map((tag, tagIndex) => (
+                                    {item.tags?.map((tag, tagIndex) => (
                                         <span key={tagIndex} className="text-xs bg-gray-200 rounded-full px-2 py-1">
                                             {tag}
                                         </span>
