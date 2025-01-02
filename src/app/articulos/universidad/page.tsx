@@ -31,7 +31,7 @@ const page = () => {
                                 <div className='text-center p-12'>
 
                                     <p className='text-2xl font-bold'>
-                                        <a href="" className='no-underline text-green-600'>
+                                        <a href={articles.to} className='no-underline text-green-600'>
                                             {articles.title}
                                         </a>
                                     </p>

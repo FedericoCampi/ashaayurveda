@@ -26,11 +26,13 @@ const CarouselUniversidad = () => {
                         <div className="absolute inset-0 flex items-center justify-center">
                             <div className='max-w-[500px] text-center text-white p-12'>
                                 <p className='text-3xl font-bold text-center leading-relaxed'>{articles.title}</p>
-                                <p className='text-[12px] my-0'>{articles.faq}</p>
+                                <p className='text-[10px] my-0 text-center'>{articles.faq}</p>
                                 <p className='text-center'>{articles.text}</p>
-                                <button className="fade-in-bottom text-xl bg-[#35b05a] text-white py-2 px-4 rounded-lg">
-                                    Leer más
-                                </button>
+                                <a href={articles.to}>
+                                    <button className="fade-in-bottom text-xl bg-[#35b05a] text-white py-2 px-4 rounded-lg">
+                                        Leer más
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>

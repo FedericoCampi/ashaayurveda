@@ -251,6 +251,30 @@ export const educationItems = [
     shortDescription: "Únete a nuestra misión de difundir y contribuir al bienestar general a través del Ayurveda y el Yoga en Asha Ayurveda. Hemos establecido colaboraciones en diversos ámbitos de la sociedad, como fundaciones, institutos de salud, facultades universitarias y museos, con...",
     description: "Únete a nuestra misión de difundir y contribuir al bienestar general a través del Ayurveda y el Yoga en Asha Ayurveda. Hemos establecido colaboraciones en diversos ámbitos de la sociedad, como fundaciones, institutos de salud, facultades universitarias y museos, con el objetivo de complementar y promover acciones que favorezcan la salud de diversos grupos de personas. Si estás interesado en contar con nuestra participación, te invitamos a contactarnos y enviar una nota de intención con tus objetivos a alcanzar. De esta manera, podremos evaluar la modalidad, nuestra disponibilidad y el contexto para brindar un aporte significativo. Estamos agradecidos y entusiasmados de formar parte de procesos que mejoren el bienestar general. En Asha Ayurveda, valoramos la colaboración y la sinergia con diferentes sectores para promover la salud y el bienestar integral. ¡Esperamos poder sumar nuestra experiencia y conocimientos a tu iniciativa!",
   },
+  {
+    idtext: "modulo-ayurveda",
+    title: "Módulo Ayurveda en la Diplomatura de Gestión de las Emociones en el Proceso Educativo (DGEPE)",
+    subTitle: "by Asha Ayurveda | Abr 22, 2024 | Universidad de Nacional de Catamarca",
+    description: "Descubre nuestro Módulo de Ayurveda: Perspectiva sobre las Emociones en Asha Ayurveda. Forma parte de la Diplomatura de Gestión de Emociones en el Proceso Educativo (DGEPE), ofrecida por la Secretaría de Posgrado de la Facultad de Ciencias Agrarias de la Universidad Nacional de Catamarca desde 2019. Contamos con al aval de la Embajada de India, sede en Buenos Aires a cargo de su Excelencia el Sr. Embajador Dinesh Bhatia para el desarrollo de actividades que impulsen la difusión de Ayurveda y su integración en nuestra región en un intercambio de respeto mutuo de culturas que promueven el bienestar general y cuidado del ecosistema",
+    image: '/articulos/universidad/first.webp',
+  },
+  {
+    idtext: "proyecto-naturaleza",
+    title: "Proyecto La Naturaleza es Sabia",
+    subTitle: "by Asha Ayurveda | Jun 17, 2023 | Educación, Universidad de Nacional de Catamarca",
+    description: "¡Descubre el inspirador proyecto “La Naturaleza es Sabia”! En colaboración con la prestigiosa Facultad de Humanidades de la Universidad Nacional de Catamarca (UNCA), la Secretaría de Extensión Universitaria de la UNCA, el Colegio Privado María Montessori y destacados profesionales de diversas disciplinas, como Ciencias Geográficas, Ciencias Agrarias, Ciencias Económicas, Ciencias Sociales, Psicología, Bromatología y Teatro, se llevó a cabo el emocionante Proyecto “La Naturaleza es Sabia”. El objetivo principal de esta investigación apasionante fue difundir y crear conciencia sobre los innumerables beneficios que el proceso de alimentación brinda a diferentes grupos sociales. Nos propusimos promover la salud basándonos en las valiosas enseñanzas de la Medicina Ayurveda, al mismo tiempo que buscamos rescatar prácticas relegadas que consideramos fundamentales para mejorar la calidad de vida de la población en general. Nos complace anunciar que el proyecto ha culminado con un rotundo éxito, logrando alcanzar todos sus objetivos y dejando una huella positiva en la comunidad. Como resultado de esta enriquecedora experiencia, hemos dado vida a un libro extraordinario titulado “La Naturaleza es Sabia, Experiencias en el Aula”, escrito por el talentoso Alberto Antonio Espeche y otros colaboradores destacados.",
+    image: '/articulos/universidad/second.webp',
+    image2: '/pageServices/educacion/libro.png',
+    secondText: 'Este libro excepcional ha sido publicado por la distinguida Universidad Nacional de Catamarca y cuenta con un total de 140 cautivadoras páginas en un formato de 22×15 cm. Su ISBN es 978-950-746-243-6. Te invitamos a sumergirte en las páginas de este fascinante libro, donde encontrarás valiosas reflexiones, experiencias prácticas y conocimientos que te inspirarán a explorar la sabiduría de la naturaleza y su impacto en nuestra alimentación y bienestar. Es una lectura imprescindible para aquellos que desean embarcarse en un viaje hacia una vida más saludable y equilibrada. En Asha Ayurveda, nos enorgullece haber sido parte de este maravilloso proyecto y esperamos seguir colaborando en futuras iniciativas que promuevan el bienestar y el conocimiento en nuestra comunidad. ¡La naturaleza nos brinda infinitas enseñanzas, y juntos podemos descubrir su sabiduría para vivir una vida plena y saludable!'
+  },
+  {
+    idtext: "naturaleza-sabia",
+    title: "Presentación libro “La naturaleza es sabia, experiencias en el aula”",
+    subTitle: "by Asha Ayurveda | May 24, 2023 | Educación, Universidad de Nacional de Catamarca",
+    description: "De derecha a izquiera Gloria Dalma Videla, terapeuta, María Luisa Ávlaos, profesora de biololgía, Lucía Medina, CPN, Rafael G. Campi médico ayurveda. Acto de presentación del libro “La Naturaleza es Sabia” hecho en colaboración con la UNCA, el Colegio privado Montessori",
+    image: '/articulos/universidad/third.webp',
+    secondText: 'Este libro excepcional ha sido publicado por la distinguida Universidad Nacional de Catamarca y cuenta con un total de 140 cautivadoras páginas en un formato de 22×15 cm. Su ISBN es 978-950-746-243-6. Te invitamos a sumergirte en las páginas de este fascinante libro, donde encontrarás valiosas reflexiones, experiencias prácticas y conocimientos que te inspirarán a explorar la sabiduría de la naturaleza y su impacto en nuestra alimentación y bienestar. Es una lectura imprescindible para aquellos que desean embarcarse en un viaje hacia una vida más saludable y equilibrada. En Asha Ayurveda, nos enorgullece haber sido parte de este maravilloso proyecto y esperamos seguir colaborando en futuras iniciativas que promuevan el bienestar y el conocimiento en nuestra comunidad. ¡La naturaleza nos brinda infinitas enseñanzas, y juntos podemos descubrir su sabiduría para vivir una vida plena y saludable!'
+  }
 ]
 
 export const masajesSection = [
@@ -396,19 +420,22 @@ export const carouselUniversidad = [
     imagen: '/articulos/universidad/first.webp',
     title: 'Módulo Ayurveda en la Diplomatura de Gestión de las Emociones en el Proceso Educativo(DGEPE)',
     text: 'Acto inaugural DGEPE',
-    faq: 'by Asha Ayurveda | 22 abril, 2024 | Universidad de Nacional de Catamarca | 0 Comments'
+    faq: 'by Asha Ayurveda | 22 abril, 2024 | Universidad de Nacional de Catamarca | 0 Comments',
+    to: '/servicios/educacion/modulo-ayurveda'
   },
   { 
     imagen: '/articulos/universidad/second.webp',
     title: 'Proyecto la naturaleza es sabia',
     text: '¡Descubre el inspirador proyecto "La naturaleza es sabia"! En colaboración con la prestigiosa Facultad de Humanidades de la Universidad Nacional de Catamarca(UNCA), la secretaría de extensión universitaria de la UNCA, el colegio privado María Montessori y destacados...',
-    faq: 'by Asha Ayurveda | 24 mayo, 2023 | Educación, Universidad de Nacional de Catamarca | 0 Comments'
+    faq: 'by Asha Ayurveda | 24 mayo, 2023 | Educación, Universidad de Nacional de Catamarca | 0 Comments',
+    to: '/servicios/educacion/proyecto-naturaleza'
   },
   { 
     imagen: '/articulos/universidad/third.webp',
     title: 'Presentación libro "La naturaleza es sabia, experiencias en el aula"',
     text: '"Con la Universidad Nacional de Catamarca(UNCA) realizamos actividades en donde potenciamos conocimientos en un marco de crecimiento mutuo y respeto. De derecha a izquierda: Gloria Dalma Videla - terapeuta, María Luisa Avalos - profesora de biología, Lucía Medina - CPN...',
-    faq: 'by Asha Ayurveda | 24 mayo, 2023 | Educación, Universidad de Nacional de Catamarca | 0 Comments'
+    faq: 'by Asha Ayurveda | 24 mayo, 2023 | Educación, Universidad de Nacional de Catamarca | 0 Comments',
+    to: '/servicios/educacion/naturaleza-sabia'
   },
 ];
 export const carouselPrensa = [

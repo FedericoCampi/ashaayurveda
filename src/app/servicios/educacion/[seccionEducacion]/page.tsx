@@ -23,10 +23,11 @@ interface EducationItemType {
     subTitle: string;
     image: string;
     image2?: string;
-    tags: string[];
-    shortDescription: string;
+    tags?: string[];
+    shortDescription?: string;
     description: string;
     taller?: Taller;
+    secondText?: string;
 }
 
 export default function SeccionEducacion() {
@@ -47,7 +48,7 @@ export default function SeccionEducacion() {
     }
 
     return (
-        <div className='mx-0 sm:mx-auto pt-8 '>
+        <div className='mx-0 sm:mx-auto pt-8 px-6 md:px-0'>
             <div className="flex justify-center">
                 <div className="max-w-[800px]">
                     <h2 className="text-4xl font-bold text-center text-green-500 mb-8">
@@ -57,9 +58,9 @@ export default function SeccionEducacion() {
                     <Image
                         src={data.image}
                         alt={data.title}
-                        width={300}
-                        height={200}
-                        className="w-full h-48 object-cover"
+                        width={1000}
+                        height={1000}
+                        className="w-full h-[500px] object-cover"
                     />
                     {data.taller && typeof data.taller === 'object' && (
                         <div className="text-green-500 pt-6 text-3xl">
@@ -67,7 +68,7 @@ export default function SeccionEducacion() {
                             <p>{data.taller.ano}</p>
                         </div>
                     )}
-                    <p>{data.description}</p>
+                    <p className="py-10">{data.description}</p>
 
                     {data.taller && typeof data.taller === 'object' && (
                         <div>
@@ -90,10 +91,13 @@ export default function SeccionEducacion() {
                         <Image
                             src={data.image2}
                             alt={data.title}
-                            width={300}
-                            height={200}
-                            className="w-full h-48 object-cover"
+                            width={1000}
+                            height={1000}
+                            className="w-full h-[600px] object-cover"
                         />
+                    )}
+                    {data.secondText && (
+                        <p className="pt-8">{data.secondText}</p>
                     )}
                 </div>
                 
