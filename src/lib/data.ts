@@ -12,9 +12,15 @@ export const imagesCarousel = [
   { imagen: '/imagesFirstLanding/carousel/fourthCarousel.webp',
     idText: 'articulos/universidad'
    },
-  { imagen: '/imagesFirstLanding/carousel/fifthCarousel.webp' },
-  { imagen: '/imagesFirstLanding/carousel/sixthCarousel.webp' },
-  { imagen: '/imagesFirstLanding/carousel/seventhCarousel.webp' }
+  { imagen: '/imagesFirstLanding/carousel/fifthCarousel.webp',
+    idText: 'servicios/educacion/colaborando-con-la-akademia'
+   },
+  { imagen: '/imagesFirstLanding/carousel/sixthCarousel.webp',
+    idText: 'servicios/educacion/celebrando-la-union-cultural'
+   },
+  { imagen: '/imagesFirstLanding/carousel/seventhCarousel.webp',
+    idText: 'servicios/educacion/ii-encuentro-de-ayurveda-catamarca'
+   }
 ];
 
 export const servicesData = [
@@ -22,25 +28,29 @@ export const servicesData = [
     title: 'Consulta ayurveda',
     description: 'Evaluación integral y personalizada según los principios de la medicina ayurvédica para mejorar tu salud y equilibrio. Se puede realizar de manera presencial u online.',
     image: '/imagesFirstLanding/services/consulta.webp',
-    alt: 'consulta'
+    alt: 'consulta',
+    to: 'servicios/consulta'
   },
   {
     title: 'Yoga',
     description: 'Integración de los principios del yoga y la medicina ayurvédica para promover la salud y el bienestar holísticos.',
     image: '/imagesFirstLanding/services/yoga.webp',
-    alt: 'yoga'
+    alt: 'yoga',
+    to: 'servicios/yoga'
   },
   {
     title: 'Educación',
     description: 'Descubre nuestras actividades educativas, donde aprendemos de la comunidad y compartimos conceptos de Ayurveda aplicables a la vida, integrando ecosistemas, cultura, creencias y salud.',
     image: '/imagesFirstLanding/services/cursos.webp',
-    alt: 'cursos'
+    alt: 'cursos',
+    to: 'servicios/educacion'
   },
   {
     title: 'Masajes',
     description: 'Descubre una variedad de tratamientos de masaje diseñados para revitalizar cuerpo y mente en nuestra página de masajes.',
     image: '/imagesFirstLanding/services/masajes.jpg',
-    alt: 'masajes'
+    alt: 'masajes',
+    to: 'servicios/masajes'
   },
 ];
 
@@ -274,6 +284,28 @@ export const educationItems = [
     description: "De derecha a izquiera Gloria Dalma Videla, terapeuta, María Luisa Ávlaos, profesora de biololgía, Lucía Medina, CPN, Rafael G. Campi médico ayurveda. Acto de presentación del libro “La Naturaleza es Sabia” hecho en colaboración con la UNCA, el Colegio privado Montessori",
     image: '/articulos/universidad/third.webp',
     secondText: 'Este libro excepcional ha sido publicado por la distinguida Universidad Nacional de Catamarca y cuenta con un total de 140 cautivadoras páginas en un formato de 22×15 cm. Su ISBN es 978-950-746-243-6. Te invitamos a sumergirte en las páginas de este fascinante libro, donde encontrarás valiosas reflexiones, experiencias prácticas y conocimientos que te inspirarán a explorar la sabiduría de la naturaleza y su impacto en nuestra alimentación y bienestar. Es una lectura imprescindible para aquellos que desean embarcarse en un viaje hacia una vida más saludable y equilibrada. En Asha Ayurveda, nos enorgullece haber sido parte de este maravilloso proyecto y esperamos seguir colaborando en futuras iniciativas que promuevan el bienestar y el conocimiento en nuestra comunidad. ¡La naturaleza nos brinda infinitas enseñanzas, y juntos podemos descubrir su sabiduría para vivir una vida plena y saludable!'
+  },
+  {
+    idtext: "colaborando-con-la-akademia",
+    title: "Colaborando con la Akademia en 2024",
+    subTitle: "by Asha Ayurveda | Abr 22, 2024 | edu 2024, Educación",
+    description: "Nos gratifica el corazón haber aceptado una nueva invitación de La Akademia Catamarca, en donde vamos a compartir experiencias y conocimientos desde la perspectiva del Yoga y el Ayurveda, con adolescentes y jóvenes de entre 17 y 23 años de edad. Luego de otra hermosa experiencia que desarrollamos en el año 2023, creemos y sentimos desde nuestro corazón participar en tan noble tarea. El objetivo es mostrarles como ciencias milenarias, que siguen vigentes de manera ininterrumpida desde hace 5000 años atrás aproximadamente, aportan ideas y sugerencias prácticas fáciles de aplicar. Nos adentraremos a través de un Módulo denominado “Despierta y conecta” con aspectos relacionados a la meditación y sus saludables efectos como así también en el campo del autoconocimiento a través de encuentros y conversatorios con la característica de Taller. En otro Módulo denominado “Somos lo que comemos” reflexionaremos sobre la alimentación, su impacto energético y emocional desde la mirada de Ayurveda. En otro módulo denominado “Muévete” se compartirá actividades y conceptos desde el Yoga con el fin de asociar una actividad física saludable con aspectos relacionados a la mente y el espíritu. En esta etapa de vida, adolescencia y juventud, se produce el mayor desarrollo físico, intelectual y crecimiento emocional, por lo que es recomendable acompañar a través de la toma de conciencia por el reconocimiento de los Biotipos corporales o Doshas y cuál de estas fuerzas de la naturaleza se hace más presente. Asociado a esto, se intercambiarán medidas generales para el cuidado de la salud, que redundarán en el cuidado de familias, comunidad y ecosistema.",
+    image: '/pageServices/educacion/akademia-2024.webp',
+  },
+  {
+    idtext: "celebrando-la-union-cultural",
+    title: "Celebrando la Unión Cultural y Espiritual: Día de la Independencia de India en la Embajada de Buenos Aires",
+    subTitle: "by Asha Ayurveda | Ago 19, 2023 | Eventos",
+    description: "En un momento de distinguida honorabilidad, nos unimos con gratitud y aprecio a la Embajada de India en Buenos Aires para celebrar el Día de la Independencia de India. Desde Asha Ayurveda, nos sentimos profundamente honrados por la invitación a este evento significativo. Bajo el liderazgo de su excelencia el Sr. Embajador Dinesh Bhatia, acompañado por su Sra. Seema Bhatia, esta celebración trasciende las fronteras y refuerza los lazos culturales y espirituales. El evento en la Embajada fue más que una conmemoración patriótica. Fue un recordatorio de la profunda conexión que compartimos con la rica herencia de la India y un llamado a fortalecer aún más esos lazos en un espíritu de colaboración y amistad. Desde Asha Ayurveda, estamos particularmente emocionados por la mención de la adaptación de las Ciencias del Yoga y el Ayurveda en nuestra región. Este es un paso importante hacia un bienestar holístico y una mayor armonía con la naturaleza y nosotros mismos. La antigua sabiduría del Ayurveda y el Yoga se une a la visión moderna de un mundo más saludable y equilibrado.",
+    image: '/pageServices/educacion/embajada-de-la-india.webp',
+    secondText: 'La Embajada de India en Buenos Aires, liderada por su excelencia el Sr. Embajador Dinesh Bhatia, ha sido un faro de promoción cultural y relaciones internacionales. Su dedicación a la unión de nuestras naciones y el fortalecimiento de los lazos culturales es admirable y profundamente valorado. Este encuentro es un recordatorio de que el Día de la Independencia no solo marca un hito histórico, sino que también simboliza la unidad en diversidad y la aspiración conjunta hacia un mundo mejor. Desde Asha Ayurveda, extendemos nuestro agradecimiento por esta oportunidad y reafirmamos nuestro compromiso de continuar trabajando juntos en la difusión de la sabiduría del Ayurveda y el Yoga. En este Día de la Independencia, reflexionamos sobre el poder de la colaboración y el significado más profundo de la independencia: la libertad de explorar, aprender y crecer juntos como naciones y como seres humanos. Que esta celebración sea un faro de inspiración y un recordatorio de la belleza que emerge cuando las culturas se entrelazan en un abrazo de entendimiento y amistad duradera.',
+  },
+  {
+    idtext: "ii-encuentro-de-ayurveda-catamarca",
+    title: "II Encuentro de Ayurveda Catamarca 2023",
+    subTitle: "by Asha Ayurveda | Dic 16, 2023 | Ayurveda, edu2023, Educación",
+    description: "Con mucha alegría compartimos algunos de los aspectos del II Encuentro de Ayurveda en Catamarca durante el mes de Diciembre de 2023. Se desarrolló una hermosa convocatoria entre los distintos profesionales que disertaron y el público que asistió y participó activamente. Siguiendo el lema de este año, con motivo por los festejos del 8vo Día Internacional del Ayurveda 2023 declarado oficialmente el 10 de Noviembre, “Ayurveda todos los días-Ayurveda en todos los lugares”, centrándose en la interfaz hombre-animal-planta-medio ambiente, es que quisimos aportar a la expansión e integración de Ayurveda sumando al noble conocimiento en la salud y las personas que ya existe actualmente. Agradecemos a la Secretaría de Extensión Universitaria de la Universidad Nacional de Catamarca a cargo del Sr Ing. Adolfo Agüero, a Embajada de India en la República Argentina a cargo de su Excelencia el Sr. Dinesh Bhatia Embajador Extraordinario y Plenipotenciario con acreditación simultánea en Uruguay, quienes acompañaron con unas afectuosas y cálidas palabras. También agradecemos a la Asociación Catamarqueña de Yoga para lo cual a través de unas palabras de la Profesora Patricia Verónica Ahumada se entregaron unos presentes en nombre de Asha Ayurveda y Embajada de India. Agradecemos al Sr. Alfredo Héctor Lauría, Médico homeópata y Ayurveda. Fundador y director del Centro Argentino de Medicina Ayurveda y Ciencias para la salud (CEAMA) quien compartió sobre “Ayurveda en las Regiones Semiáridas”. Agradecemos a la Dra Graciela Maturano especialista en Medicina del Trabajo, Magíster en Salud Pública, Investigadora en distintas temáticas Sociales, Instructora en Técnicas de Masajes Shiatsu, Terapeuta Ayurveda quien aportó sobre “Similitudes de la Medicina Ayurveda y la Medicina Andina”. Agradecemos al Sr. Federico Asunto Suarez, Astrólogo Védico y creador de la Escuela Jyotish del Sur, por su contribución sobre “Astrología Védica y Ayurveda”. Agradecemos al Sr Lic. Matías Carballido, Licenciado en Psicología cuya colaboración fue desarrollar sobre “Canto, música y Ayurveda”. Agradecemos a Angelina Galán, Terapeuta Ayurveda a cargo del tema “Jugos Depurativos y Ayurveda”.",
+    image: '/pageServices/educacion/encuentro.webp',
   }
 ]
 

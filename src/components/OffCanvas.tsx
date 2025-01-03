@@ -72,14 +72,30 @@ const OffCanvas = () => {
                                 </a>
                             </AccordionTrigger>
                             <AccordionContent>
-                                <p>Pinda Sveda</p>
-                                <p>Sirodhara</p>
-                                <p>Abhyanga</p>
-                                <p>Nasya karma</p>
-                                <p>Basti</p>
-                                <p>Sarasvati</p>
-                                <p>Garshan</p>
-                                <p>Facial kerala</p>
+                                <a href="servicios/masajes/pinda-sveda">
+                                    <p>Pinda Sveda</p>
+                                </a>
+                                <a href="servicios/masajes/sirodhara">
+                                    <p>Sirodhara</p>
+                                </a>
+                                <a href="servicios/masajes/abhyanga">
+                                    <p>Abhyanga</p>
+                                </a>
+                                <a href="servicios/masajes/nasya-karma">
+                                    <p>Nasya karma</p>
+                                </a>
+                                <a href="servicios/masajes/basti">
+                                    <p>Basti</p>
+                                </a>
+                                <a href="servicios/masajes/sarasvati">
+                                    <p>Sarasvati</p>
+                                </a>
+                                <a href="servicios/masajes/garshan">
+                                    <p>Garshan</p>
+                                </a>
+                                <a href="servicios/masajes/facial-kerala">
+                                  <p>Facial kerala</p>  
+                                </a>
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="item-3">
