@@ -12,8 +12,8 @@ const Whatsapp = () => {
       <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
         <Image
           alt='icon'
-          src='/iconWhatsapp.png'
-          className='w-[100px] h-[100px] hover:scale-110 cursor-pointer'
+          src='/iconWhatsapp.jpg'
+          className='w-[80px] h-[80px] hover:scale-110 cursor-pointer rounded-full'
           width={70}
           height={70}
         />

@@ -6,11 +6,11 @@ const Carousel = () => {
     return (
         <div id="carouselExample" className="carousel slide">
 
-            <div className="carousel-inner h-full">
+            <div className="carousel-inner h-full ">
 
                 {imagesCarousel.map((image, index) => (
 
-                    <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''} relative h-full`}>
+                    <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''} relative md:max-h-[350px] xl:max-h-[450px]`}>
 
                         {/* Pilar izquierdo */}
                         <div className="absolute left-0 top-0 h-full w-0 md:w-16 xl:w-28 bg-green-500"></div>

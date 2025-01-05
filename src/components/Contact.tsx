@@ -3,11 +3,13 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { FacebookIcon, InstagramIcon, YoutubeIcon, MapPinIcon, PhoneIcon, MailIcon } from "lucide-react"
+import { FacebookIcon, InstagramIcon, YoutubeIcon, MapPinIcon, PhoneIcon, MailIcon, Loader2 } from "lucide-react"
 import { useState } from "react";
+import toast, { Toaster } from "react-hot-toast"
 
 export default function Contact() {
 
+  const [isLoading, setIsLoading] = useState(false)
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -21,24 +23,44 @@ export default function Contact() {
       [name]: value
     }));
   };
+
+  const validateEmail = (email: string) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
   
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsLoading(true)
+
+    if (!formData.name || !formData.email || !formData.message) {
+      toast.error("Error al enviar mail: Complete los campos")
+      setIsLoading(false)
+      return;
+    }
+
+    if (!validateEmail(formData.email)) {
+      toast.error("Por favor, ingresa un email válido")
+      setIsLoading(false)
+      return;
+    }
+
     try {
       const response = await fetch("/api/sendEmail", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
-  
       if (response.ok) {
-        alert("Correo enviado con éxito");
+        toast.success("Correo enviado con éxito")
         setFormData({ name: "", email: "", message: "" });
       } else {
-        alert("Error al enviar el correo");
+        toast.error("Error al enviar el correo")
       }
     } catch (error) {
-      console.error("Error:", error);
+      toast.error("Error al enviar el correo")
+    } finally {
+      setIsLoading(false)
     }
   };
 
@@ -68,9 +90,16 @@ export default function Contact() {
               value={formData.message} onChange={handleChange}
               name="message"
             />
-            <Button type="submit" className="bg-[#35b05a] hover:bg-green-700 text-white"  onClick={handleSubmit}>
-              ENVIAR
-            </Button>
+            
+            {isLoading ? (
+                <Button type="submit" className="bg-[#35b05a] hover:bg-green-700 text-white w-[105px]">
+                  <Loader2 className="animate-spin" />
+                </Button>
+              ) : (
+                <Button type="submit" className="bg-[#35b05a] hover:bg-green-700 text-white"  onClick={handleSubmit}>
+                  ENVIAR
+                </Button>
+              )}
           </form>
         </div>
         <div className="bg-black bg-opacity-50 p-6 rounded-lg">
@@ -99,6 +128,8 @@ export default function Contact() {
           </p>
         </div>
       </div>
+
+      <Toaster position="bottom-center"/>
     </div>
   )
 }

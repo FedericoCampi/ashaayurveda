@@ -4,7 +4,6 @@ import Header from "@/components/Header";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BootstrapClient from '../services/BootstrapClient';
 import Whatsapp from "@/components/Whatsapp";
-import Chatbot from "@/components/Chatbot";
 import { Roboto_Serif } from 'next/font/google'
 import Contact from "@/components/Contact";
 
