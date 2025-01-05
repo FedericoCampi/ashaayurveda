@@ -11,12 +11,14 @@ const OffCanvas = () => {
         <div className='px-[3%]'>
             <div className='flex w-full justify-between p-2'>
                 <div className='p-1'>
+                    <a href="/">
                     <Image
                         src={'/icons/iconAsha.webp'}
                         alt='icon Asha ayurveda'
                         width={200}
                         height={100}
                     />
+                    </a>
                 </div>
                 <button className="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
                     <GiHamburgerMenu className="text-3xl mainColorText" />
@@ -72,29 +74,29 @@ const OffCanvas = () => {
                                 </a>
                             </AccordionTrigger>
                             <AccordionContent>
-                                <a href="servicios/masajes/pinda-sveda">
-                                    <p>Pinda Sveda</p>
+                                <a href="/servicios/masajes/pinda-sveda" className='no-underline'>
+                                    <p className='text-black'>Pinda Sveda</p>
                                 </a>
-                                <a href="servicios/masajes/sirodhara">
-                                    <p>Sirodhara</p>
+                                <a href="/servicios/masajes/sirodhara" className='no-underline'>
+                                    <p className='text-black no-underline'>Sirodhara</p>
                                 </a>
-                                <a href="servicios/masajes/abhyanga">
-                                    <p>Abhyanga</p>
+                                <a href="/servicios/masajes/abhyanga" className='no-underline'>
+                                    <p className='text-black no-underline'>Abhyanga</p>
                                 </a>
-                                <a href="servicios/masajes/nasya-karma">
-                                    <p>Nasya karma</p>
+                                <a href="/servicios/masajes/nasya-karma" className='no-underline'>
+                                    <p className='text-black no-underline'>Nasya karma</p>
                                 </a>
-                                <a href="servicios/masajes/basti">
-                                    <p>Basti</p>
+                                <a href="/servicios/masajes/basti" className='no-underline'>
+                                    <p className='text-black no-underline'>Basti</p>
                                 </a>
-                                <a href="servicios/masajes/sarasvati">
-                                    <p>Sarasvati</p>
+                                <a href="/servicios/masajes/sarasvati" className='no-underline'>
+                                    <p className='text-black no-underline'>Sarasvati</p>
                                 </a>
-                                <a href="servicios/masajes/garshan">
-                                    <p>Garshan</p>
+                                <a href="/servicios/masajes/garshan" className='no-underline'>
+                                    <p className='text-black no-underline'>Garshan</p>
                                 </a>
-                                <a href="servicios/masajes/facial-kerala">
-                                  <p>Facial kerala</p>  
+                                <a href="/servicios/masajes/facial-kerala" className='no-underline'>
+                                  <p className='text-black no-underline'>Facial kerala</p>  
                                 </a>
                             </AccordionContent>
                         </AccordionItem>

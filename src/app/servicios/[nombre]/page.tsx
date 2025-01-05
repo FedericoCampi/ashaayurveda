@@ -33,6 +33,10 @@ interface ServiceType {
 
 export default function Service() {
 
+    const phoneNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER; // Reemplaza con tu número
+    const message = encodeURIComponent("Hola, me contacto desde la web de Asha Ayurveda, quería hacer una consulta.");
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+    
     const [data, setData] = useState<ServiceType | null>(null);
     const pathname = usePathname(); // Obtener la ruta actual
 
@@ -56,7 +60,7 @@ export default function Service() {
                     {data.title}
                 </h1>
                 {/* Bloque de consulta */}
-                <ConsultationSection urlImageserv={data.imgServ.url} />
+                <ConsultationSection urlImageserv={data.imgServ.url} whatsappUrl={whatsappUrl} />
             </div>
 
             <div className='w-full h-auto flex justify-center px-[20px]'>
@@ -72,7 +76,7 @@ export default function Service() {
                 </div>
             </div>
 
-            <ReservationSection />
+            <ReservationSection whatsappUrl={whatsappUrl}/>
 
             <div>
                 <OtherServices />
@@ -82,7 +86,7 @@ export default function Service() {
 };
 
 // Componente para la sección de consulta
-const ConsultationSection = ({urlImageserv}: { urlImageserv: string }) => (
+const ConsultationSection = ({urlImageserv, whatsappUrl}: { urlImageserv: string, whatsappUrl: string }) => (
     <div className='w-full h-[300px] flex justify-center'>
         <div className='flex h-full w-[1000px] mx-0 sm:mx-auto mt-6'>
             <div className='h-full w-[60%]'>
@@ -97,9 +101,11 @@ const ConsultationSection = ({urlImageserv}: { urlImageserv: string }) => (
             <div className='h-full w-[40%] bg-[#3b0a03] text-white p-8 flex flex-col justify-between'>
                 <ServiceInfo label='Días' value='Lunes a Viernes' />
                 <ServiceInfo label='Hora' value='08:00 AM - 20:00 PM' />
-                <button className='bg-green-600 text-white py-2 px-4 sm:mt-4 rounded hover:bg-green-700'>
-                    Reserva tu turno
-                </button>
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                    <button className='bg-green-600 text-white py-2 px-4 sm:mt-4 rounded hover:bg-green-700'>
+                        Reserva tu turno
+                    </button>
+                </a>
             </div>
         </div>
     </div>
@@ -153,15 +159,18 @@ const ProfessionalSection = ({ name, credentials, url }: { name: string, credent
 };
 
 // Componente para la sección de reserva
-const ReservationSection = () => {
+const ReservationSection = ({whatsappUrl}: {whatsappUrl: string}) => {
     const data = services[0]; // Puedes usar el mismo array aquí
     return (
         <div className='bg-green-800 w-full h-[300px] flex flex-col justify-center items-center mt-4 sm:mt-16'>
             <p className='text-white text-3xl'>{data.consultation.title}</p>
             <p className='text-white text-lg'>{data.consultation.subtitle}</p>
-            <button className='bg-green-600 text-white py-2 px-4 mt-4 rounded hover:bg-green-700'>
-                Reserva tu sesión
-            </button>
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                <button className='bg-green-600 text-white py-2 px-4 mt-4 rounded hover:bg-green-700'>
+                    Reserva tu sesión
+                </button>
+            </a>
+            
         </div>
     )
 };

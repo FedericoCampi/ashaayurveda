@@ -51,6 +51,7 @@ export default function YogaSection() {
             className="w-full h-[600px] object-cover"
           />
           <p className="pt-10">{data.textCompleto}</p>
+          <p className="pt-10">{data.text}</p>
           {data.list && (
             <ul className="space-y-3">
               {Object.entries(data.list).map(([key, value]) => (

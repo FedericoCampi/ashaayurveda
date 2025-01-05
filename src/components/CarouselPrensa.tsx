@@ -27,9 +27,12 @@ const CarouselPrensa = () => {
                             <div className='max-w-[500px] text-center text-white p-12'>
                                 <p className='text-2xl font-bold'>{prensa.title}</p>
                                 <p>{prensa.text}</p>
-                                <button className="fade-in-bottom text-xl bg-[#35b05a] text-white py-2 px-4 rounded-lg">
-                                    Leer más
-                                </button>
+                                <a href={prensa.to}>
+                                    <button className="fade-in-bottom text-xl bg-[#35b05a] text-white py-2 px-4 rounded-lg">
+                                        Leer más
+                                    </button>
+                                </a>
+                                
                             </div>
                         </div>
                     </div>

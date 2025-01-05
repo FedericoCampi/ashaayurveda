@@ -8,7 +8,8 @@ export default function OtherServices() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         {otherServices.map((service, index) => (
           <div key={index} className="flex flex-col items-center">
-            <div className="relative w-full aspect-square mb-2">
+            <a href={service.to} className='no-underline text-black w-full'>
+               <div className="relative w-full aspect-square mb-2">
               <Image
                 src={service.image}
                 alt={service.name}
@@ -16,8 +17,10 @@ export default function OtherServices() {
                 objectFit="cover"
                 className="rounded-lg"
               />
-            </div>
-            <h3 className="text-lg font-semibold text-center">{service.name}</h3>
+              </div>
+              <h3 className="text-lg font-semibold text-center">{service.name}</h3>
+            </a>
+           
           </div>
         ))}
       </div>

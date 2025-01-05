@@ -203,14 +203,14 @@ export const services = [
 ]
 
 export const otherServices = [
-  { name: 'OTRAS TERAPIAS', image: '/pageServices/masajes.webp' },
-  { name: 'YOGA', image: '/imagesFirstLanding/services/yoga.webp' },
-  { name: 'EDUCACIÓN', image: '/imagesFirstLanding/services/cursos.webp' },
-  { name: 'SIRODHARA', image: '/pageServices/sirodhara.webp' },
-  { name: 'MASAJE ABHYANGA', image: '/pageServices/masajeAbhyanga.webp' },
-  { name: 'NASYA KARMA', image: '/pageServices/nasya-panchkarma.webp' },
-  { name: 'PINDA SVEDA', image: '/pageServices/pindaSveda.webp' },
-  { name: 'BASTI', image: '/pageServices/basti.webp' },
+  { name: 'OTRAS TERAPIAS', image: '/pageServices/masajes.webp', to: '/servicios' },
+  { name: 'YOGA', image: '/imagesFirstLanding/services/yoga.webp', to: '/servicios/yoga' },
+  { name: 'EDUCACIÓN', image: '/imagesFirstLanding/services/cursos.webp', to: '/servicios/educacion' },
+  { name: 'SIRODHARA', image: '/pageServices/sirodhara.webp', to: '/servicios/masajes/sirodhara' },
+  { name: 'MASAJE ABHYANGA', image: '/pageServices/masajeAbhyanga.webp', to: '/servicios/masajes/abhyanga' },
+  { name: 'NASYA KARMA', image: '/pageServices/nasya-panchkarma.webp', to: '/servicios/masajes/nasya-karma' },
+  { name: 'PINDA SVEDA', image: '/pageServices/pindaSveda.webp', to: '/servicios/masajes/pinda-sveda' },
+  { name: 'BASTI', image: '/pageServices/basti.webp', to: '/servicios/masajes/basti' },
 ]
 
 export const educationItems = [
@@ -312,57 +312,59 @@ export const educationItems = [
 export const masajesSection = [
   {
     id: 1,
-    title: "SHIRODHARA",
+    title: "SIRODHARA",
     description: "Profunda relajación y equilibrio mental a través del flujo constante de aceite tibio en la frente.",
-    image: "/pageServices/sirodhara.webp"
+    image: "/pageServices/sirodhara.webp",
+    to: '/servicios/masajes/sirodhara'
   },
   {
     id: 2,
     title: "MASAJE ABHYANGA",
     description: "Bienestar total con masaje relajante y rejuvenecedor con aceites herbales terapéuticos y técnicas especializadas.",
-    image: "/pageServices/masajeAbhyanga.webp"
+    image: "/pageServices/masajeAbhyanga.webp",
+    to: '/servicios/masajes/abhyanga'
   },
   {
     id: 3,
     title: "NASYA KARMA",
     description: "Tratamiento Nasya Karma: Despeje y rejuvenecimiento de los senos nasales mediante la aplicación de aceites medicados.",
-    image: "/pageServices/nasya-panchkarma.webp"
+    image: "/pageServices/nasya-panchkarma.webp",
+    to: '/servicios/masajes/nasya-karma'
   },
   {
     id: 4,
-    title: "NASYA KARMA",
-    description: "Tratamiento Nasya Karma: Despeje y rejuvenecimiento de los senos nasales mediante la aplicación de aceites medicados.",
-    image: "/pageServices/nasya-panchkarma.webp"
+    title: "PINDA SVEDA",
+    description: "Tratamiento Pinda: Relajación profunda y equilibrio mediante masajes con bolsitas herbales calientes y aromáticas.",
+    image: "/pageServices/pindaSveda.webp",
+    to: '/servicios/masajes/pinda-sveda'
   },
   {
     id: 5,
-    title: "PINDA SVEDA",
-    description: "Tratamiento Pinda: Relajación profunda y equilibrio mediante masajes con bolsitas herbales calientes y aromáticas.",
-    image: "/pageServices/pindaSveda.webp"
-  },
-  {
-    id: 6,
     title: "BASTI",
     description: "Equilibrio y bienestar a través de la aplicación de aceites medicados en puntos específicos del cuerpo.",
-    image: "/pageServices/basti.webp"
+    image: "/pageServices/basti.webp",
+    to: '/servicios/masajes/basti'
   },
   {
     id: 7,
     title: "MASAJE GARSHAN",
     description: "Masaje linfático Ayurvédico que ayuda a remover toxinas del sistema linfático que se encuentra muy cerca de la piel.",
-    image: "/pageServices/masajes/garshan.webp"
+    image: "/pageServices/masajes/garshan.webp",
+    to: '/servicios/masajes/garshan'
   },
   {
     id: 8,
     title: "MASAJE SARASVATI",
     description: "Proporciona bienestar mediante unas cuidadosas maniobras sobre el abdomen y luego cuerpo entero para lograr bienestar sutil y armonizante.",
-    image: "/pageServices/masajes/sarasvati.webp"
+    image: "/pageServices/masajes/sarasvati.webp",
+    to: '/servicios/masajes/sarasvati'
   },
   {
     id: 9,
     title: "FACIAL KERALA",
     description: "También realizamos otras modalidades de Masaje Ayurveda para acompañar distintos procesos que necesitan de la aplicación de algunas de estas Terapias.",
-    image: "/pageServices/masajes/sarasvati.webp"
+    image: "/pageServices/masajes/sarasvati.webp",
+    to: '/servicios/masajes/facial-kerala'
   },
 ];
 
@@ -373,31 +375,36 @@ export const carouselArticles = [
     imagen: '/articulos/carousel/first.webp',
     title: 'Acompañamos y honramos los festejos por el día internacional del yoga 2024',
     text: 'Enviamos nuestros más sinceros saludos y reconocimientos para los festejos por el día Internacional del Yoga este 21 de junio de 2024 que se organizaron en distintos lugares del mundo donde brilló la luz de la práctica y enseñanzas de este conocimiento. Su lema o tema...',
-    textCompleto: 'Enviamos nuestros más sinceros saludos y reconocimientos para los festejos por el día Internacional del Yoga este 21 de junio de 2024 que se organizaron en distintos lugares del mundo donde brilló la luz de la práctica y enseñanzas de este conocimiento. Su lema o tema para este año “Yoga para uno mismo, Yoga para la Sociedad” refleja el pedido de búsqueda interior sin olvidar a todos los seres que nos rodean. Agradeciendo a todas aquellas generaciones que transmitieron su esencia, con beneficios y alcances registrados desde miles de años atrás, y a los/as que lo siguen haciendo desde el corazón en beneficio de la humanidad entera, sin discriminación, con respeto, en unión y con la sencillez y efectividad claramente demostrada no solo con el paso del tiempo sino con los métodos científicos actuales. Bendiciones y felicidad para la continuidad de esta Ciencia invitando todos/as aquellas personas que quisieran experimentar el bienestar que produce la realización de Yoga.'
+    textCompleto: 'Enviamos nuestros más sinceros saludos y reconocimientos para los festejos por el día Internacional del Yoga este 21 de junio de 2024 que se organizaron en distintos lugares del mundo donde brilló la luz de la práctica y enseñanzas de este conocimiento. Su lema o tema para este año “Yoga para uno mismo, Yoga para la Sociedad” refleja el pedido de búsqueda interior sin olvidar a todos los seres que nos rodean. Agradeciendo a todas aquellas generaciones que transmitieron su esencia, con beneficios y alcances registrados desde miles de años atrás, y a los/as que lo siguen haciendo desde el corazón en beneficio de la humanidad entera, sin discriminación, con respeto, en unión y con la sencillez y efectividad claramente demostrada no solo con el paso del tiempo sino con los métodos científicos actuales. Bendiciones y felicidad para la continuidad de esta Ciencia invitando todos/as aquellas personas que quisieran experimentar el bienestar que produce la realización de Yoga.',
+    to: '/yoga/acompanamos-y-honramos'
   },
   { 
     idText: 'consejos-multisectoriales',
     imagen: '/articulos/carousel/second.webp',
     title: 'Participación en Consejos Multisectoriales',
-    text: 'Centro de día "Pilar de Vida" en 2024 en relación a los festejos por el Día mundial de la Salud, la municipalidad de San Fernando del Valle de Catamarca desde los consejos Multisectoriales organizó una serie de actividades desde el Centro Pilar de Vida para...'
+    text: 'Centro de día "Pilar de Vida" en 2024 en relación a los festejos por el Día mundial de la Salud, la municipalidad de San Fernando del Valle de Catamarca desde los consejos Multisectoriales organizó una serie de actividades desde el Centro Pilar de Vida para...',
+    to: '/yoga/participacion-en-consejos-multisectoriales'
   },
   { 
     idText: 'congreso-de-ciudades',
     imagen: '/articulos/carousel/third.webp',
     title: 'Participación en IX Congreso de Ciudades y Pueblos del interior',
-    text: 'Participación en IX Congreso de ciudades y pueblos del interior'
+    text: 'Participación en IX Congreso de ciudades y pueblos del interior',
+    to: '/servicios/educacion/congreso'
   },
   { 
     idText: 'encuentro-de-ayurveda-2023',
     imagen: '/articulos/carousel/fourth.webp',
     title: 'II Encuentro de Ayurveda Catamarca 2023',
-    text: 'Con mucha alegría compartimos algunos de los aspectos del II Encuentro de Ayurveda en Catamarca durante el mes de Diciembre de 2023. Se desarrolló una hermosa convocatoria entre los distintos profesionales que disertaron y el público que asistió y participó...'
+    text: 'Con mucha alegría compartimos algunos de los aspectos del II Encuentro de Ayurveda en Catamarca durante el mes de Diciembre de 2023. Se desarrolló una hermosa convocatoria entre los distintos profesionales que disertaron y el público que asistió y participó...',
+    to: '/servicios/educacion/encuentro'
   },
   { 
     idText: 'union-cultural-y-espiritual',
     imagen: '/articulos/carousel/fifth.webp',
     title: 'Celebrando la unión Cultural y espiritual: Día de la independencia de India en la embajada de Buenos Aires',
-    text: 'En un momento de distinguida honorabilidad, nos unimos con gratitud y aprecio a la Embajada de India en Buenos Aires para celebrar el Día de la Independencia de India. Desde Asha Ayurveda, nos sentimos profundamente honrados por la invitación a este evento...'
+    text: 'En un momento de distinguida honorabilidad, nos unimos con gratitud y aprecio a la Embajada de India en Buenos Aires para celebrar el Día de la Independencia de India. Desde Asha Ayurveda, nos sentimos profundamente honrados por la invitación a este evento...',
+    to: '/servicios/educacion/celebrando-la-union-cultural'
   },
 ];
 
@@ -445,6 +452,36 @@ export const yogaSection = [
     title: 'Celebrando la unión Cultural y espiritual: Día de la independencia de India en la embajada de Buenos Aires',
     text: 'En un momento de distinguida honorabilidad, nos unimos con gratitud y aprecio a la Embajada de India en Buenos Aires para celebrar el Día de la Independencia de India. Desde Asha Ayurveda, nos sentimos profundamente honrados por la invitación a este evento...'
   },
+  { 
+    idText: 'radio-universidad',
+    imagen: '/prensaymedios/carousel/first.webp',
+    title: 'Radio Nacional',
+    text: 'En Radio Universidad, a través del programa Senderos para Crecer, a cargo del Sr Ing. Adolfo Agüero, complementado a distintas temáticas y abordajes de la búsqueda interior, con aportes y perspectivas del Ayurveda y el Yoga.'
+  },
+  { 
+    idText: 'radio-nacional',
+    imagen: '/prensaymedios/carousel/second.webp',
+    title: 'Radio Universidad',
+    text: 'En Radio Nacional a través de las invitaciones de las Sras. Rita Soria en su programa “La hora de la Lagartija” y, por otro lado de la Sra. Sonia Luna, desarrollando temas sobre eventos y jornadas de Ayurveda y Yoga.'
+  },
+  { 
+    idText: 'revista-mahat',
+    imagen: '/prensaymedios/carousel/third.webp',
+    title: 'Revista Mahat',
+    text: 'Para Revista Mahat, en donde se publicó un artículo sobre Ayurveda y otoño, explicando que transitar y respetar el cambio estacional del año es una de las tantas recomendaciones de esta Medicina Milenaria. Ayurveda es una Ciencia reconocida por la OMS como una de las más antiguas de la humanidad. Uno de sus principios “Swasthasya Swasthya Rakshanam”, es decir, la preservación de la salud de las personas sanas y ” Aturashya Vikar Prasamanam”, es decir, curar las enfermedades de los enfermos marca el rumbo de su objetivo.'
+  },
+  { 
+    idText: 'radio-valle-viejo',
+    imagen: '/prensaymedios/carousel/fourth.webp',
+    title: 'Radio Valle viejo',
+    text: 'En Radio Valle Viejo a través del programa “Con vos” de Inés Ogas, desarrollando distintos temas de Ayurveda y Yoga de acuerdo a la necesidad de la comunidad.'
+  },
+  { 
+    idText: 'tv-catamarca',
+    imagen: '/prensaymedios/carousel/fifth.webp',
+    title: 'Tv de Catamarca',
+    text: 'En Tv de Catamarca presentando Ayurveda y Yoga como Ciencias que orientan en la Alimentación, situación que está a travesada por múltiples factores de la persona, del entorno y de la dinámica cambiante de la vida misma en el planeta.'
+  },
 ];
 
 export const carouselUniversidad = [
@@ -474,27 +511,32 @@ export const carouselPrensa = [
   { 
     imagen: '/prensaymedios/carousel/first.webp',
     title: 'Radio Universidad',
-    text: 'En Radio Universidad, a través del programa Senderos para Crecer, a cargo del Sr Ing. Adolfo Agüero, complementado a distintas temáticas y abordajes de la búsqueda interior, con aportes y perspectivas del Ayurveda y el Yoga.'
+    text: 'En Radio Universidad, a través del programa Senderos para Crecer, a cargo del Sr Ing. Adolfo Agüero, complementado a distintas temáticas y abordajes de la búsqueda interior, con aportes y perspectivas del Ayurveda y el Yoga.',
+    to: '/yoga/radio-universidad'
   },
   { 
     imagen: '/prensaymedios/carousel/second.webp',
     title: 'Radio Nacional',
-    text: 'En Radio Nacional a través de las invitaciones de las Sras. Rita Soria en su programa “La hora de la Lagartija” y, por otro lado de la Sra. Sonia Luna, desarrollando temas sobre eventos y jornadas de Ayurveda y Yoga.'
+    text: 'En Radio Nacional a través de las invitaciones de las Sras. Rita Soria en su programa “La hora de la Lagartija” y, por otro lado de la Sra. Sonia Luna, desarrollando temas sobre eventos y jornadas de Ayurveda y Yoga.',
+    to: '/yoga/radio-nacional'
   },
   { 
     imagen: '/prensaymedios/carousel/third.webp',
     title: 'Revista Mahat',
-    text: 'Para Revista Mahat, en donde se publicó un artículo sobre Ayurveda y otoño, explicando que transitar y respetar el cambio estacional del año es una de las tantas recomendaciones de esta Medicina Milenaria. Ayurveda es una Ciencia reconocida por la OMS como una de las...'
+    text: 'Para Revista Mahat, en donde se publicó un artículo sobre Ayurveda y otoño, explicando que transitar y respetar el cambio estacional del año es una de las tantas recomendaciones de esta Medicina Milenaria. Ayurveda es una Ciencia reconocida por la OMS como una de las...',
+    to: '/yoga/revista-mahat'
   },
   { 
     imagen: '/prensaymedios/carousel/fourth.webp',
     title: 'Radio Valle viejo',
-    text: 'En Radio Valle Viejo a través del programa “Con vos” de Inés Ogas, desarrollando distintos temas de Ayurveda y Yoga de acuerdo a la necesidad de la comunidad.'
+    text: 'En Radio Valle Viejo a través del programa “Con vos” de Inés Ogas, desarrollando distintos temas de Ayurveda y Yoga de acuerdo a la necesidad de la comunidad.',
+    to: '/yoga/radio-valle-viejo'
   },
   { 
     imagen: '/prensaymedios/carousel/fifth.webp',
     title: 'Tv de Catamarca',
-    text: 'En Tv de Catamarca presentando Ayurveda y Yoga como Ciencias que orientan en la Alimentación, situación que está a travesada por múltiples factores de la persona, del entorno y de la dinámica cambiante de la vida misma en el planeta.'
+    text: 'En Tv de Catamarca presentando Ayurveda y Yoga como Ciencias que orientan en la Alimentación, situación que está a travesada por múltiples factores de la persona, del entorno y de la dinámica cambiante de la vida misma en el planeta.',
+    to: '/yoga/tv-catamarca'
   },
 ];
 

@@ -43,7 +43,7 @@ const page = () => {
             <div className='p-10 flex justify-center'>
                 <div className='max-w-[700px]'>
                     {carouselArticles.map((articles, index) => (
-                        <div key={index} className={` w-full`}>
+                        <div key={index} className={`w-full`}>
                             <Image
                                 src={articles.imagen}
                                 alt={`carousel-${index}`}
@@ -55,7 +55,7 @@ const page = () => {
                                 <div className='text-center p-4 sm:p-12'>
 
                                     <p className='text-2xl font-bold'>
-                                        <a href="" className='no-underline text-green-600'>
+                                        <a href={articles.to} className='no-underline text-green-600'>
                                             {articles.title}
                                         </a>
                                     </p>

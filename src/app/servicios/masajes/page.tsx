@@ -19,7 +19,8 @@ export default function MasajesSection() {
                 <p className="text-center mb-8 text-sm italic">
                     &quot;Sumérgete en un oasis de bienestar y renueva tu cuerpo y mente con nuestros exclusivos masajes terapéuticos en Asha Ayurveda.&quot;
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="flex items-center">
+                    <div className="max-w-[1500px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {masajesSection.map((masaje) => (
                         <Card key={masaje.id} className="bg-[#A0522D] text-white">
                             <CardHeader>
@@ -30,11 +31,15 @@ export default function MasajesSection() {
                                 <p className="text-sm">{masaje.description}</p>
                             </CardContent>
                             <CardFooter>
-                                <Button className="bg-[#228B22] hover:bg-[#006400] text-white">SABER MÁS</Button>
+                                <a href={masaje.to}>
+                                    <Button className="bg-[#228B22] hover:bg-[#006400] text-white">SABER MÁS</Button>
+                                </a>
                             </CardFooter>
                         </Card>
                     ))}
                 </div>
+                </div>
+                
             </div>
         </section>
     )

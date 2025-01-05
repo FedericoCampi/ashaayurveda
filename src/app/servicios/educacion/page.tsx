@@ -10,7 +10,7 @@ export default function EducationSection() {
         <section className="container mx-auto px-4 py-12">
             <h1 className="text-4xl font-bold text-center text-green-500 mb-8">EDUCACIÓN</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {educationItems.map((item, index) => (
+                {educationItems.slice(0, 4).map((item, index) => (
                     <Card key={index} className="overflow-hidden">
                         <Link href={`educacion/${item.idtext}`} className="text-black no-underline">
                             <Image
@@ -33,7 +33,7 @@ export default function EducationSection() {
                                 </div>
                                 <p className="text-sm text-gray-600">{item.shortDescription}</p>
                                 <button className="mt-4 text-blue-600 hover:underline">
-                                        Read more
+                                    Leer más
                                 </button>
                             </CardContent>
                         </Link>

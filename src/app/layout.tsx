@@ -31,12 +31,13 @@ export default function RootLayout({
         <Header />
         {children}
         <Contact/>
-        <div className="fixed bottom-4 left-4 z-50">
-          <Whatsapp/>
-        </div>
+        {/* <div className="fixed bottom-4 left-4 z-50">
+         <Chatbot/>
+        </div> */}
         <div className="fixed bottom-4 right-4 z-50">
-          <Chatbot/>
-        </div>
+          
+           <Whatsapp/>
+        </div> 
         <BootstrapClient/>
       </body>
     </html>

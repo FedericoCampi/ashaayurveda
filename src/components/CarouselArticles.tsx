@@ -27,9 +27,11 @@ const CarouselArticles = () => {
                             <div className=' h-full text-center flex flex-col items-center justify-around text-white p-12'>
                                 <p className='text-2xl font-bold p_sin_interlineado'>{articles.title}</p>
                                 <p className='p_sin_interlineado'>{articles.text}</p>
-                                <button className="fade-in-bottom text-xl bg-[#35b05a] text-white py-2 px-4 rounded-lg">
-                                    Leer más
-                                </button>
+                                <a href={articles.to}>
+                                   <button className="fade-in-bottom text-xl bg-[#35b05a] text-white py-2 px-4 rounded-lg">
+                                        Leer más
+                                    </button> 
+                                </a>
                             </div>
                         </div>
                     </div>
