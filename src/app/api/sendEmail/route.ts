@@ -9,7 +9,7 @@ export async function POST(req: NextRequest){
     try {
 
         const dataUser = await req.json();
-        const mailAsha = 'info@ashaayurveda.com.ar';
+        const mailAsha = 'info@ashaayur.site';
         // const mailAsha = 'federicocampi95@gmail.com';
         const email = dataUser.email;
         const message = dataUser.message;

@@ -28,7 +28,11 @@ interface ServiceType {
     };
     imgServ: {
         url: string;
-    }
+    };
+    turnos?: {
+        dias: string;
+        hora: string;
+    };
 }
 
 export default function Service() {
@@ -60,7 +64,11 @@ export default function Service() {
                     {data.title}
                 </h1>
                 {/* Bloque de consulta */}
-                <ConsultationSection urlImageserv={data.imgServ.url} whatsappUrl={whatsappUrl} />
+                <ConsultationSection 
+                    urlImageserv={data.imgServ.url} 
+                    whatsappUrl={whatsappUrl}
+                    turnos={data.turnos || { dias: "Lunes a Viernes", hora: "9am a 18pm" }}
+                />
             </div>
 
             <div className='w-full h-auto flex justify-center px-[20px]'>
@@ -85,8 +93,22 @@ export default function Service() {
     );
 };
 
+
+
+interface Turnos {
+    dias: string;
+    hora: string;
+}
+interface ConsultationSectionProps {
+    urlImageserv: string;
+    whatsappUrl: string;
+    turnos: Turnos;
+  }
+
 // Componente para la sección de consulta
-const ConsultationSection = ({urlImageserv, whatsappUrl}: { urlImageserv: string, whatsappUrl: string }) => (
+const ConsultationSection = ({urlImageserv, whatsappUrl, turnos}: ConsultationSectionProps) => {
+    
+    return(
     <div className='w-full h-[300px] flex justify-center'>
         <div className='flex h-full w-[1000px] mx-0 sm:mx-auto mt-6'>
             <div className='h-full w-[60%]'>
@@ -99,8 +121,8 @@ const ConsultationSection = ({urlImageserv, whatsappUrl}: { urlImageserv: string
                 />
             </div>
             <div className='h-full w-[40%] bg-[#3b0a03] text-white p-8 flex flex-col justify-between'>
-                <ServiceInfo label='Días' value='Lunes a Viernes' />
-                <ServiceInfo label='Hora' value='08:00 AM - 20:00 PM' />
+                <ServiceInfo label='Días' value={turnos.dias} />
+                <ServiceInfo label='Hora' value={turnos.hora} />
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                     <button className='bg-green-600 text-white py-2 px-4 sm:mt-4 rounded hover:bg-green-700'>
                         Reserva tu turno
@@ -109,7 +131,8 @@ const ConsultationSection = ({urlImageserv, whatsappUrl}: { urlImageserv: string
             </div>
         </div>
     </div>
-);
+    );
+}
 
 type ServiceInfoProps = {
     label: string;

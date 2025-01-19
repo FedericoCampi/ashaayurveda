@@ -48,7 +48,7 @@ const page = () => {
                             que hacemos:
                             <span className="flex pt-4">
                                 <CheckCircle className="text-green-500" />
-                                <span className="ml-2 font-bold">PAZ</span>
+                                <span className="ml-2 font-bold">Paz</span>
                             </span>
                             Buscamos cultivar la paz interior y fomentar un ambiente de
                             armonía en todas nuestras interacciones. Valoramos la tranquilidad
@@ -64,7 +64,7 @@ const page = () => {
                             equilibrio óptimo.
                             <span className="flex">
                                 <CheckCircle className="text-green-500" />
-                                <span className="ml-2 font-bold">ACCIÓN CORRECTA</span>
+                                <span className="ml-2 font-bold">Acción correcta</span>
                             </span>
                             Nos esforzamos por tomar decisiones y acciones que estén en
                             armonía con nuestros valores y principios éticos. Buscamos actuar
@@ -72,7 +72,7 @@ const page = () => {
                             nuestra práctica.
                             <span className="flex">
                                 <CheckCircle className="text-green-500" />
-                                <span className="ml-2 font-bold">BÚSQUEDA DE LA VERDAD</span>
+                                <span className="ml-2 font-bold">Búsqueda de la verdad</span>
                             </span>
                             Valoramos la búsqueda constante de conocimiento y verdad.
                             Fomentamos el aprendizaje continuo y nos comprometemos a compartir
@@ -80,7 +80,7 @@ const page = () => {
                             en general.
                             <span className="flex">
                                 <CheckCircle className="text-green-500" />
-                                <span className="ml-2 font-bold">SOLIDARIDAD</span>
+                                <span className="ml-2 font-bold">Solidaridad</span>
                             </span>
                             Nos comprometemos a apoyar a nuestros clientes y comunidad en su
                             camino hacia el bienestar. Valoramos la empatía, la compasión y la
@@ -140,19 +140,22 @@ const page = () => {
                                 src={"/sobreNosotros/flor.webp"}
                                 className="w-full md:max-w-[600px] object-cover h-auto"
                             />
-                            <p className="flex flex-col interlineadoGlobal">
-                                <span className="text-green-500 text-[20px]">Visión</span>
+                            <p className="flex flex-col interlineadoGlobal pb-4">
+                                <span className="text-green-500 text-[20px]">VISIÓN</span>
                                 Nuestra visión en Asha Ayurveda es trascender los límites del
                                 Ayurveda y hacerlo una parte integral de la vida cotidiana de
                                 las personas. Nos esforzamos por brindar las herramientas
                                 necesarias para que cada individuo alcance una vida duradera
                                 llena de felicidad y bienestar en todos los aspectos.
                             </p>
-                            <FirstButton
+                            <a href="servicios" className="">
+                                <FirstButton
                                 titulo="Ver nuestros servicios"
                                 padding="p-2"
                                 tamano="text-lg"
                             />
+                            </a>
+                            
 
                             <p className="flex flex-col interlineadoGlobal">
                                 <span className="text-green-500 text-[20px]">MISIÓN</span>

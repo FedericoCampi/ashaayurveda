@@ -25,7 +25,7 @@ const page = () => {
                                 alt={`carousel-${index}`}
                                 width={1000}
                                 height={580}
-                                className="w-full max-h-[500px] object-cover"
+                                className="w-full max-h-[500px] object-cover object-top"
                             />
                             <div className="flex items-center justify-center">
                                 <div className='text-center p-12'>

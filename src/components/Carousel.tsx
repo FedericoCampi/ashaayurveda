@@ -32,7 +32,7 @@ const Carousel = () => {
                         <div className="absolute inset-x-0 bottom-5 flex items-center justify-center">
                             <a href={image.idText}>
                                 <button className="fade-in-bottom text-xl bg-[#35b05a] text-white py-2 px-4 rounded-lg">
-                                    Ver más
+                                    {image.textbutton ? image.textbutton : "Ver más"}
                                 </button>
                             </a>
                         </div>

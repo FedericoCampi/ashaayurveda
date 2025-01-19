@@ -4,7 +4,7 @@ import OtherServices from "@/components/OtherServices";
 import { educationItems } from "@/lib/data";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 interface Taller {
     titulo: string;
@@ -28,6 +28,7 @@ interface EducationItemType {
     description: string;
     taller?: Taller;
     secondText?: string;
+    button?: string;
 }
 
 export default function SeccionEducacion() {
@@ -60,7 +61,7 @@ export default function SeccionEducacion() {
                         alt={data.title}
                         width={1000}
                         height={1000}
-                        className="w-full h-[500px] object-cover"
+                        className="w-full h-[500px] object-cover object-top"
                     />
                     {data.taller && typeof data.taller === 'object' && (
                         <div className="text-green-500 pt-6 text-3xl">
@@ -68,7 +69,26 @@ export default function SeccionEducacion() {
                             <p>{data.taller.ano}</p>
                         </div>
                     )}
-                    <p className="py-10">{data.description}</p>
+                    {data.button && (
+                        <div className="flex justify-center pt-4">
+                            <a href="https://docs.google.com/forms/d/1HvK7LcTfsi55VSbNAiQcrS0Ci_adWS6Bc0pd-VaRAC4/viewform?ts=675afe8e&edit_requested=true"
+                                target="_blank" rel="noreferrer"
+                            >
+                                <button className="p-3 bg-green-500 text-white rounded-md hover:bg-green-600 cursor-pointer">
+                                {data.button}
+                                </button>
+                            </a>
+                        </div>
+                        
+                    )}
+                    <p className="py-10">
+                        {data.description.split("\n").map((line, index) => (
+                            <React.Fragment key={index}>
+                                {line}
+                                <br />
+                            </React.Fragment>
+                        ))}
+                    </p>
 
                     {data.taller && typeof data.taller === 'object' && (
                         <div>
@@ -100,9 +120,9 @@ export default function SeccionEducacion() {
                         <p className="pt-8">{data.secondText}</p>
                     )}
                 </div>
-                
+
             </div>
-            
+
             <OtherServices />
         </div>
     );

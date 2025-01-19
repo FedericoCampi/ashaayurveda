@@ -6,7 +6,7 @@ const CarouselArticles = () => {
     return (
         <div id="carouselExample" className="w-[500px] carousel slide">
 
-            <div className="carousel-inner h-[600px]">
+            <div className="carousel-inner h-full">
 
                 {carouselArticles.map((articles, index) => (
 

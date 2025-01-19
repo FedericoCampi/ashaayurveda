@@ -3,7 +3,8 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { FacebookIcon, InstagramIcon, YoutubeIcon, MapPinIcon, PhoneIcon, MailIcon, Loader2 } from "lucide-react"
+import {  InstagramIcon,MapPinIcon, MailIcon, Loader2 } from "lucide-react"
+import Image from "next/image"
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast"
 
@@ -103,23 +104,30 @@ export default function Contact() {
           </form>
         </div>
         <div className="bg-black bg-opacity-50 p-6 rounded-lg">
-          <h2 className="text-2xl font-bold mb-6 text-green-400">ESTAMOS CERCA</h2>
-          <div className="flex space-x-4 mb-6">
-            <FacebookIcon className="w-6 h-6" />
-            <InstagramIcon className="w-6 h-6" />
-            <YoutubeIcon className="w-6 h-6" />
+          <h2 className="text-2xl font-bold mb-3 text-green-400">ESTAMOS CERCA</h2>
+          <div className="flex space-x-4 ">
+          <a href="https://www.instagram.com/ashaayurveda" target="_blank" rel="noreferrer" className="no-underline">
+            <div className="flex space-x-2 text-white text-[18px] items-center">
+              
+              <InstagramIcon className="w-7 h-7" /> 
+              <p className="pt-3 ">ashaayurveda</p>
+            
+            </div>
+            </a>
+            
           </div>
-          <div className="space-y-4">
-            <div className="flex items-center">
-              <PhoneIcon className="w-5 h-5 mr-2" />
-              <span>+34 9 3834 19-3657</span>
+          <div className="space-y-4 ">
+            <div className="flex items-center space-x-2">
+              <Image src="/icons/wspIcon.png" width={30} height={30} alt="Whatsapp" 
+              />
+              <span>+34 9 3834 19-3657 (solo mensajes)</span>
             </div>
             <div className="flex items-center">
-              <MailIcon className="w-5 h-5 mr-2" />
-              <span>INFO@ASHAAYURVEDA.COM.AR</span>
+              <MailIcon className="w-7 h-7 mr-2" />
+              <span>info@ashaayur.site</span>
             </div>
             <div className="flex items-start">
-              <MapPinIcon className="w-5 h-5 mr-2 mt-1" />
+              <MapPinIcon className="w-9 h-9 mr-2" />
               <span>PEDRO GOYENA 128, SAN FERNANDO DEL VALLE DE CATAMARCA, PROVINCIA DE CATAMARCA, ARGENTINA</span>
             </div>
           </div>
