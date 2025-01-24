@@ -24,7 +24,7 @@ const Carousel = () => {
                                 src={image.imagen}
                                 alt={`carousel-${index}`}
                                 width={2000}
-                                height={580}
+                                height={680}
                                 className="w-full h-[250px] sm:h-full object-cover"
                             />
                         </div>

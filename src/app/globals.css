@@ -155,6 +155,15 @@ p {
   height: 100% !important;
 }
 
+.carousel-control-prev-icon{
+  padding: 20px 0px;
+  background-color: black;
+}
+.carousel-control-next-icon{
+  background-color: black;
+  padding: 20px 0px;
+}
+
 /* Media query que detecta cuando el ancho de pantalla es mayor o igual a 500px */
 @media (min-width: 500px) {
   .text-item-services {
