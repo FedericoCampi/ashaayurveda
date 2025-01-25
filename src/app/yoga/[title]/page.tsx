@@ -23,7 +23,7 @@ export default function YogaSection() {
 
   useEffect(() => {
     const lastSegment = pathname.split("/").pop(); // Obtener el último segmento de la ruta
-    console.log(lastSegment);
+    
     // Filtrar el servicio que coincide con idtext
     const articlesData = yogaSection.find(
       (articles) => articles.idText === lastSegment

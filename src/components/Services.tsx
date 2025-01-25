@@ -21,9 +21,9 @@ const Services = () => {
                                         height={300}
                                     />
                                 </div>
-                                <div className='absolute bottom-0 w-full p-2 text-center containerVidrio text-white'>
+                                <div className='absolute bottom-0 w-full p-3 text-center containerVidrio text-white '>
                                     <p className='text-lg font-semibold'>{service.title}</p>
-                                    <p>{service.description}</p>
+                                    <p className=''>{service.description}</p>
                                     <a href={service.to}>
                                         <FirstButton
                                         titulo="Saber más" 
