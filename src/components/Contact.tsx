@@ -120,7 +120,7 @@ export default function Contact() {
             <div className="flex items-center space-x-2">
               <Image src="/icons/wspIcon.png" width={30} height={30} alt="Whatsapp" 
               />
-              <span>+34 9 3834 19-3657 (solo mensajes)</span>
+              <span>+54 9 3834 19-3657 (solo mensajes)</span>
             </div>
             <div className="flex items-center">
               <MailIcon className="w-7 h-7 mr-2" />
