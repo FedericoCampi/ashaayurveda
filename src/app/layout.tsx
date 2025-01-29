@@ -44,20 +44,6 @@ export default function RootLayout({
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:title" content="Bienvenidos | Asha Ayurveda" />
         <meta property="twitter:description" content="Explora el bienestar integral a través de Asha Ayurveda. Conoce más sobre la medicina ayurvédica, prácticas de salud natural, y tratamientos inspirados en las antiguas tradiciones de la India." />
-        {/* <!-- JSON-LD Structured Data --> */}
-        <Script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            name: "Asha Ayurveda",
-            url: "https://ashaayurveda.com.ar",
-            logo: "https://ashaayurveda.com.ar/favicon.ico",
-            sameAs: [
-              "https://www.instagram.com/ashaayurveda",
-            ],
-            description: "Asha Ayurveda ofrece tratamientos ayurvédicos auténticos y consejos de bienestar para transformar tu vida."
-          })}
-        </Script>
         {/* <!-- Google tag (gtag.js) --> */}
         <Script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}></Script>
         <Script id="ga-script" strategy="afterInteractive">
