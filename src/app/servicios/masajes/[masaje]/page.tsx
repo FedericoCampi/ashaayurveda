@@ -76,7 +76,7 @@ export default function Page() {
                     </p>
                 }
                 {/* Bloque de consulta */}
-                <ConsultationSection urlImageserv={data.imgServ.url} whatsappUrl={whatsappUrl} />
+                <ConsultationSection urlImageserv={data.imgServ.url} whatsappUrl={whatsappUrl} pathname={pathname} />
             </div>
 
             <div className='w-full h-auto flex justify-center px-[20px]'>
@@ -105,7 +105,12 @@ export default function Page() {
 };
 
 // Componente para la sección de consulta
-const ConsultationSection = ({urlImageserv, whatsappUrl}: { urlImageserv: string, whatsappUrl: string }) => (
+const ConsultationSection = ({urlImageserv, whatsappUrl, pathname}: { urlImageserv: string, whatsappUrl: string, pathname: string }) => {
+    
+    const isAbhyanga = pathname.includes("abhyanga");
+
+    return (
+
     <div className='w-full h-[300px] flex justify-center'>
         <div className='flex h-full w-[1000px] mx-0 sm:mx-auto mt-6'>
             <div className='h-full w-[60%]'>
@@ -118,8 +123,8 @@ const ConsultationSection = ({urlImageserv, whatsappUrl}: { urlImageserv: string
                 />
             </div>
             <div className='h-full w-[40%] bg-[#3b0a03] text-white p-8 flex flex-col justify-between'>
-                <ServiceInfo label='Días' value='Lunes a Viernes' />
-                <ServiceInfo label='Hora' value='08:00 AM - 20:00 PM' />
+                <ServiceInfo label={isAbhyanga ? '' : 'Días'} value={isAbhyanga ? '' : 'Lunes a Viernes'} />
+                <ServiceInfo label={isAbhyanga ? '' : 'Hora'} value={isAbhyanga ? '' : '08:00 AM - 20:00 PM'} />
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                     <button className='bg-green-600 text-white py-2 px-4 sm:mt-4 rounded hover:bg-green-700'>
                         Reserva tu turno
@@ -129,7 +134,7 @@ const ConsultationSection = ({urlImageserv, whatsappUrl}: { urlImageserv: string
             </div>
         </div>
     </div>
-);
+)};
 
 type ServiceInfoProps = {
     label: string;

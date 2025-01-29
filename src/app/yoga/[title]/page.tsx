@@ -15,6 +15,9 @@ interface articlesItemType {
   imagen2?: string;
   list?: { [key: string]: string };
   secondText?: string;
+  secondTitle?: string;
+  secondImage?: string;
+  secondTextPart?: string;
 }
 
 export default function YogaSection() {
@@ -71,6 +74,26 @@ export default function YogaSection() {
           {data.secondText &&
             <p className="py-8">{data.secondText}</p>
           }
+
+        {data.secondTitle &&
+          <h4 className="text-3xl font-bold text-center text-green-500 my-8">
+            {data.secondTitle}
+          </h4>
+        }
+        {data.secondImage &&
+          <Image
+            src={data.secondImage}
+            alt={data.secondTitle || 'Images'}
+            width={1000}
+            height={1000}
+            className="w-full h-[600px] object-cover"
+          />
+        }
+        {data.secondTextPart &&
+          <p className="pt-4">
+            {data.secondTextPart}
+          </p>
+        }
         </div>
       </div>
     </div>
