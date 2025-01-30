@@ -1,8 +1,31 @@
-import React from 'react'
+"use client"
+
+import React, { useEffect, useState } from 'react'
 import { imagesCarousel } from '@/lib/data'
 import Image from 'next/image'
 
+export interface CarouselImage {
+    imagen: string;
+    imageMobile?: string;
+    idText: string;
+    textbutton?: string; 
+}
+
 const Carousel = () => {
+
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 640);
+        };
+
+        handleResize(); // Llamada inicial
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+
     return (
         <div id="carouselExample" className="carousel slide">
 
@@ -21,11 +44,11 @@ const Carousel = () => {
                         {/* Imagen con padding para que no se superponga con los pilares */}
                         <div className="h-full md:px-16 xl:px-28">
                             <Image
-                                src={image.imagen}
+                                src={isMobile && image.imageMobile ? image.imageMobile : image.imagen}
                                 alt={`carousel-${index}`}
                                 width={2000}
                                 height={680}
-                                className="w-full h-[250px] sm:h-full object-cover"
+                                className="w-full h-[300px] sm:h-full object-cover"
                             />
                         </div>
 

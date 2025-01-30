@@ -1,4 +1,6 @@
-export const imagesCarousel = [
+import { CarouselImage } from "@/components/Carousel";
+
+export const imagesCarousel: CarouselImage[] = [
   { 
     imagen: '/articulos/universidad/curso-ayurveda-banner.jpg',
     idText: 'servicios/educacion/curso-ayurveda',
@@ -18,6 +20,7 @@ export const imagesCarousel = [
     idText: 'yoga/participacion-en-consejos-multisectoriales'
    },
    { imagen: '/imagesFirstLanding/carousel/3encuentro.png',
+    imageMobile: '/imagesFirstLanding/carousel/3encuentro-mobile.png',
     idText: 'yoga/tercer-encuentro'
    },
   { imagen: '/imagesFirstLanding/carousel/fourthCarousel.webp',
@@ -529,7 +532,7 @@ export const yogaSection = [
   },
   { 
     idText: 'tercer-encuentro',
-    imagen: '/imagesFirstLanding/carousel/3encuentro.png',
+    imagen: '/imagesFirstLanding/carousel/3encuentro-web.png',
     title: 'III Encuentro de Ayurveda Catamarca',
     text: 'Agradecidos de concretar el III Encuentro de Ayurveda en Catamarca el 26 de Octubre de 2024, donde compartimos una hermosa reunión desarrollada en base a un arduo trabajo de equipo entre instituciones, autoridades y amigos/as brindando a la población en general conocimientos y experiencias con el fin de crear conciencia para el bienestar de muchas personas, poniendo en acción una de las premisas de esta Ciencia ancestral, el cuidado por la vida. Recordamos y honramos el 9no Día del Ayurveda declarado el 29 de Octubre de 2024 por el Gobierno de India, de cuyo país se reconoce el origen de ésta Ciencia milenaria. Con la imagen de Dhanvantari Jayanti (Dhanteras) y la intención de todos los participantes estuvo llena de energía y entusiasmo, destacando la importancia del Ayurveda en la promoción de la salud y la prevención de enfermedades. El tema para este año fue “Innovaciones ayurvédicas para la salud global”. Con el honorable apoyo de Embajada de India en Argentina y Uruguay a cargo de su Excelencia el Sr. Dinesh Bhatia y la Secretaría de Extensión Universitaria de la Universidad Nacional de Catamarca a cargo del Sr Ing. Adolfo Agüero se generó este hermoso Encuentro a partir de la iniciativa de Asha Ayurveda Catamarca. En el mismo contamos con unas palabras de un referente en Medicina Ayurveda para Argentina y Latinoamérica como es el Dr Jorge Berra quien actualizó con noticias sobre la evolución de Ayurveda en tiempos actuales. Luego a Cargo de Patricia Verónica Ahumada se honró y se puso una intención por medio de lámparas de cerámica, o diyas, con Ghee y pabilos de algodón. A continuación, se expuso sobre Ayurveda y Plantas Medicinales de Catamarca (Médico Rafael G. Campi, Catamarca), Ayurveda y la Mujer (Médica Alejandra Rodriguez, Mar del Plata), Asanas y Doshas (Profesora Patricia V. Ahumada, Catamarca), Ayurveda y Cardiología (Médica Alejandra Naranjo, Tucumán), Astrología Ayurveda y Ciclos de Vida (Astrólogo Védico Federico Assunto Suarez, Bs As), Música clásica de India (Lic. Matías Carballido, Catamarca), Jugos y Doshas (Terapeuta Ayurveda Stella M. Varela). Una gran cantidad de asistentes que participaron con sus preguntas y aportes también nutrieron a esa hermosa reunión de corazones. También agradecemos a personal de la Secretaría de Extensión, amigos/as y colaboradores que con su importante tarea técnica y de logística también contribuyeron a que esto se haga realidad.',
     secondImage: '/articulos/carousel/fourth.webp',

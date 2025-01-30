@@ -41,7 +41,7 @@ export default function YogaSection() {
   return (
     <div className="mx-0 sm:mx-auto pt-8 px-10 sm:px-0">
       <div className="flex justify-center">
-        <div className="max-w-[800px] py-10">
+        <div className="max-w-[900px] py-10">
           <h2 className="text-4xl font-bold text-center text-green-500 mb-8">
             {data.title}
           </h2>
@@ -51,7 +51,7 @@ export default function YogaSection() {
             alt={data.title}
             width={1000}
             height={1000}
-            className="w-full h-[600px] object-cover"
+            className="w-full h-[500px] object-cover"
           />
           <p className="pt-10">{data.textCompleto}</p>
           <p className="pt-10">{data.text}</p>
