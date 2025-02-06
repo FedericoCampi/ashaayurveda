@@ -7,6 +7,7 @@ import Whatsapp from "@/components/Whatsapp";
 import { Roboto_Serif } from 'next/font/google'
 import Contact from "@/components/Contact";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Roboto_Serif({ 
   weight: '400', 
@@ -61,6 +62,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Analytics />
         <Contact/>
         {/* <div className="fixed bottom-4 left-4 z-50">
          <Chatbot/>
