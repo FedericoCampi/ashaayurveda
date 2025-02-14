@@ -20,8 +20,8 @@ const page = () => {
                 </p>
             </div>
             <div>
-                <div className='md:flex md:items-center md:justify-center py-10 space-x-10'>
-                    <div className='md:max-w-[400px] flex flex-col items-start'>
+                <div className='md:flex md:items-center md:justify-center py-10 md:space-x-10'>
+                    <div className='md:max-w-[400px] flex flex-col items-start p-6 lg:p-0'>
                         <Image
                             width={100}
                             alt='barras'
@@ -35,7 +35,7 @@ const page = () => {
                             Aquí encontrarás una amplia variedad de contenidos informativos y enriquecedores relacionados con el mundo del Ayurveda, el yoga y las últimas novedades de nuestra institución. Nos complace compartir contigo valiosos conocimientos y experiencias que te ayudarán a alcanzar un mayor bienestar y equilibrio en tu vida diaria.
                         </p>
                     </div>
-                    <div className=''>
+                    <div className='flex justify-center'>
                         <CarouselArticles />
                     </div>
                 </div>

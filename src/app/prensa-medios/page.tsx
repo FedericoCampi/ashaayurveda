@@ -28,7 +28,7 @@ const page = () => {
               alt='barras'
               height={50}
               src={'/articulos/recorteBarras.png'}
-              className='w-[100px] h-auto pb-8'
+              className='w-[100px] h-auto pb-8 pl-6 '
             />
             <p className='px-4'>
               Estamos agradecidos por las invitaciones que hemos recibido de programas de radio, televisión y revistas en nuestra ciudad. Consideramos que participar en estos medios de comunicación es una forma de colaborar y aportar a la sociedad en su conjunto, beneficiando a diversos grupos de interlocutores: profesionales, vecinos, artistas, organizaciones, movimientos sociales, niños, niñas, jóvenes, hombres y mujeres que eligen acompañar una radio en su vida cotidiana.<br /><br />
@@ -38,7 +38,7 @@ const page = () => {
               Seguimos abiertos a nuevas invitaciones, convencidos de que esta hermosa tarea nos ayuda a generar conciencia y contribuir a una vida y un planeta mejores.
             </p>
           </div>
-          <div className='pl-6'>
+          <div className='sm:pl-6'>
             <CarouselPrensa />
           </div>
         </div>

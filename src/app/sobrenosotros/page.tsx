@@ -27,7 +27,7 @@ const page = () => {
             <div className="w-full flex flex-col items-center justify-start px-6 md:px-0">
                 <div className="md:flex items-start justify-start max-w-[1200px] md:p-16 md:space-x-10">
                     <div className="md:w-1/2 h-full">
-                        <p className="interlineadoGlobal space-y-6">
+                        <p className="interlineadoGlobal space-y-6 pt-6 sm:pt-0">
                             Aún recordamos momentos en que el destino nos reunió. Cuando menos
                             lo imaginas, se desencadenan una serie de eventos que movilizan
                             toda la profundidad del ser. En la búsqueda de comprender por qué
