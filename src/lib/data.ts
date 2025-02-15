@@ -3,10 +3,12 @@ import { CarouselImage } from "@/components/Carousel";
 export const imagesCarousel: CarouselImage[] = [
   { 
     imagen: '/articulos/universidad/curso-ayurveda-banner.jpg',
+    imageMobile: '/articulos/universidad/curso-ayurveda-mobile.png',
     idText: 'servicios/educacion/curso-ayurveda',
   },
   { 
     imagen: '/articulos/universidad/curso-abhyanga-banner.jpg',
+    imageMobile: '/articulos/universidad/curso-abhyanga-mobile.png',
     idText: 'servicios/educacion/curso-abhyanga',
   },
   { 
