@@ -4,16 +4,16 @@ import Image from 'next/image'
 
 const CarouselArticles = () => {
     return (
-        <div id="carouselExample" className="w-[500px] carousel slide">
+        <div id="carouselExample" className="w-full sm:w-[500px] h-[400px] md:h-[600px] carousel slide">
 
             <div className="carousel-inner h-full">
 
                 {carouselArticles.map((articles, index) => (
 
-                    <div key={index} className={`carousel-item w-[500px] h-full ${index === 0 ? 'active' : ''} relative `}>
+                    <div key={index} className={`carousel-item w-full h-full ${index === 0 ? 'active' : ''} relative `}>
 
                         {/* Imagen con padding para que no se sup erponga con los pilares */}
-                        <div className="w-[500px] h-full bg-black ">
+                        <div className="w-full h-full bg-black">
                             <Image
                                 src={articles.imagen}
                                 alt={`carousel-${index}`}
@@ -23,7 +23,7 @@ const CarouselArticles = () => {
                             />
                         </div>
 
-                        <div className="absolute inset-0 flex items-center justify-center w-[500px]">
+                        <div className="absolute inset-0 flex items-center justify-center w-full">
                             <div className=' h-full text-center flex flex-col items-center justify-around text-white p-12'>
                                 <p className='text-2xl font-bold p_sin_interlineado'>{articles.title}</p>
                                 <p className='p_sin_interlineado'>{articles.text}</p>

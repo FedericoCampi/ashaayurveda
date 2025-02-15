@@ -60,11 +60,23 @@ const OffCanvas = () => {
                                         Yoga Ayurvédico
                                     </a>
                                 </p>
-                                <p>
-                                    <a href="/servicios/educacion" className='text-black no-underline'>
-                                        Educación
-                                    </a>
-                                </p>
+                            </AccordionContent>
+                        </AccordionItem>
+                        <AccordionItem value="item-3">
+                            <AccordionTrigger>
+                                <a href="/servicios/educacion" className='text-black no-underline'>
+                                    Educación
+                                </a>
+                            </AccordionTrigger>
+                            <AccordionContent>
+                                <a href="/servicios/educacion" className='text-black no-underline'>
+                                    Ver actividades
+                                </a>
+                            </AccordionContent>
+                            <AccordionContent>
+                                <a href="/articulos/universidad" className='text-black no-underline'>
+                                    Universidad Nacional de Catamarca
+                                </a>
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="item-2">
@@ -100,21 +112,10 @@ const OffCanvas = () => {
                                 </a>
                             </AccordionContent>
                         </AccordionItem>
-                        <AccordionItem value="item-3">
-                            <AccordionTrigger>
-                                <a href="/articulos" className='text-black no-underline'>
-                                    Artículos de ínteres
-                                </a>
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                <a href="/articulos/universidad" className='text-black no-underline'>
-                                    Universidad nacional de Catamarca
-                                </a>
-                            </AccordionContent>
-                        </AccordionItem>
+                        
                     </Accordion>
                     <p className='text-[14px] py-4 border-bottom border-gray-500'>
-                        <a href="/articulos/universidad" className='text-black no-underline'>
+                        <a href="/sobrenosotros" className='text-black no-underline'>
                             Sobre nosotros
                         </a>
                     </p>
