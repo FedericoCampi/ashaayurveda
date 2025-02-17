@@ -24,7 +24,10 @@ export default function MasajesSection() {
                     {masajesSection.map((masaje) => (
                         <Card key={masaje.id} className="bg-[#A0522D] text-white">
                             <CardHeader>
-                                <img src={masaje.image} alt={masaje.title} className="w-full h-48 object-cover rounded-t-lg" />
+                                <Image src={masaje.image} alt={masaje.title} className="w-full h-48 object-cover rounded-t-lg" 
+                                width={1000}
+                                height={1000}
+                                />
                             </CardHeader>
                             <CardContent>
                                 <CardTitle className="mb-2">{masaje.title}</CardTitle>

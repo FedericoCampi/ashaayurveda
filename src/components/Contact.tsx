@@ -69,10 +69,12 @@ export default function Contact() {
     <div className="relative bg-gradient-to-br from-green-700 to-green-900 text-white pb-20 p-8 md:p-16"
     >
       <div className="absolute inset-0">
-        <img
+        <Image
           src="/imagesFirstLanding/fondoFooter.webp" // Reemplaza con la ruta de tu imagen
           alt="Fondo"
           className="w-full h-full object-cover opacity-30" // Ajusta la opacidad aquí
+          width={1000}
+          height={1000}
         />
       </div>
       <div className="contentFooter max-w-6xl mx-auto grid md:grid-cols-2 gap-8">

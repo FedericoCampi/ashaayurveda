@@ -172,7 +172,10 @@ const IntroductionSection = ({ text, url, name, credentials, image, introSubtitl
                 <p>{subText}</p>
             }
             {image && 
-                <img src={image} alt="Introduction image" className="mt-4 w-full h-auto" />
+                <Image src={image} alt="Introduction image" className="mt-4 w-full h-auto" 
+                width={1000}
+          height={1000}
+                />
             }
         </div>
         <ProfessionalSection name={name} credentials={credentials} url={url} />

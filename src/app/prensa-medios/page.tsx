@@ -5,7 +5,7 @@ import { carouselPrensa } from '@/lib/data'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 
-const page = () => {
+const Page = () => {
 
   const [isMobile, setIsMobile] = useState(false);
   
@@ -89,4 +89,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
