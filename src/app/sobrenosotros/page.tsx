@@ -1,9 +1,23 @@
+'use client'
+
 import FirstButton from "@/components/ui/firstButton";
 import { CheckCircle } from "lucide-react";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const page = () => {
+
+    const [isMobile, setIsMobile] = useState(false);
+      
+          useEffect(() => {
+              const handleResize = () => {
+                  setIsMobile(window.innerWidth < 640);
+              };
+      
+              handleResize(); // Llamada inicial
+              window.addEventListener("resize", handleResize);
+              return () => window.removeEventListener("resize", handleResize);
+          }, []);
     return (
         <div>
             <div className="bg-black relative">
@@ -11,7 +25,7 @@ const page = () => {
                     width={1000}
                     alt="plasha"
                     height={500}
-                    src={"/sobreNosotros/mountain.webp"}
+                    src={isMobile ? "/sobreNosotros/mountain-mobile.png" : "/sobreNosotros/mountain.webp"}
                     className="w-full object-cover h-[400px] opacity-50"
                 />
                 <p className="absolute inset-0 flex flex-col items-center justify-center text-white text-[40px] text-center">

@@ -13,12 +13,15 @@ export const imagesCarousel: CarouselImage[] = [
   },
   { 
     imagen: '/imagesFirstLanding/carousel/firstCarousel.webp',
+    imageMobile: '/imagesFirstLanding/carousel/firstCarousel-mobile.png',
     idText: 'yoga/acompanamos-y-honramos',
   },
   { imagen: '/imagesFirstLanding/carousel/secondCarousel.webp',
+    imageMobile: '/imagesFirstLanding/carousel/secondCarousel-mobile.png',
     idText: 'servicios/educacion/taller'
   },
   { imagen: '/imagesFirstLanding/carousel/thirdCarousel.webp',
+    imageMobile: '/imagesFirstLanding/carousel/thirdCarousel-mobile.png',
     idText: 'yoga/participacion-en-consejos-multisectoriales'
    },
    { imagen: '/imagesFirstLanding/carousel/3encuentro.png',
@@ -26,13 +29,16 @@ export const imagesCarousel: CarouselImage[] = [
     idText: 'yoga/tercer-encuentro'
    },
   { imagen: '/imagesFirstLanding/carousel/fourthCarousel.webp',
+    imageMobile: '/imagesFirstLanding/carousel/fourthCarousel-mobile.png',
     idText: 'articulos/universidad',
     textbutton: 'Ver actividades relacionadas'
    },
   { imagen: '/imagesFirstLanding/carousel/fifthCarousel.webp',
+    imageMobile: '/imagesFirstLanding/carousel/fifthCarousel-mobile.png',
     idText: 'servicios/educacion/colaborando-con-la-akademia'
    },
   { imagen: '/imagesFirstLanding/carousel/sixthCarousel.webp',
+    imageMobile: '/imagesFirstLanding/carousel/sixthCarousel-mobile.png',
     idText: 'servicios/educacion/celebrando-la-union-cultural'
    },
   // { imagen: '/imagesFirstLanding/carousel/seventhCarousel.webp',
