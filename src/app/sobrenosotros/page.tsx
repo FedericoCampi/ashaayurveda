@@ -9,15 +9,16 @@ const Page = () => {
 
     const [isMobile, setIsMobile] = useState(false);
       
-          useEffect(() => {
-              const handleResize = () => {
-                  setIsMobile(window.innerWidth < 640);
-              };
-      
-              handleResize(); // Llamada inicial
-              window.addEventListener("resize", handleResize);
-              return () => window.removeEventListener("resize", handleResize);
-          }, []);
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 640);
+        };
+
+        handleResize(); // Llamada inicial
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     return (
         <div>
             <div className="bg-black relative">

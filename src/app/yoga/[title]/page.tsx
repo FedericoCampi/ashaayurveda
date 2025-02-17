@@ -18,11 +18,24 @@ interface articlesItemType {
   secondTitle?: string;
   secondImage?: string;
   secondTextPart?: string;
+  imagenMobile?: string;
 }
 
 export default function YogaSection() {
   const [data, setData] = useState<articlesItemType | null>(null);
   const pathname = usePathname(); // Obtener la ruta actual
+
+  const [isMobile, setIsMobile] = useState(false);
+        
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 640);
+        };
+
+        handleResize(); // Llamada inicial
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
   useEffect(() => {
     const lastSegment = pathname.split("/").pop(); // Obtener el último segmento de la ruta
@@ -47,7 +60,7 @@ export default function YogaSection() {
           </h2>
           <p className="text-center">{data.faq}</p>
           <Image
-            src={data.imagen}
+            src={isMobile ? data.imagenMobile! : data.imagen}
             alt={data.title}
             width={1000}
             height={1000}
