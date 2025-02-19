@@ -60,11 +60,11 @@ export default function YogaSection() {
           </h2>
           <p className="text-center">{data.faq}</p>
           <Image
-            src={isMobile ? data.imagenMobile! : data.imagen}
+            src={isMobile && data.imagenMobile ? data.imagenMobile : data.imagen}
             alt={data.title}
             width={1000}
             height={1000}
-            className="w-full h-[500px] object-cover"
+            className="w-full h-[400px] object-cover"
           />
           <p className="pt-10">{data.textCompleto}</p>
           <p className="pt-10">{data.text}</p>
