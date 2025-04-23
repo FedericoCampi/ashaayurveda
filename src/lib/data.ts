@@ -7,7 +7,7 @@ export const imagesCarousel: CarouselImage[] = [
     idText: 'servicios/educacion/curso-ayurveda',
   },
   { 
-    imagen: '/articulos/universidad/curso-abhyanga-banner.jpg',
+    imagen: '/articulos/universidad/curso-abhyanga-banner2.jpg',
     imageMobile: '/articulos/universidad/curso-abhyanga-mobile.png',
     idText: 'servicios/educacion/curso-abhyanga',
   },
@@ -310,10 +310,10 @@ export const educationItems = [
     idtext: "curso-abhyanga",
     title: "Curso de masajes Abhyanga",
     subTitle: "by Asha Ayurveda | 26 Octubre, 2024 | Universidad de Nacional de Catamarca",
-    image: '/articulos/universidad/curso-abhyanga.jpg',
-    shortDescription: "Preinscripciones a partir del 5 de diciembre 2024",
+    image: '/articulos/universidad/curso-abhyanga2.jpg',
+    shortDescription: "Inscripciones a partir del 5 de diciembre 2024",
     description: "Iniciando esta nueva experiencia, con ánimos de seguir compartiendo aprendizajes y brindar herramientas que proporciona Ayurveda, ciencia milenaria que se adecua a distintos entornos y culturas, es que invitamos a todas las personas que quieran participar para profundizar en conceptos que se adaptan fácilmente, respetando su origen. Con el inmenso agradecimiento a Fundación de Salud Ayurveda Prema, a  Embajada de India para Argentina y Uruguay, a la Secretaría de Extensión Universitaria de la Universidad Nacional de Catamarca, AMARA (Asociación de Médicos y Asistentes de Ayurveda de la República Argentina) colegas, amigos y  pacientes, es que se abre esta  oportunidad de capacitación como una opción más que será útil para integrar herramientas a la vida diaria generando conciencia del cuidado de todos y del medio ambiente. Se requiere completar formulario de Pre-inscripción hasta el 15 de Febrero de 2025 por una cuestión de organización.",
-    button: "Ir a Preinscripción",
+    button: "Ir a inscripción",
   },
 
 
@@ -559,7 +559,7 @@ export const carouselUniversidad = [
     to: '/servicios/educacion/curso-ayurveda'
   },
   { 
-    imagen: '/articulos/universidad/curso-abhyanga.jpg',
+    imagen: '/articulos/universidad/curso-abhyanga2.jpg',
     title: 'Curso de masajes Abhyanga',
     text: 'Preinscripciones apartir del 5 de diciembre 2024',
     faq: 'by Asha Ayurveda | 26 Octubre, 2024 | Universidad de Nacional de Catamarca',
