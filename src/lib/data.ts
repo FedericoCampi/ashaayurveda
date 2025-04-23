@@ -8,7 +8,7 @@ export const imagesCarousel: CarouselImage[] = [
   },
   { 
     imagen: '/articulos/universidad/curso-abhyanga-banner2.jpg',
-    imageMobile: '/articulos/universidad/curso-abhyanga-mobile.png',
+    imageMobile: '/articulos/universidad/curso-abhyanga-mobile2.png',
     idText: 'servicios/educacion/curso-abhyanga',
   },
   { 
