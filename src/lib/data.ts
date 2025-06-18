@@ -1,16 +1,16 @@
 import { CarouselImage } from "@/components/Carousel";
 
 export const imagesCarousel: CarouselImage[] = [
-  { 
-    imagen: '/articulos/universidad/curso-ayurveda-banner.jpg',
-    imageMobile: '/articulos/universidad/curso-ayurveda-mobile.png',
-    idText: 'servicios/educacion/curso-ayurveda',
-  },
-  { 
-    imagen: '/articulos/universidad/curso-abhyanga-banner1.jpg',
-    imageMobile: '/articulos/universidad/curso-abhyanga-mobile2.png',
-    idText: 'servicios/educacion/curso-abhyanga',
-  },
+  // { 
+  //   imagen: '/articulos/universidad/curso-ayurveda-banner.jpg',
+  //   imageMobile: '/articulos/universidad/curso-ayurveda-mobile.png',
+  //   idText: 'servicios/educacion/curso-ayurveda',
+  // },
+  // { 
+  //   imagen: '/articulos/universidad/curso-abhyanga-banner1.jpg',
+  //   imageMobile: '/articulos/universidad/curso-abhyanga-mobile2.png',
+  //   idText: 'servicios/educacion/curso-abhyanga',
+  // },
   { 
     imagen: '/imagesFirstLanding/carousel/firstCarousel.webp',
     imageMobile: '/imagesFirstLanding/carousel/firstCarousel-mobile.png',
@@ -297,24 +297,24 @@ export const educationItems = [
     shortDescription: "Agradecidos de concretar el III Encuentro de Ayurveda en Catamarca el 26 de Octubre de 2024, donde compartimos una hermosa reunión desarrollada en base a un arduo trabajo de equipo entre instituciones, autoridades y amigos/as brindando a la población...",
     description: "Agradecidos de concretar el III Encuentro de Ayurveda en Catamarca el 26 de Octubre de 2024, donde compartimos una hermosa reunión desarrollada en base a un arduo trabajo de equipo entre instituciones, autoridades y amigos/as brindando a la población en general conocimientos y experiencias con el fin de crear conciencia para el bienestar de muchas personas, poniendo en acción una de las premisas de esta Ciencia ancestral, el cuidado por la vida.\n\nRecordamos y honramos el 9no Día del Ayurveda declarado el 29 de Octubre de 2024 por el Gobierno de India, de cuyo país se reconoce el origen de ésta Ciencia milenaria. Con la imagen de Dhanvantari Jayanti (Dhanteras) y la intención de todos los participantes estuvo llena de energía y entusiasmo, destacando la importancia del Ayurveda en la promoción de la salud y la prevención de enfermedades. El tema para este año fue “Innovaciones ayurvédicas para la salud global”. \n\n\nCon el honorable apoyo de Embajada de India en Argentina y Uruguay a cargo de su Excelencia el Sr. Dinesh Bhatia y la Secretaría de Extensión Universitaria de la Universidad Nacional de Catamarca a cargo del Sr Ing. Adolfo Agüero se generó este hermoso Encuentro a partir de la iniciativa de Asha Ayurveda Catamarca. En el mismo contamos con unas palabras de un referente en Medicina Ayurveda para Argentina y Latinoamérica como es el Dr Jorge Berra quien actualizó con noticias sobre la evolución de Ayurveda en tiempos actuales. Luego a Cargo de Patricia Verónica Ahumada se honró y se puso una intención por medio de lámparas de cerámica, o diyas, con Ghee y pabilos de algodón. A continuación, se expuso sobre Ayurveda y Plantas Medicinales de Catamarca (Médico Rafael G. Campi, Catamarca), Ayurveda y la Mujer (Médica Alejandra Rodriguez, Mar del Plata), Asanas y Doshas (Profesora Patricia V. Ahumada, Catamarca), Ayurveda y Cardiología (Médica Alejandra Naranjo, Tucumán), Astrología Ayurveda y Ciclos de Vida (Astrólogo Védico Federico Assunto Suarez, Bs As), Música clásica de India (Lic. Matías Carballido, Catamarca), Jugos y Doshas (Terapeuta Ayurveda Stella M. Varela). Una gran cantidad de asistentes que participaron con sus preguntas y aportes también nutrieron a esa hermosa reunión de corazones. También agradecemos a personal de la Secretaría de Extensión, amigos/as y colaboradores que con su importante tarea técnica y de logística también contribuyeron a que esto se haga realidad.",
   },
-  {
-    idtext: "curso-ayurveda",
-    title: "Intructorado básico en Ayurveda",
-    subTitle: "by Asha Ayurveda | 26 Octubre, 2024 | Universidad de Nacional de Catamarca",
-    image: '/articulos/universidad/curso-ayurveda.jpg',
-    shortDescription: "Preinscripciones a partir del 5 de diciembre 2024",
-    description: "Iniciando esta nueva experiencia, con ánimos de seguir compartiendo aprendizajes y brindar herramientas que proporciona Ayurveda, ciencia milenaria que se adecua a distintos entornos y culturas, es que invitamos a todas las personas que quieran participar para profundizar en conceptos que se adaptan fácilmente, respetando su origen. Con el inmenso agradecimiento a Fundación de Salud Ayurveda Prema, a  Embajada de India para Argentina y Uruguay, a la Secretaría de Extensión Universitaria de la Universidad Nacional de Catamarca, AMARA (Asociación de Médicos y Asistentes de Ayurveda de la República Argentina) colegas, amigos y  pacientes, es que se abre esta  oportunidad de capacitación como una opción más que será útil para integrar herramientas a la vida diaria generando conciencia del cuidado de todos y del medio ambiente. Se requiere completar formulario de Pre-inscripción hasta el 15 de Febrero de 2025 por una cuestión de organización.",
-    button: "Ir a Preinscripción",
-  },
-  {
-    idtext: "curso-abhyanga",
-    title: "Curso de masajes Abhyanga",
-    subTitle: "by Asha Ayurveda | 26 Octubre, 2024 | Universidad de Nacional de Catamarca",
-    image: '/articulos/universidad/curso-abhyanga2.jpg',
-    shortDescription: "Inscripciones a partir del 5 de diciembre 2024",
-    description: "Iniciando esta nueva experiencia, con ánimos de seguir compartiendo aprendizajes y brindar herramientas que proporciona Ayurveda, ciencia milenaria que se adecua a distintos entornos y culturas, es que invitamos a todas las personas que quieran participar para profundizar en conceptos que se adaptan fácilmente, respetando su origen. Con el inmenso agradecimiento a Fundación de Salud Ayurveda Prema, a  Embajada de India para Argentina y Uruguay, a la Secretaría de Extensión Universitaria de la Universidad Nacional de Catamarca, AMARA (Asociación de Médicos y Asistentes de Ayurveda de la República Argentina) colegas, amigos y  pacientes, es que se abre esta  oportunidad de capacitación como una opción más que será útil para integrar herramientas a la vida diaria generando conciencia del cuidado de todos y del medio ambiente. Se requiere completar formulario de Pre-inscripción hasta el 15 de Febrero de 2025 por una cuestión de organización.",
-    button: "Ir a inscripción",
-  },
+  // {
+  //   idtext: "curso-ayurveda",
+  //   title: "Intructorado básico en Ayurveda",
+  //   subTitle: "by Asha Ayurveda | 26 Octubre, 2024 | Universidad de Nacional de Catamarca",
+  //   image: '/articulos/universidad/curso-ayurveda.jpg',
+  //   shortDescription: "Preinscripciones a partir del 5 de diciembre 2024",
+  //   description: "Iniciando esta nueva experiencia, con ánimos de seguir compartiendo aprendizajes y brindar herramientas que proporciona Ayurveda, ciencia milenaria que se adecua a distintos entornos y culturas, es que invitamos a todas las personas que quieran participar para profundizar en conceptos que se adaptan fácilmente, respetando su origen. Con el inmenso agradecimiento a Fundación de Salud Ayurveda Prema, a  Embajada de India para Argentina y Uruguay, a la Secretaría de Extensión Universitaria de la Universidad Nacional de Catamarca, AMARA (Asociación de Médicos y Asistentes de Ayurveda de la República Argentina) colegas, amigos y  pacientes, es que se abre esta  oportunidad de capacitación como una opción más que será útil para integrar herramientas a la vida diaria generando conciencia del cuidado de todos y del medio ambiente. Se requiere completar formulario de Pre-inscripción hasta el 15 de Febrero de 2025 por una cuestión de organización.",
+  //   button: "Ir a Preinscripción",
+  // },
+  // {
+  //   idtext: "curso-abhyanga",
+  //   title: "Curso de masajes Abhyanga",
+  //   subTitle: "by Asha Ayurveda | 26 Octubre, 2024 | Universidad de Nacional de Catamarca",
+  //   image: '/articulos/universidad/curso-abhyanga2.jpg',
+  //   shortDescription: "Inscripciones a partir del 5 de diciembre 2024",
+  //   description: "Iniciando esta nueva experiencia, con ánimos de seguir compartiendo aprendizajes y brindar herramientas que proporciona Ayurveda, ciencia milenaria que se adecua a distintos entornos y culturas, es que invitamos a todas las personas que quieran participar para profundizar en conceptos que se adaptan fácilmente, respetando su origen. Con el inmenso agradecimiento a Fundación de Salud Ayurveda Prema, a  Embajada de India para Argentina y Uruguay, a la Secretaría de Extensión Universitaria de la Universidad Nacional de Catamarca, AMARA (Asociación de Médicos y Asistentes de Ayurveda de la República Argentina) colegas, amigos y  pacientes, es que se abre esta  oportunidad de capacitación como una opción más que será útil para integrar herramientas a la vida diaria generando conciencia del cuidado de todos y del medio ambiente. Se requiere completar formulario de Pre-inscripción hasta el 15 de Febrero de 2025 por una cuestión de organización.",
+  //   button: "Ir a inscripción",
+  // },
 
 
   {
@@ -551,20 +551,20 @@ export const yogaSection = [
 ];
 
 export const carouselUniversidad = [
-  { 
-    imagen: '/articulos/universidad/curso-ayurveda.jpg',
-    title: 'Intructorado básico en Ayurveda',
-    text: 'Preinscripciones apartir del 5 de diciembre 2024',
-    faq: 'by Asha Ayurveda | 26 Octubre, 2024 | Universidad de Nacional de Catamarca',
-    to: '/servicios/educacion/curso-ayurveda'
-  },
-  { 
-    imagen: '/articulos/universidad/curso-abhyanga2.jpg',
-    title: 'Curso de masajes Abhyanga',
-    text: 'Preinscripciones apartir del 5 de diciembre 2024',
-    faq: 'by Asha Ayurveda | 26 Octubre, 2024 | Universidad de Nacional de Catamarca',
-    to: '/servicios/educacion/curso-abhyanga'
-  },
+  // { 
+  //   imagen: '/articulos/universidad/curso-ayurveda.jpg',
+  //   title: 'Intructorado básico en Ayurveda',
+  //   text: 'Preinscripciones apartir del 5 de diciembre 2024',
+  //   faq: 'by Asha Ayurveda | 26 Octubre, 2024 | Universidad de Nacional de Catamarca',
+  //   to: '/servicios/educacion/curso-ayurveda'
+  // },
+  // { 
+  //   imagen: '/articulos/universidad/curso-abhyanga2.jpg',
+  //   title: 'Curso de masajes Abhyanga',
+  //   text: 'Preinscripciones apartir del 5 de diciembre 2024',
+  //   faq: 'by Asha Ayurveda | 26 Octubre, 2024 | Universidad de Nacional de Catamarca',
+  //   to: '/servicios/educacion/curso-abhyanga'
+  // },
 
   { 
     imagen: '/articulos/universidad/first.webp',
