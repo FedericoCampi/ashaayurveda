@@ -58,7 +58,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body
-        className={`${inter.className} antialiased`}
+        className={`${inter.className} antialiased `}
       >
         <Header />
         {children}
