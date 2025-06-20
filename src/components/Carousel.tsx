@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import { imagesCarousel } from '@/lib/data'
 import Image from 'next/image'
+import { app } from '@/lib/firebase-clientApp';
 
 export interface CarouselImage {
     imagen: string;
@@ -24,7 +25,6 @@ const Carousel = () => {
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);
-
 
     return (
         <div id="carouselExample" className="carousel slide">
