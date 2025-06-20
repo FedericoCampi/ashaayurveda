@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react'
 import { imagesCarousel } from '@/lib/data'
 import Image from 'next/image'
-import { app } from '@/lib/firebase-clientApp';
 
 export interface CarouselImage {
     imagen: string;
