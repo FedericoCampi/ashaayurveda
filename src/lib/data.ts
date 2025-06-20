@@ -111,6 +111,7 @@ interface NavItem {
   name: string
   href: string
   subItems?: SubItem[]
+  newSection?: boolean
 }
 
 export const navItems: NavItem[] = [
@@ -149,6 +150,7 @@ export const navItems: NavItem[] = [
   { name: 'Sobre nosotros', href: '/sobrenosotros' },
   { name: 'Galería', href: '/galeria' },
   { name: 'Prensa y medios', href: '/prensa-medios' },
+  { name: 'Cursos', href: '/cursos', newSection: true },
 ]
 
 export const services = [
@@ -1047,3 +1049,58 @@ export const yogaArticles = [
     text: 'En un momento de distinguida honorabilidad, nos unimos con gratitud y aprecio a la Embajada de India en Buenos Aires para celebrar el Día de la Independencia de India. Desde Asha Ayurveda, nos sentimos profundamente honrados por la invitación a este evento...'
   },
 ];
+
+export const courses = [
+    {
+      id: 1,
+      title: "Fundamentos del Ayurveda",
+      description:
+        "Descubre los principios básicos de la medicina ayurvédica y cómo aplicarlos en tu vida diaria para alcanzar el equilibrio y la armonía.",
+      duration: "8 semanas",
+      students: 45,
+      rating: 4.9,
+      price: "$12,500",
+      level: "Principiante",
+      image: "/placeholder.svg?height=200&width=300",
+      nextStart: "15 Marzo",
+    },
+    {
+      id: 2,
+      title: "Yoga Terapéutico Ayurvédico",
+      description:
+        "Integra las prácticas de yoga con los principios ayurvédicos para crear rutinas personalizadas según tu constitución.",
+      duration: "12 semanas",
+      students: 32,
+      rating: 4.8,
+      price: "$18,000",
+      level: "Intermedio",
+      image: "/placeholder.svg?height=200&width=300",
+      nextStart: "22 Marzo",
+    },
+    // {
+    //   id: 3,
+    //   title: "Nutrición Ayurvédica",
+    //   description:
+    //     "Aprende a alimentarte según tu dosha y las estaciones, creando menús equilibrados que nutran cuerpo, mente y espíritu.",
+    //   duration: "6 semanas",
+    //   students: 28,
+    //   rating: 4.9,
+    //   price: "$9,800",
+    //   level: "Principiante",
+    //   image: "/placeholder.svg?height=200&width=300",
+    //   nextStart: "1 Abril",
+    // },
+    // {
+    //   id: 4,
+    //   title: "Masaje Ayurvédico Abhyanga",
+    //   description:
+    //     "Domina las técnicas tradicionales de masaje ayurvédico con aceites medicinales para la sanación y relajación profunda.",
+    //   duration: "10 semanas",
+    //   students: 18,
+    //   rating: 5.0,
+    //   price: "$22,000",
+    //   level: "Avanzado",
+    //   image: "/placeholder.svg?height=200&width=300",
+    //   nextStart: "8 Abril",
+    // },
+  ]

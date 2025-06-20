@@ -52,7 +52,14 @@ const NavBar = () => {
             >
               <Link href={item.href} className={`${pathname === item.href ? 'mainColorText' : 'text-black'} no-underline`}>
                 <button className='flex items-center'>
-                  <p className='mr-[5px] mb-0'>{item.name}</p>
+                  <p className="mr-[5px] mb-0 relative">
+                    {item.name}
+                    {item.newSection && (
+                      <span className="absolute -top-2 -right-3 text-red-600 text-[10px] font-semibold">
+                        Nuevo
+                      </span>
+                    )}
+                  </p>
                   {item.subItems && <IoIosArrowDown />}
                 </button>
               </Link>
