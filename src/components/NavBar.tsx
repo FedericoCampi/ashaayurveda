@@ -1,11 +1,15 @@
 'use client'
 
 import Image from 'next/image'
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { IoIosArrowDown } from "react-icons/io";
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { navItems } from '@/lib/data';
+import { getAuth, onAuthStateChanged, type User } from "firebase/auth";
+import { app } from '@/lib/firebase-clientApp';
+import LoginModal from './LoginModal';
+import { signOut } from "firebase/auth";
 
 const NavBar = () => {
 
@@ -14,6 +18,8 @@ const NavBar = () => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
   const [openSubDropdown, setOpenSubDropdown] = useState<string | null>(null)
   const dropdownTimeout = useRef<NodeJS.Timeout | null>(null);
+  const [user, setUser] = useState<User | null>(null);
+  const [showLoginModal, setShowLoginModal] = useState(false);
 
   const handleMouseEnter = (itemName: string) => {
     if (dropdownTimeout.current) {
@@ -29,6 +35,15 @@ const NavBar = () => {
     }, 300); // 300ms delay before closing the dropdown
   };
 
+  useEffect(() => {
+    const auth = getAuth(app);
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      setUser(user);
+    });
+
+    return () => unsubscribe();
+  }, []);
+
   return (
     <div className='border-gray-300 border-b w-full h-full flex justify-center'>
       <div className='flex w-[1200px] h-full items-center xl:px-0 px-10 '>
@@ -42,7 +57,7 @@ const NavBar = () => {
             />
           </a>
         </div>
-        <div className="w-[70%] space-x-5 text-sm flex justify-end">
+        <div className="w-[60%] space-x-5 text-sm flex justify-end">
           {navItems.map((item) => (
             <div
               key={item.name}
@@ -92,8 +107,44 @@ const NavBar = () => {
             </div>
           ))}
         </div>
+        <div className='w-[10%] text-sm pl-2'>
+          {user ? (
+            <div
+              onMouseEnter={() => setOpenDropdown("miCuenta")}
+              className="relative"
+            >
+              <button className='border-green-500 border-1 p-2 rounded-full hover:bg-green-500 hover:text-white transition-colors duration-300 flex items-center justify-center whitespace-nowrap'>
+                Mi cuenta
+              </button>
+
+              {openDropdown === "miCuenta" && (
+                <div className="absolute top-full right-0 mt-2 bg-white shadow-lg p-2 w-[150px] rounded-md transition-opacity duration-300 opacity-100 border-b-4 border-[#35b05a] z-50">
+                  <button
+                    onClick={async () => {
+                      const auth = getAuth(app);
+                      await signOut(auth);
+                      setUser(null);
+                      setOpenDropdown(null);
+                    }}
+                    className="text-left w-full hover:bg-gray-100 m-1 px-2 py-2 cursor-pointer text-black"
+                  >
+                    Cerrar sesión
+                  </button>
+                </div>
+              )}
+            </div>
+          ) : (
+            <button onClick={() => setShowLoginModal(true)}
+              className='border-green-500 border-1 p-2 rounded-full hover:bg-green-500 hover:text-white transition-colors duration-300 flex items-center justify-center whitespace-nowrap'>
+              Iniciar sesión
+            </button>
+          )}
+        </div>
       </div>
+      <LoginModal isOpen={showLoginModal} onClose={() => setShowLoginModal(false)} />
+
     </div>
+    
   )
 }
 
