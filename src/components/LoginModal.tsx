@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Separator } from "@/components/ui/separator"
-import { X, Mail, Lock, Eye, EyeOff } from "lucide-react"
+import { Mail, Lock, Eye, EyeOff } from "lucide-react"
 import { FacebookAuthProvider, getAuth, GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth"
 import { app } from "@/lib/firebase-clientApp"
 
@@ -26,8 +26,7 @@ export default function LoginModal({ isOpen, onClose }: LoginModalProps) {7
         await signInWithEmailAndPassword(auth, email, password);
         console.log("Inicio de sesión exitoso");
         onClose(); // Cierra el modal si es exitoso
-    } catch (error: any) {
-        alert("Error al iniciar sesión: " + error.message);
+    } catch (error: unknown) {
     }
     };
     const handleGoogleLogin = async () => {
@@ -37,8 +36,7 @@ export default function LoginModal({ isOpen, onClose }: LoginModalProps) {7
             await signInWithPopup(auth, provider);
             console.log("Inicio de sesión exitoso google");
             onClose();
-        } catch (error: any) {
-            alert("Error al iniciar sesión con Google: " + error.message);
+        } catch (error: unknown) {
         }
     };
     const handleFacebookLogin = async () => {
@@ -48,8 +46,7 @@ export default function LoginModal({ isOpen, onClose }: LoginModalProps) {7
             await signInWithPopup(auth, provider);
             console.log("Inicio de sesión exitoso facebook");
             onClose();
-        } catch (error: any) {
-            alert("Error al iniciar sesión con Facebook: " + error.message);
+        } catch (error: unknown) {
         }
     };
 
