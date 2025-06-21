@@ -24,7 +24,6 @@ export async function POST(req: NextRequest){
             }),
             text: 'Hello'
         });
-        console.log("Respuesta de Resend:", data);
         if (!data || data.error) {
             throw new Error(data.error?.message || "Error desconocido al enviar el correo");
         }

@@ -25,7 +25,6 @@ const Carousel = () => {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-
     return (
         <div id="carouselExample" className="carousel slide">
 
